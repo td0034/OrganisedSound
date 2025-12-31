@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ app_title }} — Session</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Clip Ratings</h1>
+      <div class="status">
+        <span id="tokenBadge" class="badge">Token: {{ token }}</span>
+        <span id="progressBadge" class="badge">Progress: —</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="message" class="message"></div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 id="clipTitle">Loading…</h2>
+          <p class="prompt" id="clipPrompt">
+            Watch the clip to the end to unlock the rating form. You may replay freely.
+          </p>
+        </div>
+
+        <div class="card-body">
+          <div class="field">
+            <label>Clip</label>
+            <div class="help" id="clipMeta">—</div>
+            <video id="video" controls preload="metadata"
+                   style="width:100%; border-radius:12px; border:1px solid var(--line); background:#000">
+            </video>
+            <div class="help">Ratings appear only after you reach the end at least once.</div>
+          </div>
+
+          <form id="ratingForm" style="display:none"></form>
+
+          <div class="row">
+            <button id="saveNextBtn" class="btn primary" type="button" disabled>Save rating & Next</button>
+            <button id="saveOnlyBtn" class="btn" type="button" disabled>Save only</button>
+            <button id="prevBtn" class="btn subtle" type="button">Previous clip</button>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a class="btn subtle" href="/" style="text-decoration:none; text-align:center;">Back to home</a>
+          <a class="btn subtle" href="/api/export/ratings.csv" target="_blank" style="text-decoration:none; text-align:center;">Export ratings CSV</a>
+        </div>
+      </div>
+
+      <div class="card" id="endCard" style="display:none;">
+        <div class="card-header">
+          <h2>End (optional)</h2>
+          <p class="prompt">After rating all clips, you may provide final notes.</p>
+        </div>
+        <div class="card-body">
+          <form id="endForm"></form>
+          <button id="endSaveBtn" class="btn primary" type="button">Save end notes</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.__TOKEN__ = "{{ token }}";
+    window.__CLIP_ID__ = {{ clip_id if clip_id is defined else "null" }};
+  </script>
+  <script src="/static/session.js"></script>
+</body>
+</html>

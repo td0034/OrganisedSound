@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: raterdb
+      POSTGRES_USER: rater
+      POSTGRES_PASSWORD: rater_password_change_me
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rater -d raterdb"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  web:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://rater:rater_password_change_me@db:5432/raterdb
+      APP_TITLE: "Audiovisual Clip Ratings"
+      CLIPS_DIR: /data/clips
+      CLIPS_SCAN_SECONDS: "20"
+      TOKEN_SECRET: "CHANGE_ME_TO_A_LONG_RANDOM_STRING"
+    volumes:
+      - ./clips:/data/clips:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "18080:8080"
+
+volumes:
+  pgdata:

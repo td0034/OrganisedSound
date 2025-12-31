@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ app_title }}</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>{{ app_title }}</h1>
+      <div class="status">
+        <span class="badge">Standalone rater app</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="message" class="message"></div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Create a rater session</h2>
+          <p class="prompt">This creates a tokenised playlist link you can share with a rater.</p>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="field">
+              <label>Rater label (optional)</label>
+              <div class="help">Initials or short label for your tracking (optional).</div>
+              <input id="raterLabel" type="text" placeholder="e.g., AB" />
+            </div>
+          </div>
+
+          <button id="createBtn" class="btn primary" type="button">Create session</button>
+
+          <div id="result" class="field" style="display:none; margin-top:14px;">
+            <label>Session link</label>
+            <div class="help">Send this link to the rater.</div>
+            <input id="sessionLink" type="text" readonly />
+            <div style="display:flex; gap:10px; margin-top:10px;">
+              <a id="openLink" class="btn primary" href="#" style="text-decoration:none; text-align:center;">Open</a>
+              <button id="copyBtn" class="btn" type="button">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a class="btn subtle" href="/api/export/ratings.csv" target="_blank" style="text-decoration:none; text-align:center;">Export ratings CSV</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/index.js"></script>
+</body>
+</html>
