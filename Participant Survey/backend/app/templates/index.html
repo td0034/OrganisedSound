@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ app_title }}</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>{{ app_title }}</h1>
+      <div class="status">
+        <span id="pidBadge" class="badge">Participant: —</span>
+        <span id="sectionBadge" class="badge">Section: —</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="message" class="message"></div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 id="sectionTitle">Welcome</h2>
+          <p id="sectionPrompt" class="prompt"></p>
+        </div>
+
+        <form id="sectionForm" class="card-body"></form>
+
+        <div class="card-footer">
+          <button id="saveBtn" type="button" class="btn primary">Save & Continue</button>
+          <button id="saveOnlyBtn" type="button" class="btn">Save Only</button>
+          <button id="backBtn" type="button" class="btn subtle">Back</button>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="/api/export/sections.csv" target="_blank">Export CSV</a>
+        <a href="/api/export/sections.json" target="_blank">Export JSON</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>Local survey capture. For support: your researcher contact details here.</small>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

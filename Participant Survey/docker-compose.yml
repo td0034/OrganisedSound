@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: surveydb
+      POSTGRES_USER: survey
+      POSTGRES_PASSWORD: survey_password_change_me
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U survey -d surveydb"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  web:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://survey:survey_password_change_me@db:5432/surveydb
+      APP_TITLE: "Audiovisual Intermediality Participant Survey"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+
+volumes:
+  pgdata:
