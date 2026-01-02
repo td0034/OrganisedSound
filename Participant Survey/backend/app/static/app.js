@@ -20,7 +20,8 @@ const state = {
   dyadEnabled: false,
   sections: [], // computed
   loadedSections: {},
-  session_meta: {}
+  session_meta: {},
+  blockPresetIds: {}
 };
 
 function setMessage(text, kind="info"){
@@ -62,6 +63,33 @@ function buildSections(){
 
 function normalizeParticipantId(value){
   return (value || "").trim().toUpperCase();
+}
+
+function timestampId(){
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, "0");
+  return [
+    d.getFullYear(),
+    pad(d.getMonth() + 1),
+    pad(d.getDate())
+  ].join("") + "_" + [
+    pad(d.getHours()),
+    pad(d.getMinutes()),
+    pad(d.getSeconds())
+  ].join("");
+}
+
+function ensurePresetId(sec, payload){
+  const match = sec.key.match(/^block_([ABC])_(pre|post)$/);
+  if (!match) return;
+  const block = match[1];
+  let presetId = state.blockPresetIds[block];
+  if (!presetId){
+    const existing = state.loadedSections?.[`block_${block}_pre`]?.preset_id;
+    presetId = existing || `${state.participant_id}_${block}_${timestampId()}`;
+    state.blockPresetIds[block] = presetId;
+  }
+  payload.preset_id = presetId;
 }
 
 function validateMetaPayload(payload){
@@ -117,6 +145,7 @@ async function saveCurrentSection(payload){
       return false;
     }
   }
+  ensurePresetId(sec, finalPayload);
 
   const res = await fetch("/api/save_section", {
     method: "POST",
@@ -233,6 +262,7 @@ function resetSurvey(){
   state.dyadEnabled = false;
   state.loadedSections = {};
   state.session_meta = {};
+  state.blockPresetIds = {};
   state._idx = 0;
   localStorage.removeItem("participant_id");
   render();
@@ -354,8 +384,6 @@ function blockPromptPost(b){
 function renderBlockMeta(b){
   return `
     <div class="row">
-      ${field("Block preset ID / block ID", textInput("preset_id", "e.g., P001_A_01", true),
-        "Use the same identifier you use for saved presets / files.")}
       ${field("Task focus (quick check)", radioList("aim", ["Stability/clarity","Complexity/energy","A mix / unsure"], true))}
     </div>
     ${field("Strategy (brief)", textarea("strategy", "1–3 sentences…"))}
@@ -485,8 +513,12 @@ $("#saveBtn").addEventListener("click", async () => {
 
   if (sec.key === "meta"){
     if (!validateMetaPayload(payload)) return;
+    const prevId = state.participant_id;
     state.participant_id = payload.participant_id;
     localStorage.setItem("participant_id", payload.participant_id);
+    if (prevId && prevId !== state.participant_id){
+      state.blockPresetIds = {};
+    }
     state.order = ORDER_MAP[payload.order] || ["A","B","C"];
   }
 
@@ -514,8 +546,12 @@ $("#saveOnlyBtn").addEventListener("click", async () => {
 
   if (sec.key === "meta"){
     if (!validateMetaPayload(payload)) return;
+    const prevId = state.participant_id;
     state.participant_id = payload.participant_id;
     localStorage.setItem("participant_id", payload.participant_id);
+    if (prevId && prevId !== state.participant_id){
+      state.blockPresetIds = {};
+    }
     state.order = ORDER_MAP[payload.order] || ["A","B","C"];
   }
 
