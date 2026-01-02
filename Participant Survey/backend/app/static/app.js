@@ -3,12 +3,24 @@
 
 const $ = (sel) => document.querySelector(sel);
 
+const PARTICIPANT_ID_RE = /^\d{4}[A-Za-z]$/;
+const ORDER_MAP = {
+  "A→B→C": ["A","B","C"],
+  "A→C→B": ["A","C","B"],
+  "B→A→C": ["B","A","C"],
+  "B→C→A": ["B","C","A"],
+  "C→A→B": ["C","A","B"],
+  "C→B→A": ["C","B","A"]
+};
+
 const state = {
   participant_id: localStorage.getItem("participant_id") || "",
   order: ["A","B","C"],
   blockIndex: 0,
   dyadEnabled: false,
-  sections: [] // computed
+  sections: [], // computed
+  loadedSections: {},
+  session_meta: {}
 };
 
 function setMessage(text, kind="info"){
@@ -48,6 +60,25 @@ function buildSections(){
   }
 }
 
+function normalizeParticipantId(value){
+  return (value || "").trim().toUpperCase();
+}
+
+function validateMetaPayload(payload){
+  const rawId = (payload.participant_id || "").trim();
+  if (!rawId){
+    setMessage("Please enter the participant ID.", "error");
+    return false;
+  }
+  const normalized = normalizeParticipantId(rawId);
+  if (!PARTICIPANT_ID_RE.test(normalized)){
+    setMessage("Participant ID must be 4 digits + 1 letter.", "error");
+    return false;
+  }
+  payload.participant_id = normalized;
+  return true;
+}
+
 function render(){
   buildSections();
   const sec = currentSection();
@@ -55,6 +86,7 @@ function render(){
   $("#sectionPrompt").textContent = sec.prompt;
   $("#sectionForm").innerHTML = "";
   sec.render();
+  prefillSection(sec);
   badgeUpdate();
   setMessage("");
   $("#backBtn").disabled = (state._idx || 0) === 0;
@@ -74,18 +106,14 @@ function prevSection(){
   render();
 }
 
-async function saveCurrentSection(){
-  if (!state.participant_id){
-    setMessage("Participant ID is required before saving.", "error");
-    return false;
-  }
+async function saveCurrentSection(payload){
   const sec = currentSection();
-  const payload = collectFormData($("#sectionForm"));
-
-  // Basic required checks for meta
-  if (sec.key === "meta"){
-    if (!payload.participant_id || payload.participant_id.trim() === ""){
-      setMessage("Please enter Participant ID.", "error");
+  const finalPayload = payload || collectFormData($("#sectionForm"));
+  if (!state.participant_id){
+    if (sec.key === "meta" && finalPayload.participant_id){
+      state.participant_id = finalPayload.participant_id;
+    } else {
+      setMessage("Participant ID is required before saving.", "error");
       return false;
     }
   }
@@ -96,13 +124,27 @@ async function saveCurrentSection(){
     body: JSON.stringify({
       participant_id: state.participant_id,
       section_key: sec.key,
-      payload
+      payload: finalPayload
     })
   });
 
   if (!res.ok){
-    setMessage("Save failed. Please try again.", "error");
+    let msg = "Save failed. Please try again.";
+    try {
+      const data = await res.json();
+      if (data && data.detail) msg = data.detail;
+    } catch (err) {
+      // ignore non-JSON errors
+    }
+    setMessage(msg, "error");
     return false;
+  }
+  state.loadedSections[sec.key] = finalPayload;
+  if (sec.key === "meta"){
+    state.session_meta = {
+      ...(state.session_meta || {}),
+      ...finalPayload
+    };
   }
   setMessage("Saved.");
   return true;
@@ -133,6 +175,68 @@ function collectFormData(formEl){
   });
 
   return out;
+}
+
+function fillFormData(formEl, data){
+  if (!data) return;
+  const fields = formEl.querySelectorAll("input, textarea, select");
+  const grouped = {};
+  fields.forEach((el) => {
+    if (!el.name) return;
+    if (!grouped[el.name]) grouped[el.name] = [];
+    grouped[el.name].push(el);
+  });
+
+  Object.entries(grouped).forEach(([name, elements]) => {
+    if (data[name] === undefined) return;
+    const raw = data[name];
+    const values = Array.isArray(raw) ? raw.map(String) : [String(raw)];
+
+    elements.forEach((el) => {
+      if (el.type === "radio"){
+        el.checked = values.includes(el.value);
+      } else if (el.type === "checkbox"){
+        const normalized = values.map((v) => v.toLowerCase());
+        if (values.includes(el.value)){
+          el.checked = true;
+        } else if (normalized.length === 1 && ["1","true","yes"].includes(normalized[0]) && el.value === "1"){
+          el.checked = true;
+        } else {
+          el.checked = false;
+        }
+      } else {
+        el.value = values[0];
+      }
+    });
+  });
+}
+
+function prefillSection(sec){
+  if (!sec) return;
+  let data = state.loadedSections[sec.key];
+  if (!data && sec.key === "meta"){
+    data = state.session_meta || {};
+  }
+  fillFormData($("#sectionForm"), data);
+  const metaPid = data && data.participant_id;
+  if (sec.key === "meta" && !metaPid && state.participant_id){
+    const pidInput = $("#sectionForm").querySelector('input[name="participant_id"]');
+    if (pidInput) pidInput.value = state.participant_id;
+  }
+}
+
+function resetSurvey(){
+  const ok = window.confirm("Return to start and clear the current participant from this device?");
+  if (!ok) return;
+  state.participant_id = "";
+  state.order = ["A","B","C"];
+  state.dyadEnabled = false;
+  state.loadedSections = {};
+  state.session_meta = {};
+  state._idx = 0;
+  localStorage.removeItem("participant_id");
+  render();
+  setMessage("Ready for next participant.");
 }
 
 function field(label, innerHTML, helpText=""){
@@ -207,10 +311,10 @@ function renderMeta(){
 
   f.innerHTML = `
     <div class="row">
-      ${field("Participant ID", textInput("participant_id", "e.g., P001", true), "Use a non-identifying ID.")}
-      ${field("Date", textInput("date", "auto or enter"), "Optional.")}
+      ${field("Participant ID", textInput("participant_id", "e.g., 9746T", true), "Enter the last 4 digits of your mobile followed by your first name initial.")}
     </div>
     <div class="row">
+      ${field("Date", textInput("date", "auto or enter"), "Optional.")}
       ${field("Session location", textInput("location", "e.g., Studio / Lab"), "Optional.")}
       ${field("Researcher", textInput("researcher", "name/initials"), "Optional.")}
     </div>
@@ -218,11 +322,6 @@ function renderMeta(){
       "Choose the counterbalanced order you actually used.")}
     ${field("Notes (optional)", textarea("meta_notes", "Any session notes…"))}
   `;
-
-  // Pre-fill participant ID if present
-  if (state.participant_id){
-    f.querySelector('input[name="participant_id"]').value = state.participant_id;
-  }
 }
 
 function renderBackground(){
@@ -385,32 +484,17 @@ $("#saveBtn").addEventListener("click", async () => {
   const payload = collectFormData($("#sectionForm"));
 
   if (sec.key === "meta"){
-    const pid = (payload.participant_id || "").trim();
-    if (!pid){
-      setMessage("Please enter Participant ID.", "error");
-      return;
-    }
-    state.participant_id = pid;
-    localStorage.setItem("participant_id", pid);
-
-    // order mapping
-    const o = payload.order;
-    const map = {
-      "A→B→C": ["A","B","C"],
-      "A→C→B": ["A","C","B"],
-      "B→A→C": ["B","A","C"],
-      "B→C→A": ["B","C","A"],
-      "C→A→B": ["C","A","B"],
-      "C→B→A": ["C","B","A"]
-    };
-    state.order = map[o] || ["A","B","C"];
+    if (!validateMetaPayload(payload)) return;
+    state.participant_id = payload.participant_id;
+    localStorage.setItem("participant_id", payload.participant_id);
+    state.order = ORDER_MAP[payload.order] || ["A","B","C"];
   }
 
   if (sec.key === "dyad_gate"){
     state.dyadEnabled = (payload.dyad_done === "Yes");
   }
 
-  const ok = await saveCurrentSection();
+  const ok = await saveCurrentSection(payload);
   if (ok){
     // Prompting the next activity
     if (sec.key.endsWith("_pre")){
@@ -429,23 +513,21 @@ $("#saveOnlyBtn").addEventListener("click", async () => {
   const payload = collectFormData($("#sectionForm"));
 
   if (sec.key === "meta"){
-    const pid = (payload.participant_id || "").trim();
-    if (!pid){
-      setMessage("Please enter Participant ID.", "error");
-      return;
-    }
-    state.participant_id = pid;
-    localStorage.setItem("participant_id", pid);
+    if (!validateMetaPayload(payload)) return;
+    state.participant_id = payload.participant_id;
+    localStorage.setItem("participant_id", payload.participant_id);
+    state.order = ORDER_MAP[payload.order] || ["A","B","C"];
   }
 
   if (sec.key === "dyad_gate"){
     state.dyadEnabled = (payload.dyad_done === "Yes");
   }
 
-  await saveCurrentSection();
+  await saveCurrentSection(payload);
 });
 
 $("#backBtn").addEventListener("click", () => prevSection());
+$("#resetBtn").addEventListener("click", () => resetSurvey());
 
 // init
 state._idx = 0;

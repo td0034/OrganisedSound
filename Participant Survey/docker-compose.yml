@@ -7,8 +7,6 @@ services:
       POSTGRES_PASSWORD: survey_password_change_me
     volumes:
       - pgdata:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U survey -d surveydb"]
       interval: 5s
@@ -20,11 +18,14 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://survey:survey_password_change_me@db:5432/surveydb
       APP_TITLE: "Audiovisual Intermediality Participant Survey"
+      EXPORTS_DIR: /data/exports
+    volumes:
+      - ./exports:/data/exports
     depends_on:
       db:
         condition: service_healthy
     ports:
-      - "8080:8080"
+      - "8081:8080"
 
 volumes:
   pgdata:

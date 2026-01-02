@@ -1,0 +1,11 @@
+participant_id,section_key,payload_json,updated_at
+9746T,block_B_pre,"{'strategy': '', 'preset_id': ''}",2025-12-31T21:18:47.037343+00:00
+9746T,block_B_post,"{'param_other': '', 'interference_notes': '', 'expectation_vs_outcome': ''}",2025-12-31T21:18:48.525510+00:00
+9746T,block_C_pre,"{'strategy': '', 'preset_id': ''}",2025-12-31T21:18:49.983468+00:00
+9746T,block_C_post,"{'param_other': '', 'interference_notes': '', 'expectation_vs_outcome': ''}",2025-12-31T21:18:50.891412+00:00
+9746T,end,"{'rank_A': '', 'rank_B': '', 'rank_C': '', 'one_change': '', 'reflection': ''}",2025-12-31T21:18:51.580609+00:00
+9746T,dyad_gate,{},2025-12-31T21:18:52.479029+00:00
+9746T,meta,"{'date': '', 'order': 'A→B→C', 'location': '', 'meta_notes': 'test', 'researcher': '', 'participant_id': '9746T'}",2026-01-01T23:49:19.490965+00:00
+9746T,background,"{'age_range': '25–34', 'color_deficiency': '0', 'light_sensitivity': '0', 'musical_experience': 'Moderate (regular practice)', 'theory_familiarity': 'Moderate', 'perceptual_comments': '', 'tonnetz_familiarity': 'No', 'generative_experience': 'No'}",2026-01-01T23:49:49.287056+00:00
+9746T,block_A_pre,"{'A_1': '1', 'A_2': '2', 'A_3': '3', 'A_5': '5', 'A_6': '7', 'A_7': '2', 'aim': 'A mix / unsure', 'strategy': 'fill the display with red', 'preset_id': '9746T'}",2026-01-01T23:51:29.570891+00:00
+9746T,block_A_post,"{'B_1': '2', 'param_other': '', 'param_influence': ['Max Population', 'Neighbourhood (Local/Extended)', 'Life Length'], 'interference_notes': '', 'expectation_vs_outcome': ''}",2026-01-01T23:52:46.367082+00:00

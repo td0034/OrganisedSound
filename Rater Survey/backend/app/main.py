@@ -16,6 +16,7 @@ APP_TITLE = os.environ.get("APP_TITLE", "Clip Ratings")
 CLIPS_DIR = Path(os.environ.get("CLIPS_DIR", "")).resolve()
 SCAN_SECONDS = int(os.environ.get("CLIPS_SCAN_SECONDS", "20"))
 TOKEN_SECRET = os.environ.get("TOKEN_SECRET", "dev_only_change_me")
+EXPORTS_PATH = Path(os.environ["EXPORTS_DIR"]).resolve() if os.environ.get("EXPORTS_DIR") else None
 
 VIDEO_EXTS = {".mp4", ".m4v", ".mov"}
 
@@ -24,6 +25,35 @@ Base.metadata.create_all(bind=engine)
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
+
+def write_export(filename: str, content: str) -> None:
+    if EXPORTS_PATH is None:
+        return
+    EXPORTS_PATH.mkdir(parents=True, exist_ok=True)
+    (EXPORTS_PATH / filename).write_text(content, encoding="utf-8")
+
+def build_ratings_csv(db: OrmSession) -> str:
+    rows = db.execute(select(Rating)).scalars().all()
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["token", "clip_id", "watched_complete", "watch_progress_sec", "duration_sec", "payload_json", "updated_at"])
+    for r in rows:
+        w.writerow([
+            r.token,
+            r.clip_id,
+            r.watched_complete,
+            r.watch_progress_sec,
+            r.duration_sec,
+            (r.payload or {}),
+            r.updated_at.isoformat() if r.updated_at else ""
+        ])
+    buf.seek(0)
+    return buf.getvalue()
+
+def update_exports(db: OrmSession) -> None:
+    if EXPORTS_PATH is None:
+        return
+    write_export("ratings.csv", build_ratings_csv(db))
 
 def _sha256_file(path: Path) -> str:
     h = hashlib.sha256()
@@ -176,6 +206,7 @@ def save_rating(req: SaveRatingRequest, db: OrmSession = Depends(get_db)):
         existing.payload = req.payload
 
     db.commit()
+    update_exports(db)
     return {"ok": True}
 
 @app.post("/api/session/end")
@@ -194,21 +225,7 @@ def save_session_end(req: SaveSessionEndRequest, db: OrmSession = Depends(get_db
 
 @app.get("/api/export/ratings.csv")
 def export_ratings_csv(db: OrmSession = Depends(get_db)):
-    rows = db.execute(select(Rating)).scalars().all()
-
-    buf = io.StringIO()
-    w = csv.writer(buf)
-    w.writerow(["token", "clip_id", "watched_complete", "watch_progress_sec", "duration_sec", "payload_json", "updated_at"])
-    for r in rows:
-        w.writerow([
-            r.token,
-            r.clip_id,
-            r.watched_complete,
-            r.watch_progress_sec,
-            r.duration_sec,
-            (r.payload or {}),
-            r.updated_at.isoformat() if r.updated_at else ""
-        ])
-    buf.seek(0)
-    return StreamingResponse(iter([buf.getvalue()]), media_type="text/csv",
+    csv_text = build_ratings_csv(db)
+    write_export("ratings.csv", csv_text)
+    return StreamingResponse(iter([csv_text]), media_type="text/csv",
                              headers={"Content-Disposition": 'attachment; filename="ratings.csv"'})

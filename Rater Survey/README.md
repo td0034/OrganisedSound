@@ -16,3 +16,15 @@ Key behaviours:
 2. From this folder:
    ```bash
    docker compose up --build
+   ```
+
+## Exports
+On every successful rating save, the app writes:
+- `exports/ratings.csv`
+
+## Clip manifest
+Maintain `clips/manifest.csv` with one row per clip, including at least:
+- `clip_id`
+- `participant_code`
+- `condition`
+- `filepath`

@@ -45,20 +45,9 @@ Each major page/section is stored as one JSON document. This makes the dataset e
 2. From repo root:
    ```bash
    docker compose up --build
+   ```
 
-
-
-## TODO (planned improvements)
-- Admin panel:
-  - List participants and completion status (which sections saved, last updated timestamp).
-  - Quick open/resume for a participant ID.
-  - Flag incomplete sessions and show missing sections.
-  - One-click export buttons and (optionally) per-participant export.
-
-- Participant access code:
-  - Prompt participant to enter an “access code” of the last 4 digits of their mobile number + their initial (e.g., 9746T).
-  - Store the access code with session metadata for traceability (not used for identification outside the research context).
-  - Add basic validation (4 digits + 1 letter).
-
-- Navigation:
-  - Add a “Return to Start” action to restart the questionnaire quickly between participants while leaving the system running.
+## Exports
+On every successful save, the app writes fresh export files to:
+- `exports/sections.csv`
+- `exports/sections.json`

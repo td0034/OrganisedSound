@@ -23,8 +23,10 @@ services:
       CLIPS_DIR: /data/clips
       CLIPS_SCAN_SECONDS: "20"
       TOKEN_SECRET: "CHANGE_ME_TO_A_LONG_RANDOM_STRING"
+      EXPORTS_DIR: /data/exports
     volumes:
       - ./clips:/data/clips:ro
+      - ./exports:/data/exports
     depends_on:
       db:
         condition: service_healthy
