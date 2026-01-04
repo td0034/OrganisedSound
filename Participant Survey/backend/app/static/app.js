@@ -1,5 +1,5 @@
 // Minimal SPA wizard that saves each section to /api/save_section (JSONB in Postgres).
-// Major sections: meta -> background -> blocks (A/B/C order) -> end -> dyad(optional)
+// Major sections: meta -> background -> blocks (A/B/C order) -> end -> dyad(optional) -> addendum
 
 const $ = (sel) => document.querySelector(sel);
 
@@ -13,11 +13,52 @@ const ORDER_MAP = {
   "C→B→A": ["C","B","A"]
 };
 
+const AUTHORSHIP_OPTIONS = [
+  { value: "me", label: "Me" },
+  { value: "system", label: "System" },
+  { value: "shared", label: "Shared" },
+  { value: "unsure", label: "Unsure" }
+];
+
+const CONTEXT_OPTIONS = [
+  { value: "home_sketching", label: "Home sketching" },
+  { value: "studio_production", label: "Studio production" },
+  { value: "live_performance", label: "Live performance" },
+  { value: "gallery_installation", label: "Gallery installation" },
+  { value: "festival_public_space", label: "Festival / public space" },
+  { value: "education_workshop", label: "Education / workshop" },
+  { value: "wellbeing_relaxation", label: "Wellbeing / relaxation" },
+  { value: "other", label: "Other" }
+];
+
+const TARGET_USER_OPTIONS = [
+  { value: "complete_beginner", label: "Complete beginner" },
+  { value: "hobbyist", label: "Hobbyist" },
+  { value: "musician_performer", label: "Musician / performer" },
+  { value: "composer_producer", label: "Composer / producer" },
+  { value: "audience_participant", label: "Audience participant" },
+  { value: "educator_facilitator", label: "Educator / facilitator" },
+  { value: "other", label: "Other" }
+];
+
+const COLLAB_OPTIONS = [
+  { value: "easier_visuals", label: "Visuals (image, pattern, motion)" },
+  { value: "easier_notes", label: "Notes / harmony (sonic structure)" },
+  { value: "about_same", label: "About the same" },
+  { value: "not_sure", label: "Not sure" }
+];
+
+const SESSION_TYPE_OPTIONS = [
+  { value: "solo", label: "Solo session (standard)" },
+  { value: "dyad_only", label: "Dyad-only session" }
+];
+
 const state = {
   participant_id: localStorage.getItem("participant_id") || "",
   order: ["A","B","C"],
   blockIndex: 0,
   dyadEnabled: false,
+  sessionType: "solo",
   sections: [], // computed
   loadedSections: {},
   session_meta: {},
@@ -26,13 +67,28 @@ const state = {
 
 function setMessage(text, kind="info"){
   const el = $("#message");
-  el.textContent = text || "";
+  const msg = (typeof text === "string") ? text : "";
+  el.textContent = msg || "";
   el.style.color = kind === "error" ? "var(--warn)" : "var(--muted)";
 }
 
+function extractErrorMessage(data){
+  if (!data) return "";
+  if (typeof data === "string") return data;
+  const detail = data.detail;
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail) && detail.length){
+    const first = detail[0];
+    if (typeof first === "string") return first;
+    if (first && typeof first.msg === "string") return first.msg;
+  }
+  return "";
+}
+
 function badgeUpdate(){
+  const sec = currentSection();
   $("#pidBadge").textContent = `Participant: ${state.participant_id || "—"}`;
-  $("#sectionBadge").textContent = `Section: ${currentSection().key}`;
+  $("#sectionBadge").textContent = `Section: ${sec ? sec.key : "—"}`;
 }
 
 function currentSection(){
@@ -46,14 +102,28 @@ function buildSections(){
     { key: `block_${b}_post`, title: `Block ${b} — Part B (Post-reveal)`, prompt: blockPromptPost(b), render: () => renderBlockPost(b) }
   ])).flat();
 
-  state.sections = [
+  const isDyadOnly = state.sessionType === "dyad_only";
+
+  const sections = [
     { key: "meta", title: "Session setup", prompt: "Enter participant/session details and the counterbalanced block order.", render: renderMeta },
-    { key: "background", title: "Background (pre-session)", prompt: "Please complete these background questions.", render: renderBackground },
-    ...blocks,
-    { key: "end", title: "End-of-session comparison", prompt: "After completing all three blocks, answer these final questions.", render: renderEnd },
-    { key: "dyad_gate", title: "Dyad participation", prompt: "Did you complete the optional dyad condition?", render: renderDyadGate },
-    { key: "dyad", title: "Dyad questionnaire", prompt: "Complete this only if you took part in the dyad condition.", render: renderDyad }
+    { key: "background", title: "Background (pre-session)", prompt: "Please complete these background questions.", render: renderBackground }
   ];
+
+  if (!isDyadOnly){
+    sections.push(
+      ...blocks,
+      { key: "end", title: "End-of-session comparison", prompt: "After completing all three blocks, answer these final questions.", render: renderEnd },
+      { key: "dyad_gate", title: "Dyad participation", prompt: "Did you complete the optional dyad condition?", render: renderDyadGate }
+    );
+  }
+
+  sections.push(
+    { key: "dyad", title: "Dyad questionnaire", prompt: "Complete this only if you took part in the dyad condition.", render: renderDyad },
+    { key: "addendum", title: "Final reflections (optional)", prompt: "", render: renderAddendum },
+    { key: "thank_you", title: "Thank you", prompt: "", render: renderThankYou }
+  );
+
+  state.sections = sections;
 
   // Hide dyad section unless enabled
   if (!state.dyadEnabled){
@@ -104,12 +174,19 @@ function validateMetaPayload(payload){
     return false;
   }
   payload.participant_id = normalized;
+  if (!payload.session_type){
+    payload.session_type = "solo";
+  }
   return true;
 }
 
 function render(){
   buildSections();
   const sec = currentSection();
+  if (!sec){
+    setMessage("Section missing. Please return to start.", "error");
+    return;
+  }
   $("#sectionTitle").textContent = sec.title;
   $("#sectionPrompt").textContent = sec.prompt;
   $("#sectionForm").innerHTML = "";
@@ -118,6 +195,7 @@ function render(){
   badgeUpdate();
   setMessage("");
   $("#backBtn").disabled = (state._idx || 0) === 0;
+  updateFooterButtons(sec);
 }
 
 function nextSection(){
@@ -132,6 +210,47 @@ function nextSection(){
 function prevSection(){
   state._idx = Math.max(0, (state._idx || 0) - 1);
   render();
+}
+
+function goToSectionKey(key){
+  const idx = state.sections.findIndex((s) => s.key === key);
+  if (idx === -1) return;
+  state._idx = idx;
+  render();
+}
+
+function updateFooterButtons(sec){
+  const saveBtn = $("#saveBtn");
+  const saveOnlyBtn = $("#saveOnlyBtn");
+  const skipBtn = $("#skipBtn");
+  const backBtn = $("#backBtn");
+  const resetBtn = $("#resetBtn");
+
+  if (sec.key === "addendum"){
+    saveBtn.textContent = "Save and finish";
+    saveBtn.style.display = "";
+    saveOnlyBtn.style.display = "none";
+    skipBtn.style.display = "";
+    backBtn.style.display = "";
+    resetBtn.style.display = "";
+    return;
+  }
+
+  if (sec.key === "thank_you"){
+    saveBtn.style.display = "none";
+    saveOnlyBtn.style.display = "none";
+    skipBtn.style.display = "none";
+    backBtn.style.display = "none";
+    resetBtn.style.display = "";
+    return;
+  }
+
+  saveBtn.textContent = "Save & Continue";
+  saveBtn.style.display = "";
+  saveOnlyBtn.style.display = "";
+  skipBtn.style.display = "none";
+  backBtn.style.display = "";
+  resetBtn.style.display = "";
 }
 
 async function saveCurrentSection(payload){
@@ -161,7 +280,8 @@ async function saveCurrentSection(payload){
     let msg = "Save failed. Please try again.";
     try {
       const data = await res.json();
-      if (data && data.detail) msg = data.detail;
+      const extracted = extractErrorMessage(data);
+      if (extracted) msg = extracted;
     } catch (err) {
       // ignore non-JSON errors
     }
@@ -176,6 +296,116 @@ async function saveCurrentSection(payload){
     };
   }
   setMessage("Saved.");
+  return true;
+}
+
+function normalizeAddendumPayload(payload){
+  const normalized = { ...(payload || {}) };
+  if (normalized.context_of_use !== undefined){
+    if (Array.isArray(normalized.context_of_use)){
+      normalized.context_of_use = normalized.context_of_use;
+    } else if (normalized.context_of_use){
+      normalized.context_of_use = [normalized.context_of_use];
+    }
+  }
+  return normalized;
+}
+
+function validateAddendumPayload(payload){
+  const missing = [];
+  if (!payload.piece_title_favourite) missing.push("title");
+  if (!payload.authorship_attribution) missing.push("authorship");
+  if (!payload.return_likelihood) missing.push("return likelihood");
+  if (!payload.context_of_use || (Array.isArray(payload.context_of_use) && payload.context_of_use.length === 0)){
+    missing.push("context of use");
+  }
+  if (!payload.target_user) missing.push("target user");
+  if (!payload.collaboration_expectation) missing.push("collaboration expectation");
+
+  if (missing.length){
+    setMessage(`Please complete: ${missing.join(", ")}.`, "error");
+    return false;
+  }
+
+  const contexts = Array.isArray(payload.context_of_use) ? payload.context_of_use : [payload.context_of_use];
+  if (contexts.includes("other") && !payload.context_other){
+    setMessage("Please specify the other context.", "error");
+    return false;
+  }
+  if (payload.target_user === "other" && !payload.target_user_other){
+    setMessage("Please specify the other target user.", "error");
+    return false;
+  }
+  return true;
+}
+
+async function saveAddendum(payload){
+  const participantId = normalizeParticipantId(state.participant_id);
+  if (!participantId || !PARTICIPANT_ID_RE.test(participantId)){
+    setMessage("Participant ID is required before saving.", "error");
+    return false;
+  }
+  const sessionId = (state.session_meta && state.session_meta.session_id) ? state.session_meta.session_id : participantId;
+  const normalized = normalizeAddendumPayload(payload);
+  if (!validateAddendumPayload(normalized)){
+    return false;
+  }
+
+  const res = await fetch("/api/addendum/save", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      session_id: sessionId,
+      participant_code: participantId,
+      skipped: false,
+      ...normalized
+    })
+  });
+
+  if (!res.ok){
+    let msg = "Save failed. Please try again.";
+    try {
+      const data = await res.json();
+      const extracted = extractErrorMessage(data);
+      if (extracted) msg = extracted;
+    } catch (err) {
+      // ignore non-JSON errors
+    }
+    setMessage(msg, "error");
+    return false;
+  }
+  return true;
+}
+
+async function skipAddendum(){
+  const participantId = normalizeParticipantId(state.participant_id);
+  if (!participantId || !PARTICIPANT_ID_RE.test(participantId)){
+    setMessage("Participant ID is required before skipping.", "error");
+    return false;
+  }
+  const sessionId = (state.session_meta && state.session_meta.session_id) ? state.session_meta.session_id : participantId;
+
+  const res = await fetch("/api/addendum/skip", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      session_id: sessionId,
+      participant_code: participantId
+    })
+  });
+
+  if (!res.ok){
+    let msg = "Skip failed. Please try again.";
+    try {
+      const data = await res.json();
+      const extracted = extractErrorMessage(data);
+      if (extracted) msg = extracted;
+    } catch (err) {
+      // ignore non-JSON errors
+    }
+    setMessage(msg, "error");
+    return false;
+  }
   return true;
 }
 
@@ -244,7 +474,10 @@ function prefillSection(sec){
   if (!sec) return;
   let data = state.loadedSections[sec.key];
   if (!data && sec.key === "meta"){
-    data = state.session_meta || {};
+    data = { ...(state.session_meta || {}) };
+    if (!data.session_type){
+      data.session_type = state.sessionType || "solo";
+    }
   }
   fillFormData($("#sectionForm"), data);
   const metaPid = data && data.participant_id;
@@ -260,6 +493,7 @@ function resetSurvey(){
   state.participant_id = "";
   state.order = ["A","B","C"];
   state.dyadEnabled = false;
+  state.sessionType = "solo";
   state.loadedSections = {};
   state.session_meta = {};
   state.blockPresetIds = {};
@@ -297,6 +531,18 @@ function radioList(name, options, required=false){
   </div>`;
 }
 
+function radioListWithLabels(name, options, required=false){
+  const req = required ? "required" : "";
+  return `<div class="choice-list">
+    ${options.map((o)=>`
+      <label class="choice">
+        <input type="radio" name="${name}" value="${o.value}" ${req}>
+        <span>${o.label}</span>
+      </label>
+    `).join("")}
+  </div>`;
+}
+
 function checkbox(name, value, label){
   return `<label class="choice">
     <input type="checkbox" name="${name}" value="${value}">
@@ -310,6 +556,18 @@ function textarea(name, placeholder=""){
 
 function textInput(name, placeholder="", required=false){
   return `<input type="text" name="${name}" placeholder="${placeholder}" ${required?"required":""} />`;
+}
+
+function likertScale(name, required=false){
+  const req = required ? "required" : "";
+  return `<div class="choice-list">
+    ${[1,2,3,4,5,6,7].map((n)=>`
+      <label class="choice">
+        <input type="radio" name="${name}" value="${n}" ${req}>
+        <span>${n}</span>
+      </label>
+    `).join("")}
+  </div>`;
 }
 
 function likertGrid(baseName, statements){
@@ -343,13 +601,10 @@ function renderMeta(){
     <div class="row">
       ${field("Participant ID", textInput("participant_id", "e.g., 9746T", true), "Enter the last 4 digits of your mobile followed by your first name initial.")}
     </div>
-    <div class="row">
-      ${field("Date", textInput("date", "auto or enter"), "Optional.")}
-      ${field("Session location", textInput("location", "e.g., Studio / Lab"), "Optional.")}
-      ${field("Researcher", textInput("researcher", "name/initials"), "Optional.")}
-    </div>
     ${field("Condition order (A/B/C)", radioList("order", ["A→B→C","A→C→B","B→A→C","B→C→A","C→A→B","C→B→A"], true),
       "Choose the counterbalanced order you actually used.")}
+    ${field("Session type", radioListWithLabels("session_type", SESSION_TYPE_OPTIONS, true),
+      "Choose dyad-only if the participant did not do the solo blocks.")}
     ${field("Notes (optional)", textarea("meta_notes", "Any session notes…"))}
   `;
 }
@@ -504,12 +759,85 @@ function renderDyad(){
   `;
 }
 
+function renderAddendum(){
+  const f = $("#sectionForm");
+  f.innerHTML = `
+    ${field(
+      "What title would you give your favourite piece from today?",
+      textInput("piece_title_favourite", "e.g., Rising Echoes", true),
+      "This can be literal or poetic."
+    )}
+    ${field(
+      "In one sentence, what does it feel like / evoke?",
+      textarea("piece_description_one_line", "One sentence...")
+    )}
+    ${field(
+      "Who do you feel authored the outcome most?",
+      radioListWithLabels("authorship_attribution", AUTHORSHIP_OPTIONS, true),
+      "There's no right answer."
+    )}
+    ${field("Briefly, why?", textarea("authorship_reason", "Short reason..."))}
+    ${field(
+      "I would like to use this instrument again in a future session.",
+      likertScale("return_likelihood", true)
+    )}
+    ${field("What would make you more likely to return?", textarea("return_conditions", "Optional..."))}
+    ${field(
+      "Where could you imagine using something like this?",
+      `
+        <div class="choice-list">
+          ${CONTEXT_OPTIONS.map((o) => checkbox("context_of_use", o.value, o.label)).join("")}
+        </div>
+      `
+    )}
+    ${field("Other context (if selected)", textInput("context_other", "If other, specify"))}
+    ${field(
+      "Who do you think this is most suited to?",
+      radioListWithLabels("target_user", TARGET_USER_OPTIONS, true)
+    )}
+    ${field("Other target user (if selected)", textInput("target_user_other", "If other, specify"))}
+    ${field(
+      "If you could remove one thing (control, behaviour, or constraint), what would it be?",
+      textarea("remove_one_thing", "Optional...")
+    )}
+    ${field("If you could add one thing, what would it be?", textarea("add_one_thing", "Optional..."))}
+    ${field(
+      "If two people worked together, what do you think would be easier to negotiate?",
+      radioListWithLabels("collaboration_expectation", COLLAB_OPTIONS, true)
+    )}
+    ${field("Why?", textarea("collaboration_reason", "Optional..."))}
+    ${field(
+      "I feel confident I could recreate something similar tomorrow.",
+      likertScale("confidence_recreate_tomorrow", false)
+    )}
+  `;
+}
+
+function renderThankYou(){
+  const f = $("#sectionForm");
+  f.innerHTML = `
+    <div class="field">
+      <label>Thank you</label>
+      <div class="help">Your responses have been saved.</div>
+    </div>
+  `;
+}
+
 // ---------- Wiring ----------
 
 $("#saveBtn").addEventListener("click", async () => {
   // Special handling: meta section sets participant_id and order
   const sec = currentSection();
   const payload = collectFormData($("#sectionForm"));
+
+  if (sec.key === "addendum"){
+    const ok = await saveAddendum(payload);
+    if (ok){
+      setMessage("Saved. Thank you.");
+      goToSectionKey("thank_you");
+    }
+    return;
+  }
 
   if (sec.key === "meta"){
     if (!validateMetaPayload(payload)) return;
@@ -520,6 +848,12 @@ $("#saveBtn").addEventListener("click", async () => {
       state.blockPresetIds = {};
     }
     state.order = ORDER_MAP[payload.order] || ["A","B","C"];
+    state.sessionType = payload.session_type || "solo";
+    if (state.sessionType === "dyad_only"){
+      state.dyadEnabled = true;
+    } else {
+      state.dyadEnabled = false;
+    }
   }
 
   if (sec.key === "dyad_gate"){
@@ -542,6 +876,7 @@ $("#saveBtn").addEventListener("click", async () => {
 
 $("#saveOnlyBtn").addEventListener("click", async () => {
   const sec = currentSection();
+  if (sec.key === "addendum" || sec.key === "thank_you") return;
   const payload = collectFormData($("#sectionForm"));
 
   if (sec.key === "meta"){
@@ -553,6 +888,12 @@ $("#saveOnlyBtn").addEventListener("click", async () => {
       state.blockPresetIds = {};
     }
     state.order = ORDER_MAP[payload.order] || ["A","B","C"];
+    state.sessionType = payload.session_type || "solo";
+    if (state.sessionType === "dyad_only"){
+      state.dyadEnabled = true;
+    } else {
+      state.dyadEnabled = false;
+    }
   }
 
   if (sec.key === "dyad_gate"){
@@ -564,6 +905,16 @@ $("#saveOnlyBtn").addEventListener("click", async () => {
 
 $("#backBtn").addEventListener("click", () => prevSection());
 $("#resetBtn").addEventListener("click", () => resetSurvey());
+
+$("#skipBtn").addEventListener("click", async () => {
+  const sec = currentSection();
+  if (sec.key !== "addendum") return;
+  const ok = await skipAddendum();
+  if (ok){
+    setMessage("Skipped. Thank you.");
+    goToSectionKey("thank_you");
+  }
+});
 
 // init
 state._idx = 0;

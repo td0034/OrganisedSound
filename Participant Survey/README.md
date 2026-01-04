@@ -5,12 +5,16 @@ This repository provides a small, self-hosted web application for capturing **pa
 
 The study uses a multi-block protocol:
 - Session meta (participant ID, counterbalanced block order)
+- Session type selection (solo or dyad-only)
 - Background questions
 - Three blocks (A/B/C), each split into:
   - Part A: pre-reveal (immediately after capture)
   - Part B: post-reveal (after replay with sound+light)
 - End-of-session comparison
 - Optional dyad questionnaire (if participant took part)
+- Final reflections (optional addendum)
+
+Dyad-only sessions skip the solo blocks and the end-of-session comparison and go straight to the dyad questionnaire and final reflections.
 
 A key requirement is that participants can **save after each major section** to avoid data loss and to support a structured session flow.
 
@@ -34,6 +38,10 @@ A key requirement is that participants can **save after each major section** to 
   - unique `(participant_id, section_key)`
   - `payload` (JSONB)
   - timestamps
+- `participant_addendum`
+  - unique `(session_id, participant_code)`
+  - structured reflection fields (final reflections page)
+  - timestamps
 
 Each major page/section is stored as one JSON document. This makes the dataset easy to load into Python/pandas later:
 - groupby participant_id
@@ -51,3 +59,5 @@ Each major page/section is stored as one JSON document. This makes the dataset e
 On every successful save, the app writes fresh export files to:
 - `exports/sections.csv`
 - `exports/sections.json`
+- `exports/participant_addendum.csv`
+- `exports/participant_addendum.json`

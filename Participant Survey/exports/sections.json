@@ -1,5 +1,15 @@
 [
   {
+    "participant_id": "1234B",
+    "section_key": "background",
+    "payload": {
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "perceptual_comments": ""
+    },
+    "updated_at": "2026-01-04T20:21:12.453500+00:00"
+  },
+  {
     "participant_id": "9746T",
     "section_key": "block_B_pre",
     "payload": {
@@ -17,15 +27,6 @@
       "expectation_vs_outcome": ""
     },
     "updated_at": "2025-12-31T21:18:48.525510+00:00"
-  },
-  {
-    "participant_id": "9746T",
-    "section_key": "block_C_pre",
-    "payload": {
-      "strategy": "",
-      "preset_id": ""
-    },
-    "updated_at": "2025-12-31T21:18:49.983468+00:00"
   },
   {
     "participant_id": "9746T",
@@ -56,32 +57,25 @@
     "updated_at": "2025-12-31T21:18:52.479029+00:00"
   },
   {
-    "participant_id": "9746T",
-    "section_key": "meta",
+    "participant_id": "1234B",
+    "section_key": "dyad",
     "payload": {
-      "date": "",
-      "order": "A\u2192B\u2192C",
-      "location": "",
-      "meta_notes": "test",
-      "researcher": "",
-      "participant_id": "9746T"
+      "dyad_id": "",
+      "disagreements": "",
+      "dyad_preset_id": "",
+      "communication_notes": ""
     },
-    "updated_at": "2026-01-01T23:49:19.490965+00:00"
+    "updated_at": "2026-01-04T20:22:42.879299+00:00"
   },
   {
-    "participant_id": "9746T",
-    "section_key": "background",
+    "participant_id": "2345F",
+    "section_key": "meta",
     "payload": {
-      "age_range": "25\u201334",
-      "color_deficiency": "0",
-      "light_sensitivity": "0",
-      "musical_experience": "Moderate (regular practice)",
-      "theory_familiarity": "Moderate",
-      "perceptual_comments": "",
-      "tonnetz_familiarity": "No",
-      "generative_experience": "No"
+      "meta_notes": "",
+      "session_type": "dyad_only",
+      "participant_id": "2345F"
     },
-    "updated_at": "2026-01-01T23:49:49.287056+00:00"
+    "updated_at": "2026-01-04T20:25:36.624461+00:00"
   },
   {
     "participant_id": "9746T",
@@ -114,5 +108,544 @@
       "expectation_vs_outcome": ""
     },
     "updated_at": "2026-01-01T23:52:46.367082+00:00"
+  },
+  {
+    "participant_id": "2345F",
+    "section_key": "background",
+    "payload": {
+      "age_range": "55\u201364",
+      "color_deficiency": "0",
+      "light_sensitivity": "1",
+      "musical_experience": "Some (informal)",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "Heard of it"
+    },
+    "updated_at": "2026-01-04T20:25:46.616408+00:00"
+  },
+  {
+    "participant_id": "9746T",
+    "section_key": "background",
+    "payload": {
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "perceptual_comments": ""
+    },
+    "updated_at": "2026-01-02T00:13:16.198241+00:00"
+  },
+  {
+    "participant_id": "9746T",
+    "section_key": "block_C_pre",
+    "payload": {
+      "A_1": "1",
+      "strategy": "",
+      "preset_id": ""
+    },
+    "updated_at": "2026-01-02T00:13:34.528060+00:00"
+  },
+  {
+    "participant_id": "2345F",
+    "section_key": "dyad",
+    "payload": {
+      "D_1": "2",
+      "D_2": "2",
+      "D_3": "2",
+      "D_4": "2",
+      "D_5": "2",
+      "D_6": "2",
+      "D_7": "2",
+      "D_8": "2",
+      "dyad_id": "",
+      "disagreements": "",
+      "dyad_preset_id": "",
+      "communication_notes": ""
+    },
+    "updated_at": "2026-01-04T20:25:55.888415+00:00"
+  },
+  {
+    "participant_id": "9746T",
+    "section_key": "meta",
+    "payload": {
+      "date": "",
+      "order": "A\u2192B\u2192C",
+      "location": "",
+      "meta_notes": "",
+      "researcher": "",
+      "participant_id": "9746T"
+    },
+    "updated_at": "2026-01-02T00:18:33.509316+00:00"
+  },
+  {
+    "participant_id": "9999F",
+    "section_key": "meta",
+    "payload": {
+      "date": "",
+      "order": "C\u2192A\u2192B",
+      "location": "",
+      "meta_notes": "",
+      "researcher": "",
+      "participant_id": "9999F"
+    },
+    "updated_at": "2026-01-02T00:18:54.982825+00:00"
+  },
+  {
+    "participant_id": "9999F",
+    "section_key": "background",
+    "payload": {
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "perceptual_comments": ""
+    },
+    "updated_at": "2026-01-02T00:18:56.801127+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "meta",
+    "payload": {
+      "date": "",
+      "order": "B\u2192C\u2192A",
+      "location": "",
+      "meta_notes": "test session",
+      "researcher": "",
+      "participant_id": "1111A"
+    },
+    "updated_at": "2026-01-04T19:54:57.729046+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "background",
+    "payload": {
+      "age_range": "Prefer not to say",
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "musical_experience": "Prefer not to say",
+      "theory_familiarity": "Prefer not to say",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "No",
+      "generative_experience": "Yes (a lot)"
+    },
+    "updated_at": "2026-01-04T19:55:18.542085+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_B_pre",
+    "payload": {
+      "aim": "Stability/clarity",
+      "strategy": "",
+      "preset_id": "1111A_B_20260104_195605"
+    },
+    "updated_at": "2026-01-04T19:56:05.603298+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_B_post",
+    "payload": {
+      "preset_id": "1111A_B_20260104_195605",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T19:56:41.060193+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_C_pre",
+    "payload": {
+      "strategy": "",
+      "preset_id": "1111A_C_20260104_195655"
+    },
+    "updated_at": "2026-01-04T19:56:55.219335+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_C_post",
+    "payload": {
+      "preset_id": "1111A_C_20260104_195655",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T19:57:10.781515+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_A_pre",
+    "payload": {
+      "strategy": "",
+      "preset_id": "1111A_A_20260104_195743"
+    },
+    "updated_at": "2026-01-04T19:57:43.376733+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "block_A_post",
+    "payload": {
+      "preset_id": "1111A_A_20260104_195743",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T19:58:44.608275+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "end",
+    "payload": {
+      "rank_A": "",
+      "rank_B": "",
+      "rank_C": "",
+      "one_change": "",
+      "reflection": ""
+    },
+    "updated_at": "2026-01-04T19:59:29.330292+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "dyad_gate",
+    "payload": {
+      "dyad_done": "Yes"
+    },
+    "updated_at": "2026-01-04T20:00:13.238409+00:00"
+  },
+  {
+    "participant_id": "1111A",
+    "section_key": "dyad",
+    "payload": {
+      "D_6": "3",
+      "dyad_id": "D0000001",
+      "disagreements": "",
+      "dyad_preset_id": "",
+      "communication_notes": ""
+    },
+    "updated_at": "2026-01-04T20:06:59.042895+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "meta",
+    "payload": {
+      "order": "A\u2192C\u2192B",
+      "meta_notes": "",
+      "session_type": "solo",
+      "participant_id": "1234A"
+    },
+    "updated_at": "2026-01-04T20:18:29.996701+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "background",
+    "payload": {
+      "color_deficiency": "1",
+      "light_sensitivity": "0",
+      "perceptual_comments": ""
+    },
+    "updated_at": "2026-01-04T20:18:35.571976+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_A_pre",
+    "payload": {
+      "strategy": "hi",
+      "preset_id": "1234A_A_20260104_201840"
+    },
+    "updated_at": "2026-01-04T20:18:40.693719+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_A_post",
+    "payload": {
+      "preset_id": "1234A_A_20260104_201840",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": "gu"
+    },
+    "updated_at": "2026-01-04T20:18:44.809674+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_C_pre",
+    "payload": {
+      "strategy": "hi",
+      "preset_id": "1234A_C_20260104_201848"
+    },
+    "updated_at": "2026-01-04T20:18:48.331253+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_C_post",
+    "payload": {
+      "preset_id": "1234A_C_20260104_201848",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": "hi"
+    },
+    "updated_at": "2026-01-04T20:18:57.826681+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_B_pre",
+    "payload": {
+      "strategy": "a",
+      "preset_id": "1234A_B_20260104_201909"
+    },
+    "updated_at": "2026-01-04T20:19:09.854365+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "block_B_post",
+    "payload": {
+      "preset_id": "1234A_B_20260104_201909",
+      "param_other": "",
+      "interference_notes": "",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T20:19:18.103364+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "end",
+    "payload": {
+      "rank_A": "1",
+      "rank_B": "2",
+      "rank_C": "3",
+      "one_change": "bombada",
+      "reflection": "nada",
+      "biggest_mismatch": "A",
+      "most_intermedial": "C"
+    },
+    "updated_at": "2026-01-04T20:19:44.108245+00:00"
+  },
+  {
+    "participant_id": "1234A",
+    "section_key": "dyad_gate",
+    "payload": {
+      "dyad_done": "No"
+    },
+    "updated_at": "2026-01-04T20:19:48.551507+00:00"
+  },
+  {
+    "participant_id": "1234B",
+    "section_key": "meta",
+    "payload": {
+      "meta_notes": "",
+      "session_type": "dyad_only",
+      "participant_id": "1234B"
+    },
+    "updated_at": "2026-01-04T20:21:10.064974+00:00"
+  },
+  {
+    "participant_id": "2345G",
+    "section_key": "meta",
+    "payload": {
+      "meta_notes": "",
+      "session_type": "dyad_only",
+      "participant_id": "2345G"
+    },
+    "updated_at": "2026-01-04T20:45:26.483044+00:00"
+  },
+  {
+    "participant_id": "2345G",
+    "section_key": "background",
+    "payload": {
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "theory_familiarity": "Moderate",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "Used it before (some)"
+    },
+    "updated_at": "2026-01-04T20:45:31.252573+00:00"
+  },
+  {
+    "participant_id": "2345G",
+    "section_key": "dyad",
+    "payload": {
+      "D_5": "1",
+      "D_6": "4",
+      "dyad_id": "",
+      "disagreements": "",
+      "dyad_preset_id": "",
+      "communication_notes": ""
+    },
+    "updated_at": "2026-01-04T20:45:36.714433+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "meta",
+    "payload": {
+      "order": "A\u2192B\u2192C",
+      "meta_notes": "heloo",
+      "session_type": "solo",
+      "participant_id": "3456D"
+    },
+    "updated_at": "2026-01-04T20:50:40.546453+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "background",
+    "payload": {
+      "age_range": "18\u201324",
+      "color_deficiency": "1",
+      "light_sensitivity": "0",
+      "musical_experience": "Some (informal)",
+      "theory_familiarity": "Basic",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "Heard of it",
+      "generative_experience": "Yes (a little)"
+    },
+    "updated_at": "2026-01-04T20:50:52.250764+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_A_pre",
+    "payload": {
+      "A_1": "7",
+      "A_2": "7",
+      "A_3": "7",
+      "A_4": "7",
+      "A_5": "7",
+      "A_6": "7",
+      "A_7": "7",
+      "aim": "Stability/clarity",
+      "strategy": "calm soothing texture",
+      "preset_id": "3456D_A_20260104_205117"
+    },
+    "updated_at": "2026-01-04T20:51:17.300888+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_A_post",
+    "payload": {
+      "B_1": "1",
+      "B_2": "2",
+      "B_3": "3",
+      "B_4": "4",
+      "B_5": "5",
+      "B_6": "6",
+      "B_7": "7",
+      "B_8": "6",
+      "B_9": "5",
+      "B_10": "4",
+      "B_11": "3",
+      "B_12": "2",
+      "preset_id": "3456D_A_20260104_205117",
+      "param_other": "",
+      "param_influence": [
+        "Max Population",
+        "Loop Length",
+        "Life Length"
+      ],
+      "interference_notes": "loved it",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T20:51:47.276774+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_B_pre",
+    "payload": {
+      "A_1": "2",
+      "A_2": "2",
+      "A_3": "2",
+      "A_4": "2",
+      "A_5": "2",
+      "A_6": "2",
+      "A_7": "2",
+      "aim": "Complexity/energy",
+      "strategy": "",
+      "preset_id": "3456D_B_20260104_205205"
+    },
+    "updated_at": "2026-01-04T20:52:05.675475+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_B_post",
+    "payload": {
+      "B_1": "3",
+      "B_2": "3",
+      "B_3": "3",
+      "B_4": "3",
+      "B_5": "3",
+      "B_6": "3",
+      "B_7": "3",
+      "B_8": "3",
+      "B_9": "3",
+      "B_10": "3",
+      "B_11": "3",
+      "B_12": "3",
+      "preset_id": "3456D_B_20260104_205205",
+      "param_other": "",
+      "param_influence": [
+        "Max Population",
+        "Life Length"
+      ],
+      "interference_notes": "",
+      "expectation_vs_outcome": "weird"
+    },
+    "updated_at": "2026-01-04T20:52:24.411970+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_C_pre",
+    "payload": {
+      "A_1": "6",
+      "A_2": "6",
+      "A_3": "6",
+      "A_4": "6",
+      "A_5": "6",
+      "A_6": "6",
+      "A_7": "6",
+      "aim": "A mix / unsure",
+      "strategy": "aasjfawjkawejkfawef",
+      "preset_id": "3456D_C_20260104_205234"
+    },
+    "updated_at": "2026-01-04T20:52:34.980255+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "block_C_post",
+    "payload": {
+      "B_1": "4",
+      "B_2": "4",
+      "B_3": "4",
+      "B_4": "4",
+      "B_5": "4",
+      "B_6": "4",
+      "B_7": "4",
+      "B_8": "4",
+      "B_9": "4",
+      "B_10": "4",
+      "B_11": "4",
+      "B_12": "4",
+      "preset_id": "3456D_C_20260104_205234",
+      "param_other": "",
+      "param_influence": [
+        "Max Population",
+        "Min Neighbours",
+        "Max Neighbours"
+      ],
+      "interference_notes": "",
+      "expectation_vs_outcome": ""
+    },
+    "updated_at": "2026-01-04T20:52:52.056536+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "end",
+    "payload": {
+      "rank_A": "1",
+      "rank_B": "3",
+      "rank_C": "2",
+      "one_change": "nothing",
+      "reflection": "not much",
+      "biggest_mismatch": "C",
+      "most_intermedial": "A"
+    },
+    "updated_at": "2026-01-04T20:53:36.810383+00:00"
+  },
+  {
+    "participant_id": "3456D",
+    "section_key": "dyad_gate",
+    "payload": {
+      "dyad_done": "No"
+    },
+    "updated_at": "2026-01-04T20:53:41.292781+00:00"
   }
 ]

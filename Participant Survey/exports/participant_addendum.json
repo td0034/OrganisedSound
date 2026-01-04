@@ -1,0 +1,50 @@
+[
+  {
+    "session_id": "2345G",
+    "participant_code": "2345G",
+    "skipped": false,
+    "piece_title_favourite": "hi",
+    "piece_description_one_line": "hello",
+    "authorship_attribution": "me",
+    "authorship_reason": "na",
+    "return_likelihood": 4,
+    "return_conditions": "",
+    "context_of_use": [
+      "gallery_installation"
+    ],
+    "context_other": "",
+    "target_user": "hobbyist",
+    "target_user_other": "",
+    "remove_one_thing": "",
+    "add_one_thing": "",
+    "collaboration_expectation": "easier_notes",
+    "collaboration_reason": "",
+    "confidence_recreate_tomorrow": 4,
+    "created_at": "2026-01-04T20:46:12.374821+00:00",
+    "updated_at": "2026-01-04T20:46:12.374821+00:00"
+  },
+  {
+    "session_id": "3456D",
+    "participant_code": "3456D",
+    "skipped": false,
+    "piece_title_favourite": "lololol",
+    "piece_description_one_line": "laughs",
+    "authorship_attribution": "me",
+    "authorship_reason": "because my changes where obvious ",
+    "return_likelihood": 1,
+    "return_conditions": "cake",
+    "context_of_use": [
+      "wellbeing_relaxation"
+    ],
+    "context_other": "",
+    "target_user": "audience_participant",
+    "target_user_other": "",
+    "remove_one_thing": "abc",
+    "add_one_thing": "rythm",
+    "collaboration_expectation": "easier_visuals",
+    "collaboration_reason": "",
+    "confidence_recreate_tomorrow": 1,
+    "created_at": "2026-01-04T20:55:28.894154+00:00",
+    "updated_at": "2026-01-04T20:55:28.894154+00:00"
+  }
+]
