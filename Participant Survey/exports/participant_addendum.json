@@ -152,5 +152,58 @@
     "confidence_recreate_tomorrow": 5,
     "created_at": "2026-01-06T12:50:29.459713+00:00",
     "updated_at": "2026-01-06T12:50:29.459713+00:00"
+  },
+  {
+    "session_id": "3483M",
+    "participant_code": "3483M",
+    "skipped": false,
+    "piece_title_favourite": "blipahhhhsquimmmmmbeep",
+    "piece_description_one_line": "natures form and chaos in playful reciprocity, emergent, unpredictable, chaos, pleasurable random dance conversation",
+    "authorship_attribution": "shared",
+    "authorship_reason": "it generated something interesting regardless of what I did or my proficiency or control",
+    "return_likelihood": 6,
+    "return_conditions": "more imperfect play - quite liberating somehow",
+    "context_of_use": [
+      "live_performance",
+      "wellbeing_relaxation"
+    ],
+    "context_other": "",
+    "target_user": "other",
+    "target_user_other": "various depending on reason/purpose",
+    "remove_one_thing": "no",
+    "add_one_thing": "",
+    "collaboration_expectation": "easier_notes",
+    "collaboration_reason": "",
+    "confidence_recreate_tomorrow": 5,
+    "created_at": "2026-01-06T16:49:36.148108+00:00",
+    "updated_at": "2026-01-06T16:49:36.148108+00:00"
+  },
+  {
+    "session_id": "4939Z",
+    "participant_code": "4939Z",
+    "skipped": false,
+    "piece_title_favourite": "Weather changes",
+    "piece_description_one_line": "Often, times of stability and calm are separated by chaos and disorder.",
+    "authorship_attribution": "shared",
+    "authorship_reason": "it was a mixture of feeling like we were taking turns being 'in control'. ",
+    "return_likelihood": 7,
+    "return_conditions": "Refining the controller settings to make it more user friendly. Having the instrument on the wall instead of tabletop",
+    "context_of_use": [
+      "home_sketching",
+      "gallery_installation",
+      "festival_public_space",
+      "education_workshop",
+      "wellbeing_relaxation"
+    ],
+    "context_other": "",
+    "target_user": "composer_producer",
+    "target_user_other": "",
+    "remove_one_thing": "NA",
+    "add_one_thing": "preset chords would be useful for intuition and creating more conventional musical pieces e.g. harmonic movement & ability to select & save tone combinations would be useful.",
+    "collaboration_expectation": "easier_visuals",
+    "collaboration_reason": "For any two people, visuals as we have a more intuitive sense of this/language to communicate around it. If musicians, then they may be able to communicate tone changes more easily. ",
+    "confidence_recreate_tomorrow": 5,
+    "created_at": "2026-01-06T20:51:03.500629+00:00",
+    "updated_at": "2026-01-06T20:51:03.500629+00:00"
   }
 ]
