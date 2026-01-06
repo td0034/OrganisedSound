@@ -1,2 +1,4 @@
-token,clip_id,watched_complete,watch_progress_sec,duration_sec,payload_json,updated_at
-45564b6b9933335bbd89944b84c810f6,1,True,5.01551,5.01551,"{'R_2': '1', 'R_3': '2', 'R_4': '1', 'R_5': '1', 'R_6': '1', 'R_7': '1', 'R_8': '1', 'R_9': '1', 'comments': '', 'attention': 'Mostly sound'}",2026-01-01T23:55:37.648428+00:00
+token,clip_id,watched_complete,watch_progress_sec,duration_sec,memorability,perceived_agency,best_context,payload_json,updated_at
+45564b6b9933335bbd89944b84c810f6,1,True,5.01551,5.01551,,,,"{'R_2': '1', 'R_3': '2', 'R_4': '1', 'R_5': '1', 'R_6': '1', 'R_7': '1', 'R_8': '1', 'R_9': '1', 'comments': '', 'attention': 'Mostly sound'}",2026-01-01T23:55:37.648428+00:00
+fb2e62201e7bad22ec1868088c324770,2,True,66.316667,66.316667,2,5,workshop_education,"{'R_1': '1', 'R_2': '1', 'R_3': '1', 'R_4': '1', 'R_5': '1', 'R_6': '1', 'R_7': '1', 'R_8': '1', 'R_9': '1', 'comments': '', 'attention': 'Balanced'}",2026-01-05T12:45:57.353425+00:00
+fb2e62201e7bad22ec1868088c324770,1,True,5.01551,5.01551,4,6,workshop_education,"{'R_1': '1', 'R_2': '1', 'R_3': '1', 'R_4': '1', 'R_5': '1', 'R_6': '1', 'R_7': '1', 'R_8': '1', 'R_9': '1', 'comments': '', 'attention': 'Mostly light'}",2026-01-05T12:46:26.939923+00:00

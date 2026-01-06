@@ -10,6 +10,7 @@ Key behaviours:
 - The rating form is hidden until the rater watches the clip to the end at least once.
 - Raters can replay clips freely.
 - Ratings are stored in Postgres (JSONB) and exported as CSV for analysis.
+- Per-clip ratings include memorability, perceived agency, and best-context selection.
 
 ## Quick start
 1. Put video clips in `./clips/` (e.g., `.mp4`, `.m4v`, `.mov`).
@@ -21,6 +22,7 @@ Key behaviours:
 ## Exports
 On every successful rating save, the app writes:
 - `exports/ratings.csv`
+  - includes `memorability`, `perceived_agency`, and `best_context`
 
 ## Clip manifest
 Maintain `clips/manifest.csv` with one row per clip, including at least:

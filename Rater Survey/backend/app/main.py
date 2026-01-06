@@ -5,7 +5,7 @@ from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session as OrmSession
-from sqlalchemy import select
+from sqlalchemy import select, inspect, text
 
 from .db import Base, engine, SessionLocal, get_db
 from .models import Clip, Session, Rating, SessionEnd
@@ -21,7 +21,22 @@ EXPORTS_PATH = Path(os.environ["EXPORTS_DIR"]).resolve() if os.environ.get("EXPO
 VIDEO_EXTS = {".mp4", ".m4v", ".mov"}
 
 app = FastAPI(title=APP_TITLE)
+
+def ensure_rating_columns() -> None:
+    with engine.begin() as conn:
+        inspector = inspect(conn)
+        if "ratings" not in inspector.get_table_names():
+            return
+        columns = {col["name"] for col in inspector.get_columns("ratings")}
+        if "memorability" not in columns:
+            conn.execute(text("ALTER TABLE ratings ADD COLUMN memorability INTEGER"))
+        if "perceived_agency" not in columns:
+            conn.execute(text("ALTER TABLE ratings ADD COLUMN perceived_agency INTEGER"))
+        if "best_context" not in columns:
+            conn.execute(text("ALTER TABLE ratings ADD COLUMN best_context VARCHAR(64)"))
+
 Base.metadata.create_all(bind=engine)
+ensure_rating_columns()
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
@@ -36,7 +51,18 @@ def build_ratings_csv(db: OrmSession) -> str:
     rows = db.execute(select(Rating)).scalars().all()
     buf = io.StringIO()
     w = csv.writer(buf)
-    w.writerow(["token", "clip_id", "watched_complete", "watch_progress_sec", "duration_sec", "payload_json", "updated_at"])
+    w.writerow([
+        "token",
+        "clip_id",
+        "watched_complete",
+        "watch_progress_sec",
+        "duration_sec",
+        "memorability",
+        "perceived_agency",
+        "best_context",
+        "payload_json",
+        "updated_at"
+    ])
     for r in rows:
         w.writerow([
             r.token,
@@ -44,6 +70,9 @@ def build_ratings_csv(db: OrmSession) -> str:
             r.watched_complete,
             r.watch_progress_sec,
             r.duration_sec,
+            r.memorability,
+            r.perceived_agency,
+            r.best_context or "",
             (r.payload or {}),
             r.updated_at.isoformat() if r.updated_at else ""
         ])
@@ -196,6 +225,9 @@ def save_rating(req: SaveRatingRequest, db: OrmSession = Depends(get_db)):
             watched_complete=req.watched_complete,
             watch_progress_sec=req.watch_progress_sec,
             duration_sec=req.duration_sec,
+            memorability=req.memorability,
+            perceived_agency=req.perceived_agency,
+            best_context=req.best_context,
             payload=req.payload
         )
         db.add(existing)
@@ -203,6 +235,9 @@ def save_rating(req: SaveRatingRequest, db: OrmSession = Depends(get_db)):
         existing.watched_complete = req.watched_complete
         existing.watch_progress_sec = req.watch_progress_sec
         existing.duration_sec = req.duration_sec
+        existing.memorability = req.memorability
+        existing.perceived_agency = req.perceived_agency
+        existing.best_context = req.best_context
         existing.payload = req.payload
 
     db.commit()

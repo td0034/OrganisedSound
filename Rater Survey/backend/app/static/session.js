@@ -7,6 +7,14 @@ let state = null;
 let watchedComplete = false;
 let maxProgress = 0;
 
+const BEST_CONTEXT_OPTIONS = [
+  { value: "installation_gallery", label: "Installation / gallery" },
+  { value: "live_performance", label: "Live performance" },
+  { value: "background_ambience", label: "Background ambience" },
+  { value: "workshop_education", label: "Workshop / education" },
+  { value: "unsure", label: "Unsure" }
+];
+
 function msg(t, kind="info"){
   $("#message").textContent = t || "";
   $("#message").style.color = (kind === "error") ? "var(--warn)" : "var(--muted)";
@@ -30,6 +38,18 @@ function likertGrid(baseName, statements){
   return header + rows;
 }
 
+function likertScale(name, required=false){
+  const req = required ? "required" : "";
+  return `<div class="choice-list">
+    ${[1,2,3,4,5,6,7].map(n=>`
+      <label class="choice">
+        <input type="radio" name="${name}" value="${n}" ${req}>
+        <span>${n}</span>
+      </label>
+    `).join("")}
+  </div>`;
+}
+
 function buildRatingForm(){
   const statements = [
     "Overall, I prefer this clip.",
@@ -47,6 +67,28 @@ function buildRatingForm(){
     <div class="field">
       <label>Ratings (1=low/strongly disagree, 7=high/strongly agree)</label>
       ${likertGrid("R", statements)}
+    </div>
+
+    <div class="field">
+      <label>This clip feels distinctive / memorable compared to the others.</label>
+      ${likertScale("memorability", true)}
+    </div>
+
+    <div class="field">
+      <label>It feels like a human is shaping the result (rather than it being purely autonomous).</label>
+      ${likertScale("perceived_agency", true)}
+    </div>
+
+    <div class="field">
+      <label>Where does this clip feel most at home?</label>
+      <div class="choice-list">
+        ${BEST_CONTEXT_OPTIONS.map((o)=>`
+          <label class="choice">
+            <input type="radio" name="best_context" value="${o.value}">
+            <span>${o.label}</span>
+          </label>
+        `).join("")}
+      </div>
     </div>
 
     <div class="field">
@@ -168,6 +210,18 @@ async function saveRating(advance){
   }
 
   const payload = collectForm($("#ratingForm"));
+  const memorability = payload.memorability ? parseInt(payload.memorability, 10) : null;
+  const perceivedAgency = payload.perceived_agency ? parseInt(payload.perceived_agency, 10) : null;
+  const bestContext = payload.best_context || null;
+
+  if (!memorability || !perceivedAgency){
+    msg("Please complete the memorability and agency ratings before saving.", "error");
+    return;
+  }
+
+  delete payload.memorability;
+  delete payload.perceived_agency;
+  delete payload.best_context;
 
   await api("/api/rating/save", {
     method:"POST",
@@ -178,6 +232,9 @@ async function saveRating(advance){
       watched_complete: true,
       watch_progress_sec: maxProgress,
       duration_sec: duration,
+      memorability,
+      perceived_agency: perceivedAgency,
+      best_context: bestContext,
       payload
     })
   });

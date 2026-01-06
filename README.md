@@ -11,6 +11,8 @@ This repo contains two Dockerized surveys and a results pipeline:
   - Auto-exports on every save:
     - `Participant Survey/exports/sections.csv`
     - `Participant Survey/exports/sections.json`
+    - `Participant Survey/exports/participant_addendum.csv`
+    - `Participant Survey/exports/participant_addendum.json`
 - `Rater Survey/`
   - Web UI at `http://localhost:18080/`
   - Auto-exports on every rating save:
@@ -34,6 +36,7 @@ docker compose up --build
 ## Results pipeline
 The results script reads the exported CSVs and the manifest:
 - `Participant Survey/exports/sections.csv`
+- `Participant Survey/exports/participant_addendum.csv`
 - `Rater Survey/exports/ratings.csv`
 - `Rater Survey/clips/manifest.csv`
 

@@ -32,6 +32,10 @@ class Rating(Base):
     watch_progress_sec: Mapped[float] = mapped_column(Float, default=0.0)
     duration_sec: Mapped[float] = mapped_column(Float, default=0.0)
 
+    memorability: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    perceived_agency: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    best_context: Mapped[str | None] = mapped_column(String(64), nullable=True)
+
     payload: Mapped[dict] = mapped_column(JSONB, default=dict)
 
     created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
