@@ -233,5 +233,32 @@
     "confidence_recreate_tomorrow": 3,
     "created_at": "2026-01-07T12:45:20.900957+00:00",
     "updated_at": "2026-01-07T12:45:20.900957+00:00"
+  },
+  {
+    "session_id": "6770L",
+    "participant_code": "6770L",
+    "skipped": false,
+    "piece_title_favourite": "Back to Open",
+    "piece_description_one_line": "Remembering a mental state of peace and flow. ",
+    "authorship_attribution": "shared",
+    "authorship_reason": "I felt ease, awareness and curiosity in the collaboration ",
+    "return_likelihood": 7,
+    "return_conditions": "opportunity ",
+    "context_of_use": [
+      "home_sketching",
+      "live_performance",
+      "gallery_installation",
+      "festival_public_space"
+    ],
+    "context_other": "",
+    "target_user": "musician_performer",
+    "target_user_other": "",
+    "remove_one_thing": "The computer - a way to control it with a smaller less dominant controller",
+    "add_one_thing": "Rhythmic element - some way to play around with this musical element - maybe thinking about the other musical elements - dynamics, timbre - how to incorporate all? ",
+    "collaboration_expectation": "not_sure",
+    "collaboration_reason": "I can imagine that the difficulty might arise more in the dynamic between humans rather than the instrument/creative control or flexibility. ",
+    "confidence_recreate_tomorrow": 5,
+    "created_at": "2026-01-07T16:12:30.230305+00:00",
+    "updated_at": "2026-01-07T16:12:30.230305+00:00"
   }
 ]
