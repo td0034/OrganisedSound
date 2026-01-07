@@ -205,5 +205,33 @@
     "confidence_recreate_tomorrow": 5,
     "created_at": "2026-01-06T20:51:03.500629+00:00",
     "updated_at": "2026-01-06T20:51:03.500629+00:00"
+  },
+  {
+    "session_id": "4069S",
+    "participant_code": "4069S",
+    "skipped": false,
+    "piece_title_favourite": "Scaffolding impact driver",
+    "piece_description_one_line": "Evokes a sense of control over the choatic. Even if that chaotic is patterns that I can't disern.",
+    "authorship_attribution": "shared",
+    "authorship_reason": "I wasn't in full control at any moment, but understand I could impact the outcome.",
+    "return_likelihood": 7,
+    "return_conditions": "The fun of playing with the instrument and system.",
+    "context_of_use": [
+      "studio_production",
+      "live_performance",
+      "gallery_installation",
+      "festival_public_space",
+      "education_workshop"
+    ],
+    "context_other": "",
+    "target_user": "audience_participant",
+    "target_user_other": "",
+    "remove_one_thing": "Minimum population",
+    "add_one_thing": "Touch screen controls. Alternative interface to the mouse, this felt like a rate limiting step.",
+    "collaboration_expectation": "not_sure",
+    "collaboration_reason": "",
+    "confidence_recreate_tomorrow": 3,
+    "created_at": "2026-01-07T12:45:20.900957+00:00",
+    "updated_at": "2026-01-07T12:45:20.900957+00:00"
   }
 ]
