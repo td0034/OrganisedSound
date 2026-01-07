@@ -260,5 +260,30 @@
     "confidence_recreate_tomorrow": 5,
     "created_at": "2026-01-07T16:12:30.230305+00:00",
     "updated_at": "2026-01-07T16:12:30.230305+00:00"
+  },
+  {
+    "session_id": "7974C",
+    "participant_code": "7974C",
+    "skipped": false,
+    "piece_title_favourite": "a limited view of the space of sound representation",
+    "piece_description_one_line": "Too much and too little can lead to a thin gruel",
+    "authorship_attribution": "unsure",
+    "authorship_reason": "All art requires constraints. I found these constraints hard for the time available.",
+    "return_likelihood": 5,
+    "return_conditions": "The ability to change layouts",
+    "context_of_use": [
+      "home_sketching",
+      "wellbeing_relaxation"
+    ],
+    "context_other": "",
+    "target_user": "hobbyist",
+    "target_user_other": "",
+    "remove_one_thing": "the level of randomness",
+    "add_one_thing": "A keyboard",
+    "collaboration_expectation": "about_same",
+    "collaboration_reason": "I think this depends on how similarly confident the individuals are",
+    "confidence_recreate_tomorrow": 3,
+    "created_at": "2026-01-07T19:31:12.322772+00:00",
+    "updated_at": "2026-01-07T19:31:12.322772+00:00"
   }
 ]

@@ -1998,5 +1998,188 @@
       "dyad_done": "No"
     },
     "updated_at": "2026-01-07T16:01:54.855172+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "meta",
+    "payload": {
+      "order": "B\u2192A\u2192C",
+      "meta_notes": "",
+      "session_type": "solo",
+      "participant_id": "7974C"
+    },
+    "updated_at": "2026-01-07T17:21:00.724376+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "background",
+    "payload": {
+      "age_range": "35\u201344",
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "musical_experience": "Some (informal)",
+      "theory_familiarity": "None",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "No",
+      "generative_experience": "No"
+    },
+    "updated_at": "2026-01-07T17:21:32.314779+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_B_pre",
+    "payload": {
+      "A_1": "4",
+      "A_2": "6",
+      "A_3": "4",
+      "A_4": "2",
+      "A_5": "6",
+      "A_6": "3",
+      "A_7": "3",
+      "aim": "A mix / unsure",
+      "strategy": "I aimed to draw from a longer/slower movement to something more frenetic then settle again. There appeared to be a two note combinations that produced scattershot bursts and I wanted to swap in and out of one.",
+      "preset_id": "7974C_B_20260107_175852"
+    },
+    "updated_at": "2026-01-07T17:58:52.403656+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_B_post",
+    "payload": {
+      "B_1": "5",
+      "B_2": "2",
+      "B_3": "4",
+      "B_4": "5",
+      "B_5": "3",
+      "B_6": "2",
+      "B_7": "1",
+      "B_8": "5",
+      "B_9": "6",
+      "B_10": "3",
+      "B_11": "2",
+      "B_12": "1",
+      "preset_id": "7974C_B_20260107_175852",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Life Length",
+        "Scale"
+      ],
+      "interference_notes": "THe visual display felt much more crowded but less chaotic  - more structure perhaps? I was surprised by the lines runnig across the deck, and at one point there was a visual walk around the deck that I did not expect and did not hear in the sound whilst it was happening.",
+      "expectation_vs_outcome": "The visuals had a greater range of dense to sparse, and a greater range of patterning than expected. It seems like there are more rules or instances of notes visually than aurally. The visuals felt more graspable than my recollection of my control of the sounds but this might be reflection vs action."
+    },
+    "updated_at": "2026-01-07T18:12:29.371521+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_A_pre",
+    "payload": {
+      "A_1": "6",
+      "A_2": "6",
+      "A_3": "6",
+      "A_4": "5",
+      "A_5": "4",
+      "A_6": "2",
+      "A_7": "5",
+      "aim": "Stability/clarity",
+      "strategy": "I could see a relationship between s few chords and the visual patterns they made, and hoped to progress through these - vertical lines, down right diagonals, clusters of 5. Some attempt to change the pace in an arc.",
+      "preset_id": "7974C_A_20260107_183124"
+    },
+    "updated_at": "2026-01-07T18:31:25.003301+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_A_post",
+    "payload": {
+      "B_1": "2",
+      "B_2": "2",
+      "B_3": "3",
+      "B_4": "4",
+      "B_5": "4",
+      "B_6": "3",
+      "B_7": "1",
+      "B_8": "6",
+      "B_9": "5",
+      "B_10": "2",
+      "B_11": "7",
+      "B_12": "1",
+      "preset_id": "7974C_A_20260107_183124",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Life Length",
+        "Scale"
+      ],
+      "interference_notes": "The visual pattern did not match any auditory chonchordancy / harmony in any way that I would have predicted - they patterns of visuals and audio seem very separate. In addition, the pure tone perhaps meant that I could not hear the full complex nature of the sound that was clearly present and visible - perhaps because different octaves of the same note starting at the same time sounded as one. I could hear flurries of consecutive notes and perhaps different notes that coincided. I would be very interested to hear the outcome if these notes were more distinguishable, and likely would produce a much less busy piece!",
+      "expectation_vs_outcome": "The business of the sound did not seem to match the pattern or crowqding of the visuals. A number of sparse visuals sounded as busy as a previously very active visual. The visual patterning seemed to match dischordant sounds. and in some cases vice versa - a pleasant sound matching no visual pattern. A big mismatch overall."
+    },
+    "updated_at": "2026-01-07T18:47:12.018113+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_C_pre",
+    "payload": {
+      "A_1": "5",
+      "A_2": "7",
+      "A_3": "6",
+      "A_4": "4",
+      "A_5": "5",
+      "A_6": "4",
+      "A_7": "5",
+      "aim": "Complexity/energy",
+      "strategy": "Aiming to oscillate between fullnes/complexity and simplicity/sparseness, but by different means - on one side using the life span / rate / neighbourhood rules, on the other side using the effect of harmonies and note availability.",
+      "preset_id": "7974C_C_20260107_190342"
+    },
+    "updated_at": "2026-01-07T19:03:42.252726+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "block_C_post",
+    "payload": {
+      "B_1": "6",
+      "B_2": "2",
+      "B_3": "6",
+      "B_4": "2",
+      "B_5": "4",
+      "B_6": "2",
+      "B_7": "4",
+      "B_8": "4",
+      "B_9": "6",
+      "B_10": "2",
+      "B_11": "7",
+      "B_12": "5",
+      "preset_id": "7974C_C_20260107_190342",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Life Length",
+        "Scale"
+      ],
+      "interference_notes": "I am beginning to see why having neighbouring notes available results in simple repeating patterns and also dischordant sounds, and why having more harmony constrains the visuals under some game of life conditions, something about having the notes far enough away from each other meaning they are poor / unrelated neighbours. I think if I had better music theory I would understand this differently.",
+      "expectation_vs_outcome": "Less obvious visual structure than I expected but a stronger match between what I planned and what happened, and I feel like I am beginning to see a different and less obvious visual structure and how that relates to the sounds/notes. The two modalities are starting to feel linked in a way I didn't experience before. I had some inkling of this while playing but could see some impacts more clearly and unexpectedly in the review."
+    },
+    "updated_at": "2026-01-07T19:14:09.083073+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "end",
+    "payload": {
+      "rank_A": "2",
+      "rank_B": "3",
+      "rank_C": "1",
+      "one_change": "Put the interface on one page without scrolling. Have nonlinear scales. ",
+      "reflection": "The simplest patterns required local density - a repeating cluster or a line across the deck. This very fact of immediate neighbours translated to sound meant busy and unpleasant sounds. I was surprised at the lack of apparent relationship between the visual activity and the complexity of the sound and assume that this is in part because I could not distinguish a significant proportion of note pairings. The layout of the pattern of notes feels like it significantly hampers game of life creatures that sound nice, and I would be very interested in knowing about or playing with different layouts.",
+      "biggest_mismatch": "A",
+      "most_intermedial": "C"
+    },
+    "updated_at": "2026-01-07T19:23:33.339269+00:00"
+  },
+  {
+    "participant_id": "7974C",
+    "section_key": "dyad_gate",
+    "payload": {
+      "dyad_done": "No"
+    },
+    "updated_at": "2026-01-07T19:23:38.381800+00:00"
   }
 ]
