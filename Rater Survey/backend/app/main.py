@@ -1,4 +1,5 @@
 import os, io, csv, hashlib, asyncio, random
+from datetime import datetime, timezone
 from pathlib import Path
 from fastapi import FastAPI, Depends, Request, HTTPException
 from fastapi.responses import HTMLResponse, StreamingResponse
@@ -9,7 +10,7 @@ from sqlalchemy import select, inspect, text
 
 from .db import Base, engine, SessionLocal, get_db
 from .models import Clip, Session, Rating, SessionEnd
-from .schemas import CreateSessionRequest, SaveRatingRequest, SaveSessionEndRequest
+from .schemas import CreateSessionRequest, SaveConsentRequest, SaveRatingRequest, SaveSessionEndRequest
 from .range_utils import range_file_response
 
 APP_TITLE = os.environ.get("APP_TITLE", "Clip Ratings")
@@ -161,7 +162,7 @@ def create_session(req: CreateSessionRequest, db: OrmSession = Depends(get_db)):
     random.shuffle(clip_ids)
 
     token = _make_token()
-    s = Session(token=token, rater_label=req.rater_label or "", playlist={"clip_ids": clip_ids})
+    s = Session(token=token, rater_label=req.rater_label or "", playlist={"clip_ids": clip_ids, "consent": False})
     db.add(s)
     db.commit()
 
@@ -173,7 +174,8 @@ def session_state(token: str, db: OrmSession = Depends(get_db)):
     if s is None:
         raise HTTPException(status_code=404, detail="Session not found")
 
-    clip_ids = (s.playlist or {}).get("clip_ids", [])
+    playlist = s.playlist or {}
+    clip_ids = playlist.get("clip_ids", [])
     ratings = db.execute(select(Rating).where(Rating.token == token)).scalars().all()
     done_ids = sorted({r.clip_id for r in ratings})
 
@@ -182,7 +184,8 @@ def session_state(token: str, db: OrmSession = Depends(get_db)):
         "label": s.rater_label,
         "clip_ids": clip_ids,
         "done_ids": done_ids,
-        "total": len(clip_ids)
+        "total": len(clip_ids),
+        "consent": bool(playlist.get("consent", False))
     }
 
 @app.get("/api/session/{token}/clip/{clip_id}")
@@ -206,6 +209,21 @@ def clip_info(token: str, clip_id: int, db: OrmSession = Depends(get_db)):
             "duration_sec": existing.duration_sec
         } if existing else None)
     }
+
+@app.post("/api/session/consent")
+def save_consent(req: SaveConsentRequest, db: OrmSession = Depends(get_db)):
+    s = db.get(Session, req.token)
+    if s is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+    if not req.agreed:
+        raise HTTPException(status_code=400, detail="Consent required to proceed")
+
+    playlist = s.playlist or {}
+    playlist["consent"] = True
+    playlist["consent_at"] = datetime.now(timezone.utc).isoformat()
+    s.playlist = playlist
+    db.commit()
+    return {"ok": True}
 
 @app.post("/api/rating/save")
 def save_rating(req: SaveRatingRequest, db: OrmSession = Depends(get_db)):

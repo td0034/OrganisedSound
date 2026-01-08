@@ -1,0 +1,1 @@
+Expectation match after reveal by condition. B_7: The revealed modality matched what I expected.

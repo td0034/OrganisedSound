@@ -1,0 +1,139 @@
+3. Method
+3.1. Participants
+Sampling and recruitment. Participants were recruited via the author’s professional and personal networks using convenience sampling. Recruitment sought a mix of musical and non-musical backgrounds, and a range of familiarity with generative systems.
+Sample. N = [ ] participants completed the solo protocol. Participants self-reported:
+age range;
+musical experience (none / some / moderate / high);
+music theory / harmony familiarity;
+familiarity with generative or algorithmic music systems;
+Tonnetz familiarity;
+perceptual notes (colour-vision deficiency, sensitivity to flashing lights, optional comments).
+Dyad subset. N_dyad = [ ] dyads completed an exploratory collaboration condition (Section 3.3.3).
+Ethics and consent. All participants provided informed consent for audio/video recording and for anonymised excerpts to be used in a subsequent external rating task.
+
+3.2. System and apparatus
+3.2.1. Instrument under study
+The study evaluates the TZ5 / Cellular Au-Tonnetz audiovisual instrument: a unified system in which sound and light are generated simultaneously from a shared Tonnetz–cellular automata (CA) substrate. The system has been previously documented as a technology description (rather than an evaluation), providing a stable technical baseline for the present study.
+The TZ5 system comprises four main components:
+Web application (UI + configuration store): a browser-based interface that captures user inputs (sliders, buttons) and stores parameter values in an SQL database; the latest configuration is served to the device via HTTP GET as JSON.
+Control board: an ESP32-S3 microcontroller responsible for CA state updates and for driving both musical and visual outputs based on the retrieved parameters.
+Audio synthesis subsystem: renders audio from the device’s MIDI output, either via a DAW (e.g., Ableton Live) or via a hardware synthesiser.
+Hexagonal LED panel subsystem: a 91-pixel addressable LED array (single serial data line protocol such as WS2811) displaying the evolving CA state.
+[Figure 1 about here: system overview / block diagram showing web app → ESP32-S3 controller → LED panel + MIDI → Ableton.]
+[Figure 2 about here: web UI screenshot showing the parameter set used in the study.]
+3.2.2. Coupled audiovisual generation (shared state-space)
+Sound and light are produced as parallel projections of the same evolving CA/Tonnetz state. The controller assigns MIDI note numbers to Tonnetz grid cells (virtual “orchestra members”), then evaluates CA rules and population limits to determine activations; cells that become active both (i) trigger MIDI note events and (ii) update corresponding LED pixels.
+Note–colour mapping. Each pitch class is mapped to a hue using an HSV colour model; the LED controller updates RGB values as a visual representation of harmonic activity.
+3.2.3. LED panel configuration
+The control board can drive different physical panel formats provided the LED count and protocol remain consistent.
+The study panel was:
+Panel type: [91-LED custom PCB panel (10 cm) / 70 cm plywood panel with 91 pixels]
+Diffusion: [paper / opaque acrylic / other] (held constant across sessions)
+[Figure 3 about here: LED panel photograph (front view).]
+[Figure 4 about here: LED panel in situ / participant viewpoint (optional).]
+3.2.4. Participant-facing control parameters
+Participants controlled the instrument via the web UI, adjusting parameters documented as core TZ5 features. Parameter labels below follow the UI conventions used in the system documentation.
+Population and density
+Max Notes (Max Population): caps the maximum number of active orchestra members (density limit).
+Min Notes (Min Population): enforces a minimum active population; if activity collapses below this threshold the system seeds new activations to maintain baseline activity.
+Temporal dynamics
+Rate: CA update rate (selectable in milliseconds; real-time adjustable).
+Life Length: maximum lifetime of an activation (implementation-specific; reported as configured in the firmware revision used).
+Neighbourhood and rule constraints
+Neighbour Counting Method (Local / Extended): Local counts 6 neighbours; Extended counts 18 neighbours.
+Min Neighbours: minimum neighbour threshold required for activation.
+Max Neighbours: maximum neighbour threshold preventing activation when exceeded (crowding constraint).
+Recurrence and memory
+Loop On/Off: toggles between random coordinate selection and replay of stored coordinate selections.
+Loop Steps (Loop Length): number of updates stored and replayed; loop duration is determined by the update rate and loop steps.
+Harmonic admissibility
+Scale selection: constrains which pitch classes can activate; the same constraints shape the corresponding colour palette because colours are mapped to pitch classes.
+Excluded to reduce confounds
+Chord progressions / automatic scale sequencing were disabled for this study, so that formal change is attributable to participant steering rather than automation. (Chord progressions are a documented feature of TZ5 but were not used here.)
+3.2.5. Audio/video capture and synchronisation
+All conditions produce paired audiovisual artefacts, regardless of which modality the participant could access during composition.
+Audio capture: [Ableton Live direct render / line-out capture], [sample rate/bit depth]. (Ableton is explicitly supported as a rendering target for TZ5’s MIDI output.)
+Video capture: fixed camera framing the panel at [resolution/frame rate], with fixed exposure and white balance.
+Synchronisation marker: a clap and/or UI “MARK” at the start of each captured excerpt.
+Traceability: each excerpt is associated with a participant ID, condition ID, saved preset ID, and firmware revision ID.
+[Figure 5 about here: recording setup photograph/schematic (panel, camera, participant position).]
+3.2.6. Replication artefacts and supplementary materials
+To support reproducibility and independent interrogation of system behaviour, the following artefacts will be provided as supplementary materials:
+Supplementary S1 (Ableton Live project): Ableton Live project containing the synthesis patch, MIDI routing, and recording configuration used for all sessions.
+Supplementary S2 (Reference audio renders): stereo reference renders of the baseline preset (S0) and a short calibration sequence for level/routing verification across systems.
+Supplementary S3 (Parameter presets): exported parameter sets (S0 and all end-state presets) in a machine-readable format (e.g., JSON), keyed to participant ID and condition. (The web application architecture explicitly serves/stores parameters as JSON retrieved by the device.)
+Supplementary S4 (Firmware + build/flash instructions): the microcontroller firmware revision deployed in the study, including build/flash instructions and a version identifier corresponding to the device. This enables verification of CA update logic (asynchronous update strategy), neighbour counting (local vs extended), looping behaviour, and note–colour mapping.
+Supplementary S5 (Stimulus set): anonymised audiovisual clips supplied to external raters (including baseline control clips), with clip IDs corresponding to the analysis dataset.
+
+3.3. Study design
+3.3.1. Overview
+The study comprises:
+a within-subject solo protocol with three task/condition blocks manipulating modality access during composition;
+an exploratory dyad protocol with asymmetric modality access; and
+a system-alone baseline capture recorded from the shared starting preset.
+Dyad-only sessions skipped the solo blocks and end-of-session comparison, proceeding directly to the dyad questionnaire and final reflections.
+3.3.2. Baseline control (system-alone)
+For each session, the system ran from the common starting preset (S0) for the same duration as a participant block with no parameter changes. A final excerpt was captured, producing a baseline artefact representing system behaviour absent human steering.
+3.3.3. Dyad condition (exploratory): asymmetric modality access collaboration
+Dyads were seated facing each other to support negotiation. One participant had auditory access and the other had visual access, while both shared access to the parameter interface.
+Audio-role participant: wore headphones; did not see the LED panel.
+Visual-role participant: faced the LED panel; had no access to audio.
+The dyad produced a single final excerpt from S0 after collaborative parameter steering.
+
+3.4. Procedure
+3.4.1. Orientation and familiarisation
+Participants received a briefing describing the instrument as a coupled audiovisual generator and explaining the three task blocks. At the start of the session, a single familiarisation phase (approximately 10–15 minutes) with full audiovisual access allowed participants to develop a working understanding of key parameters (density, update rate, neighbourhood method, looping, scale constraints). Session metadata recorded the participant ID and the counterbalanced block order (A/B/C), with an option to flag dyad-only sessions.
+3.4.2. Common starting point (S0)
+Each block began from a standardised preset S0 to enable within-subject comparison. The system supports user-defined initial states; in this study S0 used [central pixel active / specified initial state].
+3.4.3. Solo blocks (three tasks with modality constraints)
+Each participant completed three blocks. In each block the participant explored the system for approximately 5–10 minutes under the specified modality constraint, then recorded a final excerpt of [60–120] seconds. Participants were permitted to adjust parameters during the recorded excerpt. The end-state preset was saved.
+Block A: Visual-only composition
+Constraint: participant viewed the LED panel; audio feedback was fully masked.
+Task prompt: “Create an interesting pattern/motion on the LED panel.”
+Output: final captured excerpt includes both audio and video (audio revealed only after capture).
+Block B: Audio-only composition
+Constraint: participant heard audio output via headphones; the LED panel was occluded.
+Task prompt: “Create an interesting melody/sonic texture.”
+Output: final captured excerpt includes both audio and video (video revealed only after capture).
+Block C: Audiovisual composition
+Constraint: participant had simultaneous access to audio and the LED panel.
+Task prompt: “Create an interesting combined audiovisual experience.”
+Output: final captured excerpt includes both audio and video.
+Order control. Condition order was counterbalanced across participants using a rotating schedule.
+Reveal + questionnaires (per block). Immediately after each capture, participants completed a pre-reveal questionnaire (Part A). The excerpt was then replayed with both modalities enabled and participants completed a post-reveal questionnaire (Part B), including free-text reflection comparing expectations to outcome and notes on intermedial interference.
+3.4.4. Dyad trial (single collaborative block)
+Dyads completed one collaborative block from S0:
+confirm asymmetric access and shared UI control;
+exploration under split access (~5–10 minutes);
+final capture ([60–120] seconds) with live parameter changes permitted;
+save end-state preset;
+complete dyad questionnaire and brief joint reflection.
+
+3.5. Measures
+3.5.1. Block questionnaires (pre-reveal and post-reveal)
+Each solo block used a two-part questionnaire. Part A (pre-reveal) captured task focus (stability/clarity, complexity/energy, or mixed), strategy notes, and 7-point Likert ratings of satisfaction, intention clarity, steerability, interface understanding, useful surprise, frustrating unpredictability, and anticipated interest. Part B (post-reveal) captured 7-point Likert ratings of fusion/equality, coherence, constructive and destructive interference, overload, expectation match, interpretation change after reveal, causal legibility, perceived system autonomy, and reliance on visual or Tonnetz/theory cues. Participants also provided free-text reflections on expectation vs outcome, noted any interference moments, and selected the most influential parameters (aiming for three).
+3.5.2. End-of-session comparison
+Participants ranked their three outputs and indicated which block felt most intermedial, which block had the largest expectation–outcome mismatch, and provided a short reflection on what they learned about sound–light relationships, plus one suggested change to improve media equality.
+3.5.3. Dyad questionnaire (if applicable)
+Dyad participants provided ratings on communication effectiveness, shared reference points, whether split access helped or hindered coordination, sense of joint ownership, audiovisual balance/coherence, and whether the dyad outcome would be preferred over solo outputs. They also recorded dyad ID, role (audio-role or visual-role), dyad preset ID, and brief notes on communication and disagreements.
+3.5.4. Final reflections (optional addendum)
+An optional end-of-session addendum captured a title and one-line description for the participant’s favourite piece, authorship attribution and rationale, return likelihood and conditions, imagined contexts of use, target user profile, suggested removals/additions, collaboration expectations (easier to negotiate visuals vs notes), and confidence in recreating a similar result.
+3.5.5. External rating study (independent raters)
+A separate pool of raters evaluated anonymised audiovisual clips in a blinded presentation:
+Stimuli: one clip per participant per block, plus system-alone or default-parameter control clips.
+Presentation: a tokenised web app generated a randomised clip order; raters completed an information/consent page before access and were instructed to allow 1–2 hours to rate approximately 30 clips (1–2 minutes each). Ratings were unlocked only after each clip was watched to the end.
+Judgements: 7-point Likert ratings of preference, coherence, novelty, fusion/equality, constructive/destructive interference, overload, inferred structure/process, and perceived human steering; separate ratings of memorability and perceived agency; a best-context choice (installation, live performance, background ambience, workshop/education, unsure); attention-dominance selection (sound vs light vs balanced); a composition-condition guess (audio-only, visual-only, audiovisual, unsure); and optional comments. An optional end-of-session form captured raters’ top three clips and brief fusion notes.
+
+3.6. Data handling and analysis plan
+Per block data captured
+saved preset (parameter values);
+audio file + video file;
+questionnaire responses;
+[optional] addendum reflections and researcher field notes;
+[optional] parameter change logs from the server database (where available).
+Primary comparisons
+within-subject differences across visual-only vs audio-only vs audiovisual blocks;
+participant-shaped outputs vs system-alone baseline;
+exploratory dyad outputs vs solo outputs (reported descriptively with appropriate caution given sample size).
+Cross-linking experience to artefacts
+Participant self-ratings (e.g., fusion, agency, interference) will be compared with independent rater judgements of the corresponding clips to test whether perceived intermedial success is primarily a compositional experience, an artefact property, or both.

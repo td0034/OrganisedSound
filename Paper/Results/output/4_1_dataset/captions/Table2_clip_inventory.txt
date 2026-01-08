@@ -1,0 +1,1 @@
+Clip inventory based on saved preset IDs (per participant block).

@@ -1,0 +1,31 @@
+condition,parameter,count
+A,Scale,7
+A,Rate,6
+A,Life Length,3
+A,Loop On/Off,3
+A,Max Neighbours,3
+A,Min Neighbours,2
+A,Loop Length,1
+A,Max Population,1
+A,Min Population,1
+A,Neighbourhood (Local/Extended),1
+AV,Scale,7
+AV,Rate,5
+AV,Life Length,4
+AV,Loop On/Off,4
+AV,Max Neighbours,2
+AV,Min Neighbours,2
+AV,Neighbourhood (Local/Extended),2
+AV,Loop Length,1
+AV,Max Population,1
+AV,Min Population,1
+V,Rate,7
+V,Max Neighbours,4
+V,Max Population,4
+V,Life Length,3
+V,Scale,3
+V,Min Neighbours,2
+V,Min Population,2
+V,Neighbourhood (Local/Extended),2
+V,Loop Length,1
+V,Loop On/Off,1

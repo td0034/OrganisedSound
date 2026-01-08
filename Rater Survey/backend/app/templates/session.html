@@ -19,7 +19,51 @@
     <main class="main">
       <div id="message" class="message"></div>
 
-      <div class="card">
+      <div class="card" id="consentCard" style="display:none;">
+        <div class="card-header">
+          <h2>Before you begin</h2>
+          <p class="prompt">Please read the study information and provide consent to continue.</p>
+        </div>
+        <div class="card-body">
+          <div class="field">
+            <label>Study information (summary)</label>
+            <div class="help">
+              You will watch and rate a set of short audiovisual clips generated with an experimental instrument.
+              Some clips were composed under different access conditions (audio-only, visual-only, or audiovisual).
+              Clips show the LED panel output with the instrument audio; no participants are shown.
+            </div>
+            <div class="help" style="margin-top:8px;">
+              Expect approximately <span id="clipCount">—</span> clips, each around 1–2 minutes. Please allow about 1–2 hours to complete all ratings.
+            </div>
+            <div class="help" style="margin-top:8px;">
+              Participation is voluntary. You can stop at any time. If you wish to withdraw your ratings, contact the researcher within 5 days.
+            </div>
+            <div class="help" style="margin-top:8px;">
+              Researcher: t.didiotcook@gmail.com. Independent contact: research-governance@bristol.ac.uk.
+            </div>
+          </div>
+          <div class="field">
+            <label>Example questions (per clip)</label>
+            <div class="help">You will rate items such as:</div>
+            <ul class="help" style="margin:6px 0 0 18px;">
+              <li>Preference, coherence/legibility, novelty/interest</li>
+              <li>Fusion/equality, constructive vs destructive interference, overload</li>
+              <li>Perceived human steering, inferred structure/process</li>
+              <li>Attention dominance (sound vs light) and a condition guess</li>
+            </ul>
+          </div>
+          <div class="field">
+            <label>Consent</label>
+            <label class="choice">
+              <input id="consentCheck" type="checkbox" />
+              <span>I am aged 18+ and agree to take part in this rating task.</span>
+            </label>
+          </div>
+          <button id="consentBtn" class="btn primary" type="button" disabled>Agree and start</button>
+        </div>
+      </div>
+
+      <div class="card" id="ratingCard">
         <div class="card-header">
           <h2 id="clipTitle">Loading…</h2>
           <p class="prompt" id="clipPrompt">

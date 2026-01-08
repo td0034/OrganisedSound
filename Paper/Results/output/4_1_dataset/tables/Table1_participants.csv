@@ -1,0 +1,9 @@
+participant_id,order,session_type,musical_experience,theory_familiarity,generative_experience,tonnetz_familiarity,age_range,color_deficiency,light_sensitivity,dyad_participation,dyad_id
+5344J,A→B→C,solo,Some (informal),Basic,No,No,35–44,0,0,No,
+5220H,A→C→B,solo,Moderate (regular practice),Moderate,No,Heard of it,35–44,1,0,No,
+1661J,B→A→C,solo,Some (informal),Basic,No,No,25–34,0,0,No,
+3483M,B→C→A,solo,Some (informal),Moderate,No,No,45–54,0,0,No,
+4939Z,C→A→B,solo,High (advanced/degree/pro),High,Yes (moderate),No,25–34,0,0,No,
+4069S,C→B→A,solo,None,None,No,Heard of it,35–44,0,0,No,
+6770L,A→B→C,solo,High (advanced/degree/pro),High,No,No,25–34,0,0,No,
+7974C,B→A→C,solo,Some (informal),None,No,No,35–44,0,0,No,

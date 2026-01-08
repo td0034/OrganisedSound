@@ -100,6 +100,19 @@ function buildRatingForm(){
     </div>
 
     <div class="field">
+      <label>Which composition condition do you think this clip came from?</label>
+      <div class="choice-list">
+        ${[
+          { value: "audio_only", label: "Audio-only (composer could not see the visuals)" },
+          { value: "visual_only", label: "Visual-only (composer could not hear the audio)" },
+          { value: "audiovisual", label: "Audiovisual (both available)" },
+          { value: "unsure", label: "Unsure" }
+        ].map(o=>`<label class="choice"><input type="radio" name="condition_guess" value="${o.value}" required><span>${o.label}</span></label>`).join("")}
+      </div>
+      <div class="help">Best guess is fine.</div>
+    </div>
+
+    <div class="field">
       <label>Comments (optional)</label>
       <textarea name="comments" placeholder="Any brief comments…"></textarea>
     </div>
@@ -162,6 +175,7 @@ async function loadState(){
   state = await api(`/api/session/${token}/state`);
   const done = (state.done_ids || []).length;
   $("#progressBadge").textContent = `Progress: ${done}/${state.total}`;
+  $("#clipCount").textContent = String(state.total || "—");
 
   // pick first unrated clip if clipId not provided
   if (clipId === null || clipId === undefined){
@@ -293,8 +307,37 @@ $("#endSaveBtn").addEventListener("click", async () => {
 (async function init(){
   try{
     await loadState();
-    await loadClip();
+    if (state && state.consent){
+      $("#consentCard").style.display = "none";
+      $("#ratingCard").style.display = "";
+      await loadClip();
+    } else {
+      $("#consentCard").style.display = "";
+      $("#ratingCard").style.display = "none";
+      $("#endCard").style.display = "none";
+      msg("Please review the information and provide consent to begin.");
+    }
   }catch(e){
     msg("Failed to load session/clip: " + e.message, "error");
   }
 })();
+
+$("#consentCheck").addEventListener("change", () => {
+  $("#consentBtn").disabled = !$("#consentCheck").checked;
+});
+
+$("#consentBtn").addEventListener("click", async () => {
+  try{
+    await api("/api/session/consent", {
+      method:"POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ token, agreed: true })
+    });
+    await loadState();
+    $("#consentCard").style.display = "none";
+    $("#ratingCard").style.display = "";
+    await loadClip();
+  }catch(e){
+    msg("Failed to save consent: " + e.message, "error");
+  }
+});

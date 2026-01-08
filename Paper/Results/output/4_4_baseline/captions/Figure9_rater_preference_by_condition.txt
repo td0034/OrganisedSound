@@ -1,0 +1,1 @@
+Rater preference by condition (if manifest provides condition labels).

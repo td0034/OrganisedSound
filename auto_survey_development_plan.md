@@ -3,7 +3,7 @@
 ## Scope
 - Participant Survey (in-person capture).
 - Rater Survey (blinded clip ratings).
-- Results pipeline (`make_results.py`) that consumes exports + manifest.
+- Results pipeline (`Paper/Results/generate_results.py`) that consumes exports + manifest.
 
 ## Participant Survey
 ### Goals
@@ -49,9 +49,10 @@
   - `clip_id`, `participant_code`, `condition`, `filepath`
 - This enables joining rater clip ratings to participant conditions.
 
-## Results Pipeline (`make_results.py`)
+## Results Pipeline (`Paper/Results/generate_results.py`)
 ### Inputs
-- Participant export: `Participant Survey/exports/sections.csv`
+- Participant export: `Participant Survey/exports/sections.json`
+- Addendum export: `Participant Survey/exports/participant_addendum.json`
 - Rater export: `Rater Survey/exports/ratings.csv`
 - Manifest: `Rater Survey/clips/manifest.csv`
 
@@ -63,16 +64,14 @@
   `R_5` -> constructive, `R_6` -> destructive, `R_7` -> overload, `R_9` -> agency.
 
 ### Outputs
-- Tables and figures under `out/`:
-  - `tables/`, `figures/`, `results_snippets/`.
+- Tables and figures under `Paper/Results/output/<section>/`:
+  - `tables/`, `figures/`, `captions/`.
 
 ### Usage
-- Full: `python make_results.py`
-- Participant-only: `python make_results.py --participants-only`
-- Rater-only: `python make_results.py --raters-only`
-- Override paths with `--participant-csv`, `--rater-csv`, `--manifest-csv`.
+- Full: `python Paper/Results/generate_results.py`
+- Override paths with `--sections-json`, `--addendum-json`, `--rater-csv`, `--manifest-csv`, `--out-root`.
 
 ## Non-conformances / TODO (inspect)
-- Verify questionnaire→construct mappings in `make_results.py` match final wording for A/B/D/R keys.
+- Verify questionnaire→construct mappings in `Paper/Results/generate_results.py` match final wording for A/B/D/R keys.
 - Confirm `manifest.csv` uses the database `clip_id` values (add a helper/export if manual sync is error-prone).
 - If multiple clips per participant/condition exist, add a deterministic link (e.g., store clip_id/preset_id in participant exports and update join logic).

@@ -1,0 +1,1 @@
+Participant summary (background and session metadata).

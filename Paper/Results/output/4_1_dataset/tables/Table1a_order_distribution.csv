@@ -1,0 +1,7 @@
+order,count
+A→B→C,2
+B→A→C,2
+A→C→B,1
+B→C→A,1
+C→A→B,1
+C→B→A,1
