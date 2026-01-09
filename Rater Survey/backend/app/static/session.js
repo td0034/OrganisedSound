@@ -6,6 +6,7 @@ let state = null;
 
 let watchedComplete = false;
 let maxProgress = 0;
+const consentKey = `consent:${token}`;
 
 const BEST_CONTEXT_OPTIONS = [
   { value: "installation_gallery", label: "Installation / gallery" },
@@ -18,6 +19,22 @@ const BEST_CONTEXT_OPTIONS = [
 function msg(t, kind="info"){
   $("#message").textContent = t || "";
   $("#message").style.color = (kind === "error") ? "var(--warn)" : "var(--muted)";
+}
+
+function hasLocalConsent(){
+  try{
+    return window.localStorage.getItem(consentKey) === "true";
+  }catch(_e){
+    return false;
+  }
+}
+
+function setLocalConsent(){
+  try{
+    window.localStorage.setItem(consentKey, "true");
+  }catch(_e){
+    // Ignore storage errors; consent is still stored server-side when available.
+  }
 }
 
 async function api(path, opts){
@@ -52,7 +69,7 @@ function likertScale(name, required=false){
 
 function buildRatingForm(){
   const statements = [
-    "Overall, I prefer this clip.",
+    "I like this clip.",
     "This clip feels coherent/legible as an audiovisual work.",
     "This clip feels novel/interesting.",
     "Sound and light feel fused (two equals shaping a single experience).",
@@ -67,16 +84,6 @@ function buildRatingForm(){
     <div class="field">
       <label>Ratings (1=low/strongly disagree, 7=high/strongly agree)</label>
       ${likertGrid("R", statements)}
-    </div>
-
-    <div class="field">
-      <label>This clip feels distinctive / memorable compared to the others.</label>
-      ${likertScale("memorability", true)}
-    </div>
-
-    <div class="field">
-      <label>It feels like a human is shaping the result (rather than it being purely autonomous).</label>
-      ${likertScale("perceived_agency", true)}
     </div>
 
     <div class="field">
@@ -122,8 +129,8 @@ function buildRatingForm(){
 function buildEndForm(){
   $("#endForm").innerHTML = `
     <div class="field">
-      <label>Top 3 Clip IDs (most preferred)</label>
-      <div class="help">Enter numeric clip IDs (e.g., 12). Optional.</div>
+      <label>Top 3 clip numbers (most preferred)</label>
+      <div class="help">Enter the clip numbers shown in the header (e.g., 12). Optional.</div>
       <div class="row">
         <div class="field"><label>1st</label><input type="text" name="top1" placeholder="e.g., 12" /></div>
         <div class="field"><label>2nd</label><input type="text" name="top2" placeholder="e.g., 7" /></div>
@@ -133,6 +140,14 @@ function buildEndForm(){
     <div class="field">
       <label>What made clips feel fused/unfused? (optional)</label>
       <textarea name="fusion_notes" placeholder="Short notes…"></textarea>
+    </div>
+    <div class="field">
+      <label>What made your favourite clip most memorable or interesting? (optional)</label>
+      <textarea name="favorite_memorable" placeholder="Short notes…"></textarea>
+    </div>
+    <div class="field">
+      <label>How do you think this system is operated? (optional)</label>
+      <textarea name="system_operation" placeholder="Short notes…"></textarea>
     </div>
   `;
 }
@@ -174,8 +189,14 @@ function navigateTo(idx){
 async function loadState(){
   state = await api(`/api/session/${token}/state`);
   const done = (state.done_ids || []).length;
-  $("#progressBadge").textContent = `Progress: ${done}/${state.total}`;
-  $("#clipCount").textContent = String(state.total || "—");
+  const progressBadge = $("#progressBadge");
+  if (progressBadge){
+    progressBadge.textContent = `Progress: ${done}/${state.total}`;
+  }
+  const clipCount = $("#clipCount");
+  if (clipCount){
+    clipCount.textContent = String(state.total || "—");
+  }
 
   // pick first unrated clip if clipId not provided
   if (clipId === null || clipId === undefined){
@@ -189,8 +210,13 @@ async function loadClip(){
   resetWatch();
 
   const info = await api(`/api/session/${token}/clip/${clipId}`);
-  $("#clipTitle").textContent = `Clip ${info.clip.clip_id}`;
-  $("#clipMeta").textContent = info.clip.filename;
+  const clipTitle = $("#clipTitle");
+  if (clipTitle){
+    const idx = currentIndex();
+    const displayNum = idx >= 0 ? idx + 1 : info.clip.clip_id;
+    const total = state && state.total ? state.total : null;
+    clipTitle.textContent = total ? `Clip ${displayNum} of ${total}` : `Clip ${displayNum}`;
+  }
 
   const video = $("#video");
   video.src = `/media/${clipId}`;
@@ -224,17 +250,14 @@ async function saveRating(advance){
   }
 
   const payload = collectForm($("#ratingForm"));
-  const memorability = payload.memorability ? parseInt(payload.memorability, 10) : null;
-  const perceivedAgency = payload.perceived_agency ? parseInt(payload.perceived_agency, 10) : null;
+  const perceivedAgency = payload.R_9 ? parseInt(payload.R_9, 10) : null;
   const bestContext = payload.best_context || null;
 
-  if (!memorability || !perceivedAgency){
-    msg("Please complete the memorability and agency ratings before saving.", "error");
+  if (!perceivedAgency){
+    msg("Please complete all ratings before saving.", "error");
     return;
   }
 
-  delete payload.memorability;
-  delete payload.perceived_agency;
   delete payload.best_context;
 
   await api("/api/rating/save", {
@@ -246,7 +269,6 @@ async function saveRating(advance){
       watched_complete: true,
       watch_progress_sec: maxProgress,
       duration_sec: duration,
-      memorability,
       perceived_agency: perceivedAgency,
       best_context: bestContext,
       payload
@@ -307,7 +329,8 @@ $("#endSaveBtn").addEventListener("click", async () => {
 (async function init(){
   try{
     await loadState();
-    if (state && state.consent){
+    if (state && (state.consent || hasLocalConsent())){
+      state.consent = true;
       $("#consentCard").style.display = "none";
       $("#ratingCard").style.display = "";
       await loadClip();
@@ -333,6 +356,7 @@ $("#consentBtn").addEventListener("click", async () => {
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({ token, agreed: true })
     });
+    setLocalConsent();
     await loadState();
     $("#consentCard").style.display = "none";
     $("#ratingCard").style.display = "";

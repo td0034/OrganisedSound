@@ -26,31 +26,34 @@
         </div>
         <div class="card-body">
           <div class="field">
-            <label>Study information (summary)</label>
+            <label>Study information</label>
             <div class="help">
               You will watch and rate a set of short audiovisual clips generated with an experimental instrument.
-              Some clips were composed under different access conditions (audio-only, visual-only, or audiovisual).
               Clips show the LED panel output with the instrument audio; no participants are shown.
             </div>
             <div class="help" style="margin-top:8px;">
-              Expect approximately <span id="clipCount">—</span> clips, each around 1–2 minutes. Please allow about 1–2 hours to complete all ratings.
+              Expect approximately <span id="clipCount">—</span> clips, each around 1–2 minutes. Clips appear in a random order.
+              Please allow about 1–2 hours to complete all ratings.
             </div>
             <div class="help" style="margin-top:8px;">
               Participation is voluntary. You can stop at any time. If you wish to withdraw your ratings, contact the researcher within 5 days.
             </div>
-            <div class="help" style="margin-top:8px;">
-              Researcher: t.didiotcook@gmail.com. Independent contact: research-governance@bristol.ac.uk.
-            </div>
           </div>
           <div class="field">
-            <label>Example questions (per clip)</label>
-            <div class="help">You will rate items such as:</div>
+            <label>What you will be asked (per clip)</label>
+            <div class="help">Each clip uses 1–7 ratings and a few multiple-choice items:</div>
             <ul class="help" style="margin:6px 0 0 18px;">
-              <li>Preference, coherence/legibility, novelty/interest</li>
-              <li>Fusion/equality, constructive vs destructive interference, overload</li>
-              <li>Perceived human steering, inferred structure/process</li>
-              <li>Attention dominance (sound vs light) and a condition guess</li>
+              <li>I like this clip.</li>
+              <li>Coherence/legibility and novelty/interest.</li>
+              <li>Fusion, constructive/destructive interference, and overload.</li>
+              <li>Inferred structure/process and perceived human steering.</li>
+              <li>Which modality dominated your attention.</li>
+              <li>Which composition condition you think it came from.</li>
+              <li>Optional comments.</li>
             </ul>
+            <div class="help" style="margin-top:8px;">
+              End of session: a short note on your favourite clip and how you think the system is operated.
+            </div>
           </div>
           <div class="field">
             <label>Consent</label>
@@ -74,7 +77,6 @@
         <div class="card-body">
           <div class="field">
             <label>Clip</label>
-            <div class="help" id="clipMeta">—</div>
             <video id="video" controls preload="metadata"
                    style="width:100%; border-radius:12px; border:1px solid var(--line); background:#000">
             </video>

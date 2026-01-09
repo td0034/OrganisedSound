@@ -14,6 +14,10 @@ async function api(path, opts){
 $("#createBtn").addEventListener("click", async () => {
   try{
     const label = ($("#raterLabel").value || "").trim();
+    if (!label){
+      msg("Please enter a rater label before creating a session.", "error");
+      return;
+    }
     const r = await api("/api/session/create", {
       method:"POST",
       headers: {"Content-Type":"application/json"},

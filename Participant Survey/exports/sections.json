@@ -498,6 +498,23 @@
     "updated_at": "2026-01-05T12:41:25.508775+00:00"
   },
   {
+    "participant_id": "5747E",
+    "section_key": "block_A_pre",
+    "payload": {
+      "A_1": "4",
+      "A_2": "5",
+      "A_3": "4",
+      "A_4": "5",
+      "A_5": "4",
+      "A_6": "2",
+      "A_7": "2",
+      "aim": "A mix / unsure",
+      "strategy": "",
+      "preset_id": "5747E_A_20260109_153659"
+    },
+    "updated_at": "2026-01-09T15:36:59.009305+00:00"
+  },
+  {
     "participant_id": "3456D",
     "section_key": "block_A_post",
     "payload": {
@@ -1764,6 +1781,23 @@
     "updated_at": "2026-01-07T12:21:46.545534+00:00"
   },
   {
+    "participant_id": "5747E",
+    "section_key": "block_C_pre",
+    "payload": {
+      "A_1": "6",
+      "A_2": "5",
+      "A_3": "4",
+      "A_4": "5",
+      "A_5": "6",
+      "A_6": "1",
+      "A_7": "5",
+      "aim": "Stability/clarity",
+      "strategy": "",
+      "preset_id": "5747E_C_20260109_151543"
+    },
+    "updated_at": "2026-01-09T15:15:43.909699+00:00"
+  },
+  {
     "participant_id": "4069S",
     "section_key": "block_A_post",
     "payload": {
@@ -1978,6 +2012,34 @@
     "updated_at": "2026-01-07T15:53:50.331995+00:00"
   },
   {
+    "participant_id": "5747E",
+    "section_key": "block_C_post",
+    "payload": {
+      "B_1": "4",
+      "B_2": "6",
+      "B_3": "6",
+      "B_4": "6",
+      "B_5": "2",
+      "B_6": "2",
+      "B_7": "4",
+      "B_8": "4",
+      "B_9": "4",
+      "B_10": "2",
+      "B_11": "4",
+      "B_12": "1",
+      "preset_id": "5747E_C_20260109_151543",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Life Length",
+        "Scale"
+      ],
+      "interference_notes": "not really - would need to play it more, it might do, ",
+      "expectation_vs_outcome": "not particularly - at the beginning i thought it was a bit boring but when it got into the different notes and the speed i did rather like it - don't think i could reproduce it ever as its not in my head, not surre sure that i could identify it from a bunch of the other. i wanted to be able to get the ending to resonate and tail off more"
+    },
+    "updated_at": "2026-01-09T15:23:34.107590+00:00"
+  },
+  {
     "participant_id": "6770L",
     "section_key": "end",
     "payload": {
@@ -2181,5 +2243,126 @@
       "dyad_done": "No"
     },
     "updated_at": "2026-01-07T19:23:38.381800+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "meta",
+    "payload": {
+      "order": "C\u2192A\u2192B",
+      "meta_notes": "",
+      "session_type": "solo",
+      "participant_id": "5747E"
+    },
+    "updated_at": "2026-01-09T15:13:08.033584+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "background",
+    "payload": {
+      "age_range": "65+",
+      "color_deficiency": "0",
+      "light_sensitivity": "0",
+      "musical_experience": "Moderate (regular practice)",
+      "theory_familiarity": "Basic",
+      "perceptual_comments": "",
+      "tonnetz_familiarity": "No",
+      "generative_experience": "No"
+    },
+    "updated_at": "2026-01-09T15:14:16.988139+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "block_A_post",
+    "payload": {
+      "B_1": "6",
+      "B_2": "5",
+      "B_3": "5",
+      "B_4": "5",
+      "B_5": "2",
+      "B_6": "2",
+      "B_7": "4",
+      "B_8": "7",
+      "B_9": "1",
+      "B_10": "4",
+      "B_11": "5",
+      "B_12": "1",
+      "preset_id": "5747E_A_20260109_153659",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Loop Length",
+        "Life Length"
+      ],
+      "interference_notes": "I was quite suprised in how the sound/visual/speed fitted together, as I has no idea how it would sound when I was making it\n",
+      "expectation_vs_outcome": "quite surprising - much better than i thought it would be - didnt have th urge to turn it off after 15seconds, the connection between the audio and visuals isnt in my head - i had no idea how it was going to turn out but still quite please with how turned out"
+    },
+    "updated_at": "2026-01-09T15:45:07.387908+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "block_B_pre",
+    "payload": {
+      "A_1": "6",
+      "A_2": "3",
+      "A_3": "4",
+      "A_4": "4",
+      "A_5": "4",
+      "A_6": "2",
+      "A_7": "2",
+      "aim": "A mix / unsure",
+      "strategy": "",
+      "preset_id": "5747E_B_20260109_155802"
+    },
+    "updated_at": "2026-01-09T15:58:02.468160+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "block_B_post",
+    "payload": {
+      "B_1": "3",
+      "B_2": "2",
+      "B_3": "5",
+      "B_4": "4",
+      "B_5": "4",
+      "B_6": "2",
+      "B_7": "4",
+      "B_8": "6",
+      "B_9": "2",
+      "B_10": "4",
+      "B_11": "2",
+      "B_12": "1",
+      "preset_id": "5747E_B_20260109_155802",
+      "param_other": "",
+      "param_influence": [
+        "Rate",
+        "Loop Length",
+        "Life Length"
+      ],
+      "interference_notes": "I found the audio more interesting/coherent than the visuals",
+      "expectation_vs_outcome": "No idea! On viewing, I felt the visuals were a bit sparse, but the sound was spacious\n"
+    },
+    "updated_at": "2026-01-09T16:03:51.631122+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "end",
+    "payload": {
+      "rank_A": "2",
+      "rank_B": "3",
+      "rank_C": "1",
+      "one_change": "No idea! But overall, it went better than I thought it would - I had no idea what to expect...",
+      "reflection": "It helps if you can hear the audio in your head while usinf the system.  I felt more in control when using both at the same time, but was pleased and a bit surprised with the result of the audio only piece",
+      "biggest_mismatch": "B",
+      "most_intermedial": "C"
+    },
+    "updated_at": "2026-01-09T16:12:00.380092+00:00"
+  },
+  {
+    "participant_id": "5747E",
+    "section_key": "dyad_gate",
+    "payload": {
+      "dyad_done": "No"
+    },
+    "updated_at": "2026-01-09T16:12:10.626771+00:00"
   }
 ]

@@ -49,12 +49,18 @@ def write_export(filename: str, content: str) -> None:
     (EXPORTS_PATH / filename).write_text(content, encoding="utf-8")
 
 def build_ratings_csv(db: OrmSession) -> str:
-    rows = db.execute(select(Rating)).scalars().all()
+    rows = db.execute(
+        select(Rating, Session.rater_label, Clip.filename)
+        .join(Session, Session.token == Rating.token, isouter=True)
+        .join(Clip, Clip.clip_id == Rating.clip_id, isouter=True)
+    ).all()
     buf = io.StringIO()
     w = csv.writer(buf)
     w.writerow([
         "token",
+        "rater_label",
         "clip_id",
+        "clip_filename",
         "watched_complete",
         "watch_progress_sec",
         "duration_sec",
@@ -64,10 +70,12 @@ def build_ratings_csv(db: OrmSession) -> str:
         "payload_json",
         "updated_at"
     ])
-    for r in rows:
+    for r, rater_label, clip_filename in rows:
         w.writerow([
             r.token,
+            rater_label or "",
             r.clip_id,
+            clip_filename or "",
             r.watched_complete,
             r.watch_progress_sec,
             r.duration_sec,
@@ -101,23 +109,35 @@ async def scan_clips_forever():
         return
     while True:
         try:
-            files = [p for p in CLIPS_DIR.iterdir() if p.is_file() and p.suffix.lower() in VIDEO_EXTS]
+            files = [
+                p
+                for p in CLIPS_DIR.iterdir()
+                if p.is_file() and p.suffix.lower() in VIDEO_EXTS
+            ]
             files.sort(key=lambda p: p.name.lower())
+            file_map = {p.name: p for p in files}
 
-            for fp in files:
-                sha = _sha256_file(fp)
-                size = fp.stat().st_size
+            with SessionLocal() as db:
+                existing = db.execute(select(Clip)).scalars().all()
+                existing_by_name = {c.filename: c for c in existing}
 
-                with SessionLocal() as db:
-                    existing = db.execute(select(Clip).where(Clip.filename == fp.name)).scalar_one_or_none()
-                    if existing is None:
-                        db.add(Clip(filename=fp.name, sha256=sha, filesize=size))
-                        db.commit()
+                for name, fp in file_map.items():
+                    sha = _sha256_file(fp)
+                    size = fp.stat().st_size
+
+                    clip = existing_by_name.get(name)
+                    if clip is None:
+                        db.add(Clip(filename=name, sha256=sha, filesize=size))
                     else:
-                        if existing.sha256 != sha or existing.filesize != size:
-                            existing.sha256 = sha
-                            existing.filesize = size
-                            db.commit()
+                        if clip.sha256 != sha or clip.filesize != size:
+                            clip.sha256 = sha
+                            clip.filesize = size
+
+                for clip in existing:
+                    if clip.filename not in file_map:
+                        db.delete(clip)
+
+                db.commit()
         except Exception:
             pass
 
@@ -155,14 +175,25 @@ def media(clip_id: int, request: Request, db: OrmSession = Depends(get_db)):
 
 @app.post("/api/session/create")
 def create_session(req: CreateSessionRequest, db: OrmSession = Depends(get_db)):
+    if not CLIPS_DIR.exists():
+        raise HTTPException(status_code=400, detail="CLIPS_DIR does not exist. Check the clips volume mount.")
+
+    rater_label = (req.rater_label or "").strip()
+    if not rater_label:
+        raise HTTPException(status_code=400, detail="Rater label is required.")
+
     clips = db.execute(select(Clip)).scalars().all()
+    clips = [c for c in clips if (CLIPS_DIR / c.filename).exists()]
     if not clips:
-        raise HTTPException(status_code=400, detail="No clips found. Add files to CLIPS_DIR and wait for scan.")
+        raise HTTPException(
+            status_code=400,
+            detail="No clips found in CLIPS_DIR. Add files and wait for scan.",
+        )
     clip_ids = [c.clip_id for c in clips]
     random.shuffle(clip_ids)
 
     token = _make_token()
-    s = Session(token=token, rater_label=req.rater_label or "", playlist={"clip_ids": clip_ids, "consent": False})
+    s = Session(token=token, rater_label=rater_label, playlist={"clip_ids": clip_ids, "consent": False})
     db.add(s)
     db.commit()
 
@@ -176,6 +207,27 @@ def session_state(token: str, db: OrmSession = Depends(get_db)):
 
     playlist = s.playlist or {}
     clip_ids = playlist.get("clip_ids", [])
+    if clip_ids:
+        rows = db.execute(
+            select(Clip.clip_id, Clip.filename).where(Clip.clip_id.in_(clip_ids))
+        ).all()
+        filename_by_id = {cid: fname for cid, fname in rows}
+        seen = set()
+        filtered = []
+        for cid in clip_ids:
+            if cid in seen:
+                continue
+            fname = filename_by_id.get(cid)
+            if not fname:
+                continue
+            if (CLIPS_DIR / fname).exists():
+                filtered.append(cid)
+                seen.add(cid)
+        if filtered != clip_ids:
+            playlist["clip_ids"] = filtered
+            s.playlist = playlist
+            db.commit()
+        clip_ids = filtered
     ratings = db.execute(select(Rating).where(Rating.token == token)).scalars().all()
     done_ids = sorted({r.clip_id for r in ratings})
 

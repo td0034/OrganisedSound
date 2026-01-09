@@ -1,0 +1,70 @@
+Results section draft (paste into paper; fill placeholders from script output)
+4. Results
+4.1. Dataset and completeness
+
+A total of 8 participants completed the solo study, each producing three recorded outcomes corresponding to the three block conditions: A (visual-only; no access to sound during composition), B (audio-only; no access to visuals during composition), and C (audiovisual; access to both sound and visuals during composition). After each block, participants completed the pre-reveal questionnaire (Part A), then were played back their recorded 1–2 minute composition with both modalities present, and completed the post-reveal questionnaire (Part B).
+
+Across all participants, 24 block-level outcomes were captured (24 expected). Missingness was low (0.0% of Likert items missing overall), and analyses were therefore conducted using within-participant, pairwise-complete data per item (i.e., Friedman/Wilcoxon tests performed only on participants with complete responses across A/B/C for that item).
+
+4.2. Preference and perceived “most intermedial” outcome
+
+Participants provided an end-of-session ranking of their three outcomes. The audiovisual (C) outcome was most frequently ranked first, selected by 7/8 participants (87.5%), compared with A: 0/8 and B: 1/8 (Figure 1). Participants also indicated which outcome felt “most intermedial”; again, C dominated (6/8, 75.0%), with fewer participants selecting A (0) or B (1).
+
+These ranking results provide a compact behavioural summary: participants tended to prefer outcomes created with simultaneous access to both sensory modalities during composition, and judged those outcomes as more strongly occupying an intermedial “in-between” space.
+
+Figure 1. End-of-session rank-1 preference and “most intermedial” counts by condition (A/B/C).
+
+4.3. Pre-reveal composition experience (Part A)
+
+Part A assessed experience during composition under the modality constraint (before replay). Steerability (A_3) differed across conditions (Friedman test: χ²(2) = 8.857, p = 0.0119, Kendall’s W = 0.554). Pairwise comparisons did not survive Holm correction; descriptively A and C were higher than B (medians: A=6, C=5, B=4) (Figure 2). Frustration/unpredictability (A_6) did not vary by condition (Friedman: χ²(2) = 0.267, p = 0.875), and pairwise comparisons were non-significant (medians: A=3, B=3.5, C=4) (Figure 3).
+
+Two additional pre-reveal patterns help interpret how participants adapted to modality deprivation. First, intention clarity (A_2) and perceived ability to enact intention (A_3) tended to co-vary across conditions (Spearman within-participant pooled: ρ = 0.743, p = 3.17e-05), suggesting that the constraint primarily affected participants’ ability to form and pursue a stable goal. Second, “useful surprise” (A_5) remained comparatively high across conditions (medians: A=5, B=5, C=6), supporting the design premise that the system retains generative interest even when one modality is withheld.
+
+Figure 2. A_3 (Able to steer toward intention) by condition.
+Figure 3. A_6 (Unpredictable/frustrating) by condition.
+
+4.4. Post-reveal intermedial perception (Part B): fusion, equality, coherence
+
+Part B probed participants’ perception of the recorded audiovisual replay after the modality constraint was lifted. The three “intermedial space” core measures—fusion (B_1), balance/equality (B_2), and coherence/legibility (B_3)—showed modest condition sensitivity: B_1: χ²(2)=5.04, p=0.080; B_2: χ²(2)=0.778, p=0.678; B_3: χ²(2)=3.263, p=0.196. Fusion (B_1) was higher in B/C than A (medians: A=4, B=6.5, C=6), while equality (B_2) and coherence (B_3) were broadly similar across conditions (medians ~5.5–6) (Figure 4).
+
+Notably, the post-reveal results indicate that participants’ subsequent interpretation of the audiovisual whole was shaped by how they composed under constraint. Composing with only one modality did not simply reduce overall quality; instead, it altered perceived cross-modal causal stories and interpretive alignment during replay (see also Section 4.6).
+
+Figure 4. B_1 (fusion), B_2 (equality), and B_3 (coherence) by condition.
+
+4.5. Intermedial interference: constructive, destructive, and overload
+
+Participants’ judgements of intermedial interference differentiated between constructive reinforcement (B_4), destructive competition (B_5), and perceptual overload (B_6). Across conditions, constructive interference remained high relative to destructive interference (B_4 medians=6 across A/B/C vs B_5 medians=1.5–2.0), while overload was low overall with a slight uptick in audio-only (B) (Friedman B_6: χ²(2)=1.043, p=0.593). Figure 5 summarises these relationships.
+
+Free-text descriptions support these quantitative patterns: participants commonly described constructive interference as “locking in” of motion and phrasing, while destructive interference was typically framed as masking or contradiction (e.g., “the visuals imply a build that the audio doesn’t deliver”). Overload descriptions frequently referenced density and temporal rate, aligning with the parameter-influence data in Section 4.7.
+
+Figure 5. B_4 (constructive interference), B_5 (destructive interference), B_6 (overload) by condition.
+
+4.6. Modality-cue reliance and productive “misreadings”
+
+Two items operationalised cue reliance: reliance on visual pattern cues (B_11) and reliance on Tonnetz/music-theory expectations (B_12). As expected, reliance on visual pattern cues was highest when participants composed with visuals available (A and C) and lowest in the audio-only condition (B) (Friedman B_11: χ²(2)=12.621, p=0.00182; Figure 6). Reliance on Tonnetz/music-theory expectations showed a distinct pattern (Friedman B_12: χ²(2)=2.947, p=0.229), with medians increasing from A=1 to B=2 to C=3.5 (trend only).
+
+This divergence is analytically useful: it suggests that participants do not necessarily approach the Tonnetz as a strict harmonic map. Instead, when composing visually (and especially under time pressure), the Tonnetz is often treated as a patterning surface whose structure invites interpretation without requiring formal theoretical adherence. In other words, the interface can elicit productive overfitting—a creative “misreading” that nonetheless yields coherent outcomes upon audiovisual replay. This aligns with the broader motivation to examine how instrument design can open a space for creativity by permitting multiple interpretive strategies.
+
+Figure 6. B_11 (visual-cue reliance) and B_12 (Tonnetz/theory reliance) by condition.
+
+4.7. Parameter steering strategies (self-reported)
+
+Participants selected which parameters most influenced their outcomes in each block. Across all conditions, the most frequently cited parameters were Rate, Scale, Life Length, Max Neighbours, and Loop On/Off. However, parameter influence differed by modality constraint: visual-only (A) emphasised Rate, Max Neighbours, and Max Population; audio-only (B) emphasised Scale and Rate (with Life Length/Loop On/Off next); and audiovisual (C) emphasised Scale and Rate (with Life Length/Loop On/Off next) (Figure 7).
+
+This supports a simple interpretation: under visual deprivation, participants were more likely to steer using harmonic admissibility (scale/pitch-class constraints) and temporal feel, whereas under audio deprivation, participants relied more on density, persistence, and spatial motion in the light field. With both modalities available, participants balanced these strategies, selecting parameters that simultaneously stabilised perceptual coherence and retained generative novelty.
+
+Figure 7. Frequency of “most influential parameters” selections by condition.
+
+4.8. Addendum reflections (design implications and PhD-level framing)
+
+The addendum questions extend the Organised Sound-focused results into design implications relevant to the broader programme of developing tools that support solo and collaborative music-making. Participants’ responses indicated:
+
+likely contexts of use clustered around [TODO: analyze addendum contexts];
+
+desired changes prioritised [TODO: analyze addendum change requests];
+
+authorship attributions tended toward [TODO: analyze addendum authorship];
+
+and participant-proposed titles suggested [TODO: analyze addendum titles] (Tables A1–A3 in Supplementary Materials).
+
+These reflections directly support a thesis-level narrative in which evaluation does not simply “validate” a prototype; instead, it specifies an end-to-end development loop connecting hardware/algorithm design → interaction design iteration → empirical evaluation → actionable design requirements for multisensory, potentially collaborative instruments.
