@@ -138,5 +138,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-10T17:18:53.706015+00:00"
+  },
+  {
+    "token": "2d7296df02f5bd7ff095f8b8304d3dc7",
+    "rater_label": "002",
+    "clip_id": 17,
+    "clip_filename": "5344J_B_2026-01-05_17-27-06.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 71.033333,
+    "duration_sec": 71.033333,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "unsure",
+    "payload": {
+      "R_1": "4",
+      "R_2": "3",
+      "R_3": "5",
+      "R_4": "4",
+      "R_5": "4",
+      "R_6": "4",
+      "R_7": "3",
+      "R_8": "1",
+      "R_9": "4",
+      "comments": "",
+      "attention": "Balanced",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-10T20:56:20.935945+00:00"
   }
 ]
