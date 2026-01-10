@@ -110,5 +110,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-10T16:53:43.917080+00:00"
+  },
+  {
+    "token": "2d7296df02f5bd7ff095f8b8304d3dc7",
+    "rater_label": "002",
+    "clip_id": 9,
+    "clip_filename": "4069S_C_2026-01-07_11-42-07.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 75.516667,
+    "duration_sec": 75.516667,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "5",
+      "R_9": "7",
+      "comments": "",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-10T17:18:53.706015+00:00"
   }
 ]
