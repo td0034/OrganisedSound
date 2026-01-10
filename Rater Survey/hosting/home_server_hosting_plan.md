@@ -15,9 +15,10 @@ This avoids exposing the session-creation page publicly and keeps the rater labe
 
 ## Server configuration
 ### 1) Ports and domain
-- Run the web container behind a reverse proxy (Caddy/Traefik/Nginx).
+- Option A (recommended): run the web container behind a reverse proxy (Caddy/Traefik/Nginx).
 - Serve at the root of a domain or subdomain (e.g., `https://raters.yourdomain.com`).
 - Ensure the proxy forwards `Range` requests for video playback.
+- Option B (HTTP-only domain): publish the app directly on `http://<domain>:18080` and forward port `18080` in your router.
 - Do not expose the Postgres port externally.
 
 ### 2) Volumes and persistence
@@ -48,10 +49,12 @@ Bind mount these paths so data survives restarts:
 1) Run the app locally on your laptop.
 2) Create sessions and copy links to raters.
 3) Store a local list that maps `rater_label` -> `session link`.
+4) If generating links via script, use the live base URL:
+   - `python Rater\\ Survey/hosting/generate_session_links.py --base-url http://55gpt.ddns.net:18080`
 
 ### B) Host only the rater links
 - On the server, keep the app running and respond to incoming session URLs.
-- Ensure the domain is correct in the links you send.
+- Ensure the domain/port in the links you send matches the server (e.g., `http://55gpt.ddns.net:18080`).
 
 ### C) Add new clips
 - Upload new clips into `trimmed_clips` on the server.

@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("Rater Survey/hosting/session_links_001_100.txt"),
+        default=Path("Rater Survey/hosting/session_links_001_100.csv"),
         help="Output path for the links file.",
     )
     return parser.parse_args()
@@ -68,12 +68,12 @@ def main() -> int:
         link = share_url
         if share_url.startswith("/"):
             link = f"{base_url}{share_url}"
-        rows.append((label, res.get("token", ""), link, res.get("total", "")))
+        rows.append((label, res.get("token", ""), link))
 
-    with args.output.open("w", encoding="utf-8") as handle:
-        handle.write("rater_label\ttoken\tsession_link\tclip_total\n")
+    with args.output.open("w", encoding="utf-8", newline="") as handle:
+        handle.write("rater_label,token,session_link\n")
         for row in rows:
-            handle.write("\t".join(str(item) for item in row) + "\n")
+            handle.write(",".join(str(item) for item in row) + "\n")
 
     print(f"Wrote {len(rows)} links to {args.output}")
     return 0
