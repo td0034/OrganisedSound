@@ -30,7 +30,7 @@ $("#createBtn").addEventListener("click", async () => {
     $("#result").style.display = "";
     msg(`Session created (${r.total} clips).`);
   }catch(e){
-    msg("Failed to create session. Ensure clips exist in ./clips and wait for scan.", "error");
+    msg("Failed to create session. Ensure clips exist in the mounted clips folder and wait for scan.", "error");
   }
 });
 

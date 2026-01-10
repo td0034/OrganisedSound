@@ -25,7 +25,7 @@ services:
       TOKEN_SECRET: "CHANGE_ME_TO_A_LONG_RANDOM_STRING"
       EXPORTS_DIR: /data/exports
     volumes:
-      - ./clips_square:/data/clips:ro
+      - ./trimmed_clips:/data/clips:ro
       - ./exports:/data/exports
     depends_on:
       db:

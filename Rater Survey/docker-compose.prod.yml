@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-raterdb}
+      POSTGRES_USER: ${POSTGRES_USER:-rater}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-rater} -d ${POSTGRES_DB:-raterdb}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  web:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-rater}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-raterdb}
+      APP_TITLE: ${APP_TITLE:-Audiovisual Clip Ratings}
+      CLIPS_DIR: /data/clips
+      CLIPS_SCAN_SECONDS: ${CLIPS_SCAN_SECONDS:-20}
+      TOKEN_SECRET: ${TOKEN_SECRET:?Set TOKEN_SECRET in .env}
+      EXPORTS_DIR: /data/exports
+    volumes:
+      - ./trimmed_clips:/data/clips:ro
+      - ./exports:/data/exports
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-18080}:8080"
+
+volumes:
+  pgdata:

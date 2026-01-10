@@ -54,5 +54,5 @@ Use `--overwrite` to replace existing outputs:
 python "Rater Survey/clip_cropping/crop_clips.py" --overwrite
 ```
 
-## Using the cropped clips in the survey
-The survey app reads clips from `CLIPS_DIR` in `Rater Survey/docker-compose.yml`. To use the cropped clips, update the volume mapping to point at `./clips_square` (and keep `CLIPS_DIR` as `/data/clips`).
+## Using clips in the survey
+The survey app reads clips from `CLIPS_DIR` in `Rater Survey/docker-compose.yml`. To use cropped clips, map `./clips_square` to `/data/clips`. To use trimmed clips (current default), map `./trimmed_clips` to `/data/clips`.

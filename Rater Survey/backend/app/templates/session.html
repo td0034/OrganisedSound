@@ -32,8 +32,14 @@
               Clips show the LED panel output with the instrument audio; no participants are shown.
             </div>
             <div class="help" style="margin-top:8px;">
+              Three composition conditions were filmed: audio-only, video-only, or both audio and video.
+            </div>
+            <div class="help" style="margin-top:8px;">
               Expect approximately <span id="clipCount">—</span> clips, each around 1–2 minutes. Clips appear in a random order.
               Please allow about 1–2 hours to complete all ratings.
+            </div>
+            <div class="help" style="margin-top:8px;">
+              Please ensure your device audio is on and at a comfortable volume.
             </div>
             <div class="help" style="margin-top:8px;">
               Participation is voluntary. You can stop at any time. If you wish to withdraw your ratings, contact the researcher within 5 days.
@@ -90,11 +96,11 @@
             <button id="saveOnlyBtn" class="btn" type="button" disabled>Save only</button>
             <button id="prevBtn" class="btn subtle" type="button">Previous clip</button>
           </div>
+          <div id="saveMessage" class="message"></div>
         </div>
 
         <div class="card-footer">
           <a class="btn subtle" href="/" style="text-decoration:none; text-align:center;">Back to home</a>
-          <a class="btn subtle" href="/api/export/ratings.csv" target="_blank" style="text-decoration:none; text-align:center;">Export ratings CSV</a>
         </div>
       </div>
 
@@ -106,6 +112,7 @@
         <div class="card-body">
           <form id="endForm"></form>
           <button id="endSaveBtn" class="btn primary" type="button">Save end notes</button>
+          <div id="endMessage" class="message"></div>
         </div>
       </div>
     </main>

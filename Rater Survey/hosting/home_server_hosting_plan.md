@@ -22,9 +22,14 @@ This avoids exposing the session-creation page publicly and keeps the rater labe
 
 ### 2) Volumes and persistence
 Bind mount these paths so data survives restarts:
-- `./clips_square` (read-only)
+- `./trimmed_clips` (read-only)
 - `./exports`
 - Postgres data (`pgdata` volume)
+
+### 2a) Production compose file
+- Use `docker-compose.prod.yml` on the server for safer defaults (no DB port exposure, restart policy, env-based secrets).
+- Copy `Rater Survey/.env.example` to `Rater Survey/.env` and set `POSTGRES_PASSWORD` + `TOKEN_SECRET`.
+- Run: `docker compose -f docker-compose.prod.yml up --build`
 
 ### 3) Secrets and access
 - Set `TOKEN_SECRET` to a long random value.
@@ -49,9 +54,9 @@ Bind mount these paths so data survives restarts:
 - Ensure the domain is correct in the links you send.
 
 ### C) Add new clips
-- Upload new clips into `clips_square` on the server.
+- Upload new clips into `trimmed_clips` on the server.
 - The app scan will pick up new files automatically within ~20 seconds.
-- If you need to regenerate crops, do that locally and then sync the folder.
+- If you need to regenerate trims or crops, do that locally and then sync the folder.
 
 ### D) Backups
 - Regularly download `exports/ratings.csv` to your laptop.
@@ -66,6 +71,6 @@ Bind mount these paths so data survives restarts:
 - [ ] Domain/subdomain set and TLS enabled.
 - [ ] `/` not publicly accessible (or protected).
 - [ ] `TOKEN_SECRET` and DB credentials updated.
-- [ ] `clips_square` and `exports` volumes mounted.
+- [ ] `trimmed_clips` and `exports` volumes mounted.
 - [ ] Test a session link end-to-end.
 - [ ] Confirm `exports/ratings.csv` is updating.

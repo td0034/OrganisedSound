@@ -6,6 +6,7 @@ let state = null;
 
 let watchedComplete = false;
 let maxProgress = 0;
+let seekGuard = false;
 const consentKey = `consent:${token}`;
 
 const BEST_CONTEXT_OPTIONS = [
@@ -19,6 +20,20 @@ const BEST_CONTEXT_OPTIONS = [
 function msg(t, kind="info"){
   $("#message").textContent = t || "";
   $("#message").style.color = (kind === "error") ? "var(--warn)" : "var(--muted)";
+}
+
+function msgSave(t, kind="info"){
+  const el = $("#saveMessage");
+  if (!el) return;
+  el.textContent = t || "";
+  el.style.color = (kind === "error") ? "var(--warn)" : "var(--muted)";
+}
+
+function msgEnd(t, kind="info"){
+  const el = $("#endMessage");
+  if (!el) return;
+  el.textContent = t || "";
+  el.style.color = (kind === "error") ? "var(--warn)" : "var(--muted)";
 }
 
 function hasLocalConsent(){
@@ -129,25 +144,16 @@ function buildRatingForm(){
 function buildEndForm(){
   $("#endForm").innerHTML = `
     <div class="field">
-      <label>Top 3 clip numbers (most preferred)</label>
-      <div class="help">Enter the clip numbers shown in the header (e.g., 12). Optional.</div>
-      <div class="row">
-        <div class="field"><label>1st</label><input type="text" name="top1" placeholder="e.g., 12" /></div>
-        <div class="field"><label>2nd</label><input type="text" name="top2" placeholder="e.g., 7" /></div>
-        <div class="field"><label>3rd</label><input type="text" name="top3" placeholder="e.g., 3" /></div>
-      </div>
+      <label>What did you like most about your highest rated clip(s)? (optional)</label>
+      <textarea name="highest_rated_notes" placeholder="Short notes…"></textarea>
     </div>
     <div class="field">
-      <label>What made clips feel fused/unfused? (optional)</label>
-      <textarea name="fusion_notes" placeholder="Short notes…"></textarea>
+      <label>What did you like least about your lowest rated clip(s)? (optional)</label>
+      <textarea name="lowest_rated_notes" placeholder="Short notes…"></textarea>
     </div>
     <div class="field">
-      <label>What made your favourite clip most memorable or interesting? (optional)</label>
-      <textarea name="favorite_memorable" placeholder="Short notes…"></textarea>
-    </div>
-    <div class="field">
-      <label>How do you think this system is operated? (optional)</label>
-      <textarea name="system_operation" placeholder="Short notes…"></textarea>
+      <label>Any further comments / remarks? (optional)</label>
+      <textarea name="further_comments" placeholder="Short notes…"></textarea>
     </div>
   `;
 }
@@ -164,6 +170,7 @@ function collectForm(formEl){
 function resetWatch(){
   watchedComplete = false;
   maxProgress = 0;
+  seekGuard = false;
   $("#ratingForm").style.display = "none";
   $("#saveNextBtn").disabled = true;
   $("#saveOnlyBtn").disabled = true;
@@ -226,15 +233,31 @@ async function loadClip(){
     maxProgress = Math.max(maxProgress, video.currentTime);
   };
 
+  video.onseeking = () => {
+    if (seekGuard || watchedComplete) return;
+    if (video.currentTime > maxProgress + 0.25){
+      seekGuard = true;
+      video.currentTime = maxProgress;
+      msg("Skipping ahead is disabled. Please watch the clip in order.", "error");
+      setTimeout(() => { seekGuard = false; }, 0);
+    }
+  };
+
   video.onended = () => {
     watchedComplete = true;
+    seekGuard = false;
+    if (isFinite(video.duration)) {
+      maxProgress = Math.max(maxProgress, video.duration);
+    }
     unlockRatings();
   };
 
   msg("Please watch to the end to unlock the rating form.");
+  msgSave("");
 }
 
 async function saveRating(advance){
+  msgSave("");
   const video = $("#video");
   const duration = isFinite(video.duration) ? video.duration : 0;
 
@@ -254,7 +277,7 @@ async function saveRating(advance){
   const bestContext = payload.best_context || null;
 
   if (!perceivedAgency){
-    msg("Please complete all ratings before saving.", "error");
+    msgSave("Please complete all ratings before saving.", "error");
     return;
   }
 
@@ -276,6 +299,7 @@ async function saveRating(advance){
   });
 
   msg("Saved.");
+  msgSave("");
   if (advance){
     await loadState();
     const idx = currentIndex();
@@ -287,6 +311,7 @@ async function saveRating(advance){
     } else {
       $("#endCard").style.display = "";
       buildEndForm();
+      msgEnd("");
       msg("All clips rated. Optional: complete end notes below.");
     }
   }
@@ -313,15 +338,16 @@ $("#prevBtn").addEventListener("click", async () => {
 
 $("#endSaveBtn").addEventListener("click", async () => {
   try{
+    msgEnd("");
     const payload = collectForm($("#endForm"));
     await api("/api/session/end", {
       method:"POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({ token, payload })
     });
-    msg("End notes saved. Thank you.");
+    msgEnd("End notes saved. Thank you.");
   }catch(e){
-    msg("Failed to save end notes: " + e.message, "error");
+    msgEnd("Failed to save end notes: " + e.message, "error");
   }
 });
 

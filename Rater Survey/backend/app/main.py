@@ -1,8 +1,8 @@
-import os, io, csv, hashlib, asyncio, random
+import os, io, csv, hashlib, asyncio, random, json
 from datetime import datetime, timezone
 from pathlib import Path
 from fastapi import FastAPI, Depends, Request, HTTPException
-from fastapi.responses import HTMLResponse, StreamingResponse
+from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session as OrmSession
@@ -50,9 +50,10 @@ def write_export(filename: str, content: str) -> None:
 
 def build_ratings_csv(db: OrmSession) -> str:
     rows = db.execute(
-        select(Rating, Session.rater_label, Clip.filename)
+        select(Rating, Session.rater_label, Clip.filename, SessionEnd.payload)
         .join(Session, Session.token == Rating.token, isouter=True)
         .join(Clip, Clip.clip_id == Rating.clip_id, isouter=True)
+        .join(SessionEnd, SessionEnd.token == Rating.token, isouter=True)
     ).all()
     buf = io.StringIO()
     w = csv.writer(buf)
@@ -68,9 +69,14 @@ def build_ratings_csv(db: OrmSession) -> str:
         "perceived_agency",
         "best_context",
         "payload_json",
+        "end_highest_rated_notes",
+        "end_lowest_rated_notes",
+        "end_further_comments",
+        "end_payload_json",
         "updated_at"
     ])
-    for r, rater_label, clip_filename in rows:
+    for r, rater_label, clip_filename, end_payload in rows:
+        end_payload = end_payload or {}
         w.writerow([
             r.token,
             rater_label or "",
@@ -83,15 +89,46 @@ def build_ratings_csv(db: OrmSession) -> str:
             r.perceived_agency,
             r.best_context or "",
             (r.payload or {}),
+            end_payload.get("highest_rated_notes", ""),
+            end_payload.get("lowest_rated_notes", ""),
+            end_payload.get("further_comments", ""),
+            end_payload,
             r.updated_at.isoformat() if r.updated_at else ""
         ])
     buf.seek(0)
     return buf.getvalue()
 
+def build_ratings_json(db: OrmSession) -> str:
+    rows = db.execute(
+        select(Rating, Session.rater_label, Clip.filename, SessionEnd.payload)
+        .join(Session, Session.token == Rating.token, isouter=True)
+        .join(Clip, Clip.clip_id == Rating.clip_id, isouter=True)
+        .join(SessionEnd, SessionEnd.token == Rating.token, isouter=True)
+    ).all()
+    out = []
+    for r, rater_label, clip_filename, end_payload in rows:
+        out.append({
+            "token": r.token,
+            "rater_label": rater_label or "",
+            "clip_id": r.clip_id,
+            "clip_filename": clip_filename or "",
+            "watched_complete": r.watched_complete,
+            "watch_progress_sec": r.watch_progress_sec,
+            "duration_sec": r.duration_sec,
+            "memorability": r.memorability,
+            "perceived_agency": r.perceived_agency,
+            "best_context": r.best_context,
+            "payload": (r.payload or {}),
+            "end_notes": (end_payload or {}),
+            "updated_at": r.updated_at.isoformat() if r.updated_at else ""
+        })
+    return json.dumps(out, indent=2)
+
 def update_exports(db: OrmSession) -> None:
     if EXPORTS_PATH is None:
         return
     write_export("ratings.csv", build_ratings_csv(db))
+    write_export("ratings.json", build_ratings_json(db))
 
 def _sha256_file(path: Path) -> str:
     h = hashlib.sha256()
@@ -326,11 +363,5 @@ def save_session_end(req: SaveSessionEndRequest, db: OrmSession = Depends(get_db
     else:
         existing.payload = req.payload
     db.commit()
+    update_exports(db)
     return {"ok": True}
-
-@app.get("/api/export/ratings.csv")
-def export_ratings_csv(db: OrmSession = Depends(get_db)):
-    csv_text = build_ratings_csv(db)
-    write_export("ratings.csv", csv_text)
-    return StreamingResponse(iter([csv_text]), media_type="text/csv",
-                             headers={"Content-Disposition": 'attachment; filename="ratings.csv"'})
