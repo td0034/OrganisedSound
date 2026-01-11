@@ -473,5 +473,61 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T15:47:34.978881+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 26,
+    "clip_filename": "7974C_B_2026-01-07_17-52-19.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 90.211,
+    "duration_sec": 90.211,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "workshop_education",
+    "payload": {
+      "R_1": "1",
+      "R_2": "6",
+      "R_3": "6",
+      "R_4": "4",
+      "R_5": "6",
+      "R_6": "7",
+      "R_7": "7",
+      "R_8": "4",
+      "R_9": "7",
+      "comments": "Sounded like lots of tiny humans warming up on percussion instruments and too busy and noisy for me.",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T15:51:58.512248+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 24,
+    "clip_filename": "6770L_C_2026-01-07_15-39-22.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 103.63,
+    "duration_sec": 103.63,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "5",
+      "R_2": "6",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "6",
+      "R_8": "7",
+      "R_9": "7",
+      "comments": "discordant pink notes on the outer edges spoilt my enjoyment of this clip. found the visuals fascinating especially as the hexagon started to form, wanted it to join up to make a full hexagon as opposed to half hexagon shape. Could anticipate the high pink notes as LED pattern appeared quickly.",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T15:57:45.780000+00:00"
   }
 ]
