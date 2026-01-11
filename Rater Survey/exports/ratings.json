@@ -724,5 +724,61 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T16:27:00.838942+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 15,
+    "clip_filename": "5220H_C_2026-01-05_20-04-01.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.546,
+    "duration_sec": 76.546,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "2",
+      "R_8": "4",
+      "R_9": "4",
+      "comments": "There is lots of sound in this clip. Like the way the tempo changes. Feels jazz like. Love the patterns of the visuals, almost \"C\" and reversed \"C\" shapes. ",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T16:30:59.549883+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 18,
+    "clip_filename": "5344J_C_2026-01-05_17-46-30.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.617,
+    "duration_sec": 76.617,
+    "memorability": null,
+    "perceived_agency": 2,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "4",
+      "R_2": "6",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "4",
+      "R_6": "3",
+      "R_7": "5",
+      "R_8": "4",
+      "R_9": "2",
+      "comments": "I really like the way this clip started and ended with a few subtle notes. It became too busy and discordant during the clip for me with those high pink notes on the outer edges but fab visuals. ",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T16:36:40.033562+00:00"
   }
 ]
