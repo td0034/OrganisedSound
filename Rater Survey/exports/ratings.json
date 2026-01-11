@@ -418,5 +418,60 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T15:38:44.976845+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 17,
+    "clip_filename": "5344J_B_2026-01-05_17-27-06.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 71.026,
+    "duration_sec": 71.026,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "3",
+      "R_2": "6",
+      "R_3": "6",
+      "R_4": "6",
+      "R_5": "6",
+      "R_6": "2",
+      "R_7": "3",
+      "R_8": "4",
+      "R_9": "4",
+      "comments": "lower notes made it feel calmer. Noted single LED then pattern of 2 LEDs repeated ",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T15:43:15.053863+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 30,
+    "clip_filename": "Default_Params_2026-01-09_14-23-48.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 69.8,
+    "duration_sec": 69.8,
+    "memorability": null,
+    "perceived_agency": 2,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "6",
+      "R_2": "6",
+      "R_3": "6",
+      "R_4": "6",
+      "R_5": "6",
+      "R_7": "1",
+      "R_8": "7",
+      "R_9": "2",
+      "comments": "Some harmonious sounds and matching LEDs. Didn't enjoy the random high notes as much as the lower melodious ones",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T15:47:34.978881+00:00"
   }
 ]
