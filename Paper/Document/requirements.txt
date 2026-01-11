@@ -1,0 +1,5 @@
+# No Python dependencies required.
+#
+# System dependencies for export:
+# - pandoc (docx + pdf)
+# - xelatex, lualatex, pdflatex, or tectonic (pdf)

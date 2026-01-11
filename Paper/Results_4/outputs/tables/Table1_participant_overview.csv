@@ -1,0 +1,10 @@
+participant_id,session_type,order,age_range,musical_experience,theory_familiarity,tonnetz_familiarity,generative_experience,color_deficiency,light_sensitivity,perceptual_comments
+1661J,solo,B→A→C,25–34,Some (informal),Basic,No,No,0,0,
+3483M,solo,B→C→A,45–54,Some (informal),Moderate,No,No,0,0,
+4069S,solo,C→B→A,35–44,None,None,Heard of it,No,0,0,
+4939Z,solo,C→A→B,25–34,High (advanced/degree/pro),High,No,Yes (moderate),0,0,Using speaker instead of headphones for audio output
+5220H,solo,A→C→B,35–44,Moderate (regular practice),Moderate,Heard of it,No,1,0,lil bit colour blind red green
+5344J,solo,A→B→C,35–44,Some (informal),Basic,No,No,0,0,
+5747E,solo,C→A→B,65+,Moderate (regular practice),Basic,No,No,0,0,
+6770L,solo,A→B→C,25–34,High (advanced/degree/pro),High,No,No,0,0,
+7974C,solo,B→A→C,35–44,Some (informal),None,No,No,0,0,

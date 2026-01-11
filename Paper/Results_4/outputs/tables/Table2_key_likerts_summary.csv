@@ -1,0 +1,4 @@
+Condition,Condition label,n_pre,n_post,A1 Satisfied with outcome,A3 Able to steer system,A5 Useful surprise,A6 Frustrating unpredictability,B1 Same underlying process,B2 Balanced modalities,B6 Overwhelming/overload,B7 Revealed modality matched expectation,B10 Strong system autonomy
+A,Visual-only,9,9,"5.00 [4.00, 6.00]","6.00 [4.00, 6.00]","5.00 [4.00, 6.00]","3.00 [2.00, 4.00]","4.00 [3.00, 6.00]","6.00 [2.00, 6.00]","2.00 [1.00, 2.00]","3.00 [3.00, 4.00]","4.00 [3.00, 5.00]"
+B,Audio-only,9,9,"6.00 [4.00, 6.00]","4.00 [3.00, 5.00]","5.00 [4.00, 6.00]","3.00 [2.00, 5.00]","6.00 [6.00, 7.00]","6.00 [3.00, 6.00]","2.00 [2.00, 3.00]","3.00 [2.00, 4.00]","4.00 [3.00, 5.00]"
+C,Audio+Visual,9,9,"6.00 [5.00, 6.00]","5.00 [5.00, 5.00]","6.00 [5.00, 6.00]","4.00 [3.00, 4.00]","6.00 [6.00, 6.00]","6.00 [3.00, 6.00]","2.00 [2.00, 2.00]","4.00 [4.00, 4.00]","5.00 [2.00, 5.00]"

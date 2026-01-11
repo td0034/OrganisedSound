@@ -1,0 +1,14 @@
+{
+  "N_participants": 9,
+  "N_blocks_total": 27,
+  "N_blocks_expected": 27,
+  "missing_pct": 0.0,
+  "pref_A_n": 0,
+  "pref_B_n": 1,
+  "pref_C_n": 8,
+  "most_intermedial_A_n": 0,
+  "most_intermedial_B_n": 1,
+  "most_intermedial_C_n": 7,
+  "A2A3_rho": 0.7199030803098151,
+  "A2A3_p": 2.304584640400746e-05
+}

@@ -1,0 +1,400 @@
+4. Results (skeleton)
+4.1. Dataset overview and completeness
+Participants. Solo study: N = [ ] (musical experience: none [ ], some [ ], moderate [ ], high [ ]). Dyad add-on: N_dyad = [ ] dyads.
+
+
+Trials captured.
+
+
+Solo: 3 conditions × N = [ ] final excerpts + baseline system-alone = [ ] excerpts.
+
+
+Dyad: [ ] excerpts.
+
+
+Missing data / exclusions.
+
+
+Questionnaire missingness: [ ].
+
+
+Technical failures (audio/video/logging): [ ].
+
+
+Any exclusions (and rationale): [ ].
+
+
+Data sources.
+Participant survey sections (background, meta, block A/B/C pre + post, end, dyad gate, dyad).
+Participant addendum (final reflections and broader usage context).
+Researcher field notes (sketchbook observations of confusion, frustration, and key moments).
+
+Table 1. Participant summary
+Columns: Participant ID, musical experience, generative familiarity, dyad participation (Y/N), condition order.
+
+Table 1a. Order distribution
+Counts for each block order (A→B→C, A→C→B, B→A→C, B→C→A, C→A→B, C→B→A).
+
+
+Table 2. Clip inventory
+Columns: Clip ID, source (participant/dyad/baseline), condition (hidden from raters), duration, end-preset ID.
+
+
+
+4.2. Manipulation integrity and condition compliance
+Purpose: demonstrate that modality constraints were actually enforced and perceived as intended.
+Self-report confirmation (post-block).
+
+
+Audio-only: proportion indicating they could not see panel: [ ]%.
+
+
+Visual-only: proportion indicating they could not hear audio: [ ]%.
+
+
+Qualitative check. Brief examples of participant strategies consistent with constraint (e.g., “I watched motion continuity” vs “I listened for density/phrasing”).
+
+
+(Optional) Figure 1. Condition compliance summary
+Simple bar chart or table (percent compliant).
+
+
+
+4.3. Solo study: within-subject effects of modality access
+This is your core quantitative spine: V vs A vs AV on your main constructs, with descriptive emphasis (medians, IQRs) given small N.
+4.3.1. Pre-reveal experience (Part A)
+Ratings: satisfaction (A_1), intention clarity (A_2), steerability (A_3), interface understanding (A_4), useful surprise (A_5), frustrating unpredictability (A_6), anticipated interest (A_7).
+Report per-condition descriptives and within-subject comparisons (Friedman + effect sizes; treat as exploratory).
+Figure 2. Pre-reveal ratings by condition (small multiples or ridge plots).
+
+4.3.2. Fusion and media equality (primary outcome)
+Report descriptive stats per condition:
+Fusion index (e.g., mean of B_1 + B_2; or your defined subscale):
+
+
+Visual-only: median [ ], IQR [ ]
+
+
+Audio-only: median [ ], IQR [ ]
+
+
+Audiovisual: median [ ], IQR [ ]
+
+
+Media equality (B_2 or subscale): [same format]
+
+
+Inferential:
+Friedman test across three conditions: χ²(df=2) = [ ], p = [ ], Kendall’s W = [ ].
+
+
+Post-hoc pairwise Wilcoxon signed-rank with Holm correction:
+
+
+AV vs V: p = [ ], r = [ ]
+
+
+AV vs A: p = [ ], r = [ ]
+
+
+V vs A: p = [ ], r = [ ]
+
+
+Figure 3. Fusion/equality by condition
+Box/violin plot with individual participant points overlaid.
+
+
+Interpretation bullets (fill later):
+Audiovisual access increased/decreased perceived fusion relative to deprived conditions.
+
+
+Visual-only vs audio-only differences suggest [visual primacy / sonic primacy / symmetry], with implications for sensory hierarchy.
+
+
+4.3.3. Constructive vs destructive intermedial interference
+Operationalise interference as two complementary measures:
+Constructive interference (B_4)
+
+
+Destructive interference (B_5, reverse-coded or treated separately)
+ Optionally compute a composite Interference Balance = Constructive − Destructive.
+
+
+Report:
+Descriptives and Friedman/Wilcoxon as above.
+
+
+Figure 4. Interference profile by condition
+Two plots or one plot showing constructive and destructive separately.
+
+
+Interpretation bullets:
+Deprivation conditions increased destructive interference because hidden modality produced mismatches at reveal, evidenced by [scores + quotes].
+
+
+Audiovisual access reduced contradiction or increased overload depending on [Rate/Population] settings.
+
+
+4.3.4. Agency, predictability, and steerability
+Report subscale Agency/Control (A_2–A_6, with reverse coding for unpredictability).
+Descriptives by condition
+
+
+Friedman + post-hocs
+
+
+Figure 5. Agency/control by condition
+Interpretation bullets:
+If visual-only yields higher agency than audio-only for novices, argue visuals provide a stronger “control model.”
+
+
+If audio-only yields higher agency for musicians, argue learned auditory schemas dominate.
+
+
+4.3.5. Novelty, coherence, and overload
+Report:
+Novelty/interest (A_7, plus rater novelty where available)
+
+
+Coherence (B_3)
+
+
+Overload (B_6, reverse-coded or separate)
+
+
+Analyses:
+Condition effects (Friedman + post-hocs)
+
+
+Note any novelty–coherence trade-off patterns.
+
+
+Figure 6. Novelty vs coherence trade-off
+Scatter per condition (Novelty on x, Coherence on y) with condition markers.
+
+
+Interpretation bullets:
+Evidence that the system supports coherence without collapsing novelty under [AV / deprived] conditions.
+
+
+Identify whether certain parameter regimes (e.g., high Rate, high Max Population, Extended neighbourhood) correlate with overload.
+
+
+
+4.3.6. Reveal effects and interpretation shift
+Expectation match (B_7) and interpretation change (B_8) by condition, including the audiovisual block.
+Use this to discuss cognitive load during performance vs post-hoc evaluation.
+Figure 7. Expectation match vs interpretation change (paired points per participant).
+
+4.3.7. Causal legibility and reliance cues
+Report B_9 (causal story), B_10 (system autonomy), B_11 (visual pattern reliance), B_12 (Tonnetz/theory reliance).
+Compare across conditions to indicate whether access bias shaped decision models.
+
+4.3.8. Parameter influence selections
+Frequency of parameter picks (param_influence) per condition; list top 3 per block.
+Table 3. Parameter influence frequency by condition.
+
+4.3.9. Block order and learning/fatigue effects
+Compare ratings by block position (first, second, third) irrespective of condition to test learning effects.
+Compare the six orderings for any systematic shifts (descriptive plots).
+Figure 8. Pre/post ratings by block position (1/2/3).
+
+4.3.10. Within-participant block profiles
+For each participant, plot A vs B vs C across key measures to capture inter-block contrasts and individual strategies.
+Use 2–3 short case vignettes to highlight distinct trajectories.
+
+4.4. Baseline control: system-alone vs participant-shaped outcomes
+This section ensures you can credibly claim participants meaningfully shaped the output.
+Compare external rater preference (and/or coherence) for baseline clips vs participant clips.
+
+
+If sample permits: compare participant self-rated agency in baseline (not applicable) vs participant clips indirectly via rater “intentionality” if included.
+
+
+Analyses:
+Mann–Whitney U (baseline vs participant clips) or mixed-effects model if you have enough raters/clips (optional; keep simple if time-limited).
+
+
+Report effect size (Cliff’s delta or r).
+
+
+Figure 9. External preference: baseline vs participant-shaped
+Box/violin plot, baseline vs all human-shaped (or by condition).
+
+
+Interpretation bullets:
+Human interaction yields higher perceived intentionality/coherence than baseline, supporting the claim that the instrument affords compositional control.
+
+
+
+4.5. Cross-linking experience to artefacts: participant ratings vs external rater ratings
+This is where you deliver the “triangulation” your design enables.
+4.5.1. Correlations between self-report and external perception
+For each clip, link:
+participant’s post-block ratings (e.g., coherence, fusion, agency)
+ to
+
+
+external rater ratings (preference, coherence, fusion/equality, overload).
+
+
+Analyses:
+Spearman correlations (ρ) with confidence intervals:
+
+
+Self coherence ↔ rater coherence: ρ = [ ]
+
+
+Self fusion ↔ rater fusion: ρ = [ ]
+
+
+Self agency ↔ rater “intentionality” (if included): ρ = [ ]
+
+
+Self overload ↔ rater overload: ρ = [ ]
+
+
+Figure 10. Self vs rater coherence (example)
+Scatter plot with trend line; annotate outliers.
+
+
+Interpretation bullets:
+Agreement supports that participants’ felt control maps to perceivable structure.
+
+
+Disagreements illustrate interference (e.g., participant feels fused; raters perceive dominance/competition).
+
+
+4.5.2. Rater reliability (minimum viable)
+Report inter-rater consistency:
+Cronbach’s alpha or ICC for key scales (preference, coherence, fusion).
+
+
+If you used forced-choice sets, report choice proportions and (optional) Kendall’s W.
+
+
+Table 4. Rater reliability
+Metrics per scale: alpha/ICC, N raters, N clips.
+
+
+
+4.6. Participant background and experience effects (exploratory)
+Compare ratings by musical experience, theory familiarity, generative/algorithmic experience, and Tonnetz familiarity.
+Given small N, use descriptive plots and grouped medians; note potential confounds with block order.
+Figure 11. Fusion/agency by experience group (strip + median line).
+
+4.7. Qualitative findings: strategies and perceived intermedial interference
+This is where you make the Organised Sound argument, anchored in participant language, reveal/reflection notes, and researcher field observations.
+Sources: strategy, expectation_vs_outcome, interference_notes, end reflection, one_change, and researcher field notes.
+Approach: light thematic coding with short quotes; optional word cloud as illustrative material only (not an analytic result).
+4.7.1. Strategies under modality deprivation
+Theme set (likely candidates; finalise after coding):
+Visual-only strategies: palette stabilisation; motion continuity; density shaping; loop-as-form.
+
+
+Audio-only strategies: density/rhythm shaping via Rate; harmonic gating via Scale; textural shaping via Life Length.
+
+
+Audiovisual strategies: synchronising perceived section boundaries; managing overload; resolving contradictions.
+
+
+Provide:
+2–3 short illustrative quotes per theme (keep each quote brief).
+
+
+Link themes to specific parameter moves where possible.
+Include 2–3 researcher field-note vignettes as critical incidents (e.g., obscured visuals plus reset state and the need for feedback to confirm parameters are taking effect).
+
+
+4.7.2. Taxonomy of interference events (constructive and destructive)
+Present a compact taxonomy grounded in your system (suggested headings):
+Temporal interference: perceived binding/phase alignment issues (often driven by Rate and asynchronous updates).
+
+
+Structural interference: disagreement between sonic form and visual form (often affected by Loop and Loop Length).
+
+
+Salience interference: one modality dominating attention (often influenced by Max Population / brightness density).
+
+
+Agency interference: inability to infer causality (“what I did” vs “what happened”), often tied to neighbourhood choice (Local/Extended) and neighbour thresholds.
+
+
+Table 5. Interference taxonomy with evidence
+Columns: interference type, operational description, typical parameter regime, representative quote, representative clip ID(s).
+
+
+
+4.8. Addendum insights (broader usage)
+Summarise addendum fields: authorship attribution, return likelihood, context of use, target users, suggested removals/additions, collaboration expectations, confidence to recreate.
+Table 6. Addendum response summary (counts/medians).
+
+4.9. Dyad study (exploratory): asymmetric-access collaboration
+Treat this as exploratory unless dyad N is robust.
+4.9.1. Outcome ratings: dyad vs solo
+Compare external rater ratings for dyad clips vs solo clips (and optionally vs baseline):
+Preference, coherence, fusion/equality, overload.
+
+
+Analyses:
+Mann–Whitney U (dyad vs solo), report effect sizes.
+
+
+If you matched dyads to participant skill levels, note that as a limitation/stratification.
+
+
+Figure 12. Dyad vs solo: rater fusion/equality
+Interpretation bullets:
+If dyads score higher on audio quality/coherence, this supports your hypothesis that visual coordination can scaffold musical outcomes for non-experts.
+
+
+If dyads score higher on fusion but not preference, interpret as increased structural legibility without necessarily increasing aesthetic appeal.
+
+
+4.9.2. Collaboration process themes
+From dyad reflections:
+How negotiation unfolded (colour language vs musical language)
+
+
+How disagreements were resolved
+
+
+Whether asymmetric access encouraged “equal media” thinking
+
+
+Table 7. Dyad process themes with clip anchors
+Theme, evidence quote, clip ID.
+
+
+
+4.10. Summary of findings against the paper’s central claim
+A short closing subsection that explicitly answers the Organised Sound framing:
+Intermedial Space / equality: evidence that sound and light can be treated as co-equal projections of a shared generative score, with [condition effects] indicating when equality is perceived vs collapses into hierarchy.
+
+
+Intermedial interference: evidence of both constructive and destructive interference; taxonomy and parameter regimes that increase/decrease each.
+
+
+Authorship/agency: evidence for distributed authorship between participant and CA system, modulated by parameter regimes and modality access.
+
+
+Figure 13 (optional). Design implications map
+A concise diagram linking parameters → interference types → perceived outcomes.
+
+
+
+Minimal figure/table set (if you need to keep it lean)
+If you must compress for time/word count, prioritise:
+Table 1 (participants)
+
+
+Figure 3 (fusion/equality by condition)
+
+
+Figure 4 (constructive vs destructive interference by condition)
+
+
+Figure 9 (baseline vs participant, rater preference/coherence)
+
+
+Table 5 (interference taxonomy)

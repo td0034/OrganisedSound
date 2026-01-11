@@ -1,0 +1,3 @@
+Candidate records extracted: 162
+Merged block rows (participant x condition): 27
+Sanity: participants=9, blocks=27

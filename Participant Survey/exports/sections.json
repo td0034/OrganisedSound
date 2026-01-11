@@ -116,15 +116,6 @@
     "updated_at": "2026-01-04T20:25:55.888415+00:00"
   },
   {
-    "participant_id": "9746T",
-    "section_key": "block_A_pre",
-    "payload": {
-      "strategy": "",
-      "preset_id": "9746T_A_20260105_123950"
-    },
-    "updated_at": "2026-01-05T12:39:50.125602+00:00"
-  },
-  {
     "participant_id": "9999F",
     "section_key": "meta",
     "payload": {
@@ -2535,5 +2526,14 @@
       "communication_notes": ""
     },
     "updated_at": "2026-01-09T20:15:06.854218+00:00"
+  },
+  {
+    "participant_id": "9746T",
+    "section_key": "block_A_pre",
+    "payload": {
+      "strategy": "",
+      "preset_id": "9746T_A_20260110_233430"
+    },
+    "updated_at": "2026-01-10T23:34:30.223356+00:00"
   }
 ]
