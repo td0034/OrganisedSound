@@ -334,5 +334,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T04:39:34.483984+00:00"
+  },
+  {
+    "token": "9ff6821526a4f1c9aa137e26a25c378d",
+    "rater_label": "012",
+    "clip_id": 3,
+    "clip_filename": "1661J_C_2026-01-06_12-27-39.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 80.698,
+    "duration_sec": 80.698,
+    "memorability": null,
+    "perceived_agency": 5,
+    "best_context": "unsure",
+    "payload": {
+      "R_1": "3",
+      "R_2": "5",
+      "R_3": "6",
+      "R_4": "2",
+      "R_5": "3",
+      "R_6": "5",
+      "R_7": "2",
+      "R_8": "2",
+      "R_9": "5",
+      "comments": "",
+      "attention": "Balanced",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T04:43:14.132369+00:00"
   }
 ]
