@@ -1004,5 +1004,61 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T17:58:00.411477+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 1,
+    "clip_filename": "1661J_A_2026-01-06_12-12-03.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 72.285,
+    "duration_sec": 72.285,
+    "memorability": null,
+    "perceived_agency": 2,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "3",
+      "R_2": "6",
+      "R_3": "6",
+      "R_4": "2",
+      "R_5": "4",
+      "R_6": "3",
+      "R_7": "5",
+      "R_8": "4",
+      "R_9": "2",
+      "comments": "",
+      "attention": "Mostly light",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T18:00:50.188598+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 28,
+    "clip_filename": "Default_Params_2026-01-06_10-07-27.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 69.0,
+    "duration_sec": 69.0,
+    "memorability": null,
+    "perceived_agency": 2,
+    "best_context": "background_ambience",
+    "payload": {
+      "R_1": "6",
+      "R_2": "7",
+      "R_3": "6",
+      "R_4": "6",
+      "R_5": "6",
+      "R_6": "2",
+      "R_7": "1",
+      "R_8": "6",
+      "R_9": "2",
+      "comments": "enjoyed seeing the cluster of lights appear and subtle more mellow tones",
+      "attention": "Mostly light",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T18:03:33.101552+00:00"
   }
 ]
