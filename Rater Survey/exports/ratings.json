@@ -668,5 +668,61 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-11T16:18:29.411661+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 3,
+    "clip_filename": "1661J_C_2026-01-06_12-27-39.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 80.698,
+    "duration_sec": 80.698,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "6",
+      "R_9": "7",
+      "comments": "felt like a digital steel pan drum experience. ",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T16:22:38.200699+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 14,
+    "clip_filename": "5220H_B_2026-01-05_20-22-36.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 82.584,
+    "duration_sec": 82.584,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "unsure",
+    "payload": {
+      "R_1": "5",
+      "R_2": "4",
+      "R_3": "4",
+      "R_4": "6",
+      "R_5": "6",
+      "R_6": "5",
+      "R_7": "5",
+      "R_8": "3",
+      "R_9": "4",
+      "comments": "thought I could hear a melody initially but then felt a little overwhelmed by the discordant sounds",
+      "attention": "Mostly sound",
+      "condition_guess": "unsure"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-11T16:27:00.838942+00:00"
   }
 ]
