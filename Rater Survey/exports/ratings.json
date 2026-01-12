@@ -2217,6 +2217,62 @@
     "updated_at": "2026-01-12T20:56:52.165565+00:00"
   },
   {
+    "token": "2d85550aecfe4df36ddc3867c4ad20f8",
+    "rater_label": "013",
+    "clip_id": 23,
+    "clip_filename": "6770L_B_2026-01-07_15-13-53.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.35,
+    "duration_sec": 76.35,
+    "memorability": null,
+    "perceived_agency": 6,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "2",
+      "R_8": "6",
+      "R_9": "6",
+      "comments": "really like the beginning of this clip, intro to dj set",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-12T21:05:15.385866+00:00"
+  },
+  {
+    "token": "2d85550aecfe4df36ddc3867c4ad20f8",
+    "rater_label": "013",
+    "clip_id": 6,
+    "clip_filename": "3483M_C_2026-01-06_15-51-19.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 81.578667,
+    "duration_sec": 81.578667,
+    "memorability": null,
+    "perceived_agency": 6,
+    "best_context": "workshop_education",
+    "payload": {
+      "R_1": "6",
+      "R_2": "7",
+      "R_3": "6",
+      "R_4": "6",
+      "R_5": "6",
+      "R_6": "1",
+      "R_7": "2",
+      "R_8": "5",
+      "R_9": "6",
+      "comments": "",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-12T21:08:20.019576+00:00"
+  },
+  {
     "token": "c2488cc75747e27097215705c9c62eae",
     "rater_label": "009",
     "clip_id": 15,
@@ -2299,5 +2355,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-12T20:59:13.525750+00:00"
+  },
+  {
+    "token": "2d85550aecfe4df36ddc3867c4ad20f8",
+    "rater_label": "013",
+    "clip_id": 18,
+    "clip_filename": "5344J_C_2026-01-05_17-46-30.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.516667,
+    "duration_sec": 76.516667,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "5",
+      "R_2": "5",
+      "R_3": "6",
+      "R_4": "4",
+      "R_5": "3",
+      "R_6": "4",
+      "R_7": "4",
+      "R_8": "3",
+      "R_9": "4",
+      "comments": "liked how cohesive/smooth at the beginning then less so towards the end",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-12T21:02:24.005242+00:00"
   }
 ]
