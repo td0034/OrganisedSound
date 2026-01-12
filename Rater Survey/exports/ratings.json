@@ -2273,6 +2273,34 @@
     "updated_at": "2026-01-12T21:08:20.019576+00:00"
   },
   {
+    "token": "2d85550aecfe4df36ddc3867c4ad20f8",
+    "rater_label": "013",
+    "clip_id": 15,
+    "clip_filename": "5220H_C_2026-01-05_20-04-01.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.586667,
+    "duration_sec": 76.586667,
+    "memorability": null,
+    "perceived_agency": 5,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "5",
+      "R_2": "5",
+      "R_3": "5",
+      "R_4": "4",
+      "R_5": "4",
+      "R_6": "3",
+      "R_7": "3",
+      "R_8": "4",
+      "R_9": "5",
+      "comments": "",
+      "attention": "It varied / unsure",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-12T21:15:35.240087+00:00"
+  },
+  {
     "token": "c2488cc75747e27097215705c9c62eae",
     "rater_label": "009",
     "clip_id": 15,
@@ -2383,5 +2411,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-12T21:02:24.005242+00:00"
+  },
+  {
+    "token": "2d85550aecfe4df36ddc3867c4ad20f8",
+    "rater_label": "013",
+    "clip_id": 26,
+    "clip_filename": "7974C_B_2026-01-07_17-52-19.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 90.218667,
+    "duration_sec": 90.218667,
+    "memorability": null,
+    "perceived_agency": 4,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "3",
+      "R_2": "4",
+      "R_3": "4",
+      "R_4": "2",
+      "R_5": "2",
+      "R_6": "5",
+      "R_7": "5",
+      "R_8": "4",
+      "R_9": "4",
+      "comments": "",
+      "attention": "Mostly light",
+      "condition_guess": "visual_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-12T21:11:21.840290+00:00"
   }
 ]
