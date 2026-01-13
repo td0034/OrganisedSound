@@ -3705,5 +3705,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T20:45:36.052472+00:00"
+  },
+  {
+    "token": "1270ebf547c6d3f9c238e6b0aa37b824",
+    "rater_label": "014",
+    "clip_id": 4,
+    "clip_filename": "3483M_A_2026-01-06_16-09-43.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 90.752,
+    "duration_sec": 90.752,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "unsure",
+    "payload": {
+      "R_1": "1",
+      "R_2": "1",
+      "R_3": "4",
+      "R_4": "7",
+      "R_5": "1",
+      "R_6": "7",
+      "R_7": "7",
+      "R_8": "1",
+      "R_9": "7",
+      "comments": "overwhelming and confusing, I didn't like the experience ",
+      "attention": "Mostly sound",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T21:13:15.669292+00:00"
   }
 ]
