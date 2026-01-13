@@ -1258,38 +1258,6 @@
     "updated_at": "2026-01-11T20:00:35.653311+00:00"
   },
   {
-    "token": "690b7749f82a727cfd18f7e25ac99188",
-    "rater_label": "001",
-    "clip_id": 4,
-    "clip_filename": "3483M_A_2026-01-06_16-09-43.mp4",
-    "watched_complete": true,
-    "watch_progress_sec": 90.752,
-    "duration_sec": 90.752,
-    "memorability": null,
-    "perceived_agency": 4,
-    "best_context": "live_performance",
-    "payload": {
-      "R_1": "6",
-      "R_2": "5",
-      "R_3": "5",
-      "R_4": "5",
-      "R_5": "5",
-      "R_6": "6",
-      "R_7": "6",
-      "R_8": "5",
-      "R_9": "4",
-      "comments": "I prefer the lights and visuals to the sound generated. Too busy and frenetic at times for me. ",
-      "attention": "Mostly light",
-      "condition_guess": "audio_only"
-    },
-    "end_notes": {
-      "further_comments": "I am curious to know how these clips were created and find out more.",
-      "lowest_rated_notes": "the very high pitched notes that weren't harmonious and the speed of some that was not harmonious and occasionally alarming. I became wary of the pink notes on the outer edges as they came to represent the sounds I personally didn't like. ",
-      "highest_rated_notes": "The fascinating array of colours and visual patterns and when I could imagine the sounds as a familiar instrument or style of music - e.g. steel pan drum, piano, and jazz. "
-    },
-    "updated_at": "2026-01-11T20:05:20.868611+00:00"
-  },
-  {
     "token": "9ff6821526a4f1c9aa137e26a25c378d",
     "rater_label": "012",
     "clip_id": 22,
@@ -1400,6 +1368,38 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-12T00:39:48.647869+00:00"
+  },
+  {
+    "token": "690b7749f82a727cfd18f7e25ac99188",
+    "rater_label": "001",
+    "clip_id": 4,
+    "clip_filename": "3483M_A_2026-01-06_16-09-43.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 90.752,
+    "duration_sec": 90.752,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "1",
+      "R_2": "1",
+      "R_3": "7",
+      "R_4": "1",
+      "R_5": "1",
+      "R_6": "7",
+      "R_7": "7",
+      "R_8": "1",
+      "R_9": "7",
+      "comments": "no comments ",
+      "attention": "Mostly sound",
+      "condition_guess": "unsure"
+    },
+    "end_notes": {
+      "further_comments": "I am curious to know how these clips were created and find out more.",
+      "lowest_rated_notes": "the very high pitched notes that weren't harmonious and the speed of some that was not harmonious and occasionally alarming. I became wary of the pink notes on the outer edges as they came to represent the sounds I personally didn't like. ",
+      "highest_rated_notes": "The fascinating array of colours and visual patterns and when I could imagine the sounds as a familiar instrument or style of music - e.g. steel pan drum, piano, and jazz. "
+    },
+    "updated_at": "2026-01-13T20:34:40.574653+00:00"
   },
   {
     "token": "690b7749f82a727cfd18f7e25ac99188",
