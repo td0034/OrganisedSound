@@ -3426,5 +3426,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T10:13:30.852478+00:00"
+  },
+  {
+    "token": "16328b70c7ffc3702c5ff204c50cbddd",
+    "rater_label": "007",
+    "clip_id": 14,
+    "clip_filename": "5220H_B_2026-01-05_20-22-36.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 82.6,
+    "duration_sec": 82.6,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "6",
+      "R_9": "7",
+      "comments": "The sense of rhythmic pulse and rhythms in the composition at a digestible pace made this composition very enjoyable for me, even if pitches were leaping. The visuals reinforced the experience and made it enjoyable to watch while listening. I enjoyed the coherence and started bopping my head do it, feeling rhythm in my body in this clip. I liked it a lot - felt it must be human led. I'd dig that in a live-performance setting.",
+      "attention": "Mostly sound",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T10:22:46.420339+00:00"
   }
 ]
