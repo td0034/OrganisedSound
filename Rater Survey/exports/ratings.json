@@ -3314,5 +3314,61 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T09:55:05.566608+00:00"
+  },
+  {
+    "token": "16328b70c7ffc3702c5ff204c50cbddd",
+    "rater_label": "007",
+    "clip_id": 19,
+    "clip_filename": "5747E_A_2026-01-09_15-32-44.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 86.016667,
+    "duration_sec": 86.016667,
+    "memorability": null,
+    "perceived_agency": 6,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "6",
+      "R_2": "6",
+      "R_3": "6",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "7",
+      "R_9": "6",
+      "comments": "I finally learned that blue is F#/Gb, pink is A#/Bb, and violet is G#/Ab. The limitations on colors and pitch in this mode really helped, and even if the composition felt random, having less pitch/color parameters made it much more enjoyable for me to watch and listen. I enjoyed it at this pace, and would probably enjoy it even more with delivery at half speed or slower. I couldn't tell if it was human or computer generated, but it's certainly something that a human COULD compose.",
+      "attention": "Balanced",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T10:01:01.476377+00:00"
+  },
+  {
+    "token": "16328b70c7ffc3702c5ff204c50cbddd",
+    "rater_label": "007",
+    "clip_id": 20,
+    "clip_filename": "5747E_B_2026-01-09_15-54-52.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 78.004,
+    "duration_sec": 78.004,
+    "memorability": null,
+    "perceived_agency": 6,
+    "best_context": "background_ambience",
+    "payload": {
+      "R_1": "7",
+      "R_2": "3",
+      "R_3": "5",
+      "R_4": "3",
+      "R_5": "3",
+      "R_6": "4",
+      "R_7": "4",
+      "R_8": "4",
+      "R_9": "6",
+      "comments": "This clip was very interesting to me. I suddenly wondered why fifths were close together in color, and also wondered why the same pitches were recurring in wildly different visual areas than I expected them to since I last had heard that pitch. I felt like the colors were \"surprising\" me as to their location, and therefore randomized in location, while the audio was much more sequential and coherent. it felt jazzy and chill, and I would definitely not mine listening to that as background ambience music with lights going on in this clip that I wouldn't have to pay much attention to. However, since I was focused in this study, the randomness of color location captured most of my attention and detracted from my enjoyment of the audio composition.",
+      "attention": "Mostly light",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T10:06:37.513450+00:00"
   }
 ]
