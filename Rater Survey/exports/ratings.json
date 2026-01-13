@@ -3623,6 +3623,34 @@
     "updated_at": "2026-01-13T20:59:12.698968+00:00"
   },
   {
+    "token": "1270ebf547c6d3f9c238e6b0aa37b824",
+    "rater_label": "014",
+    "clip_id": 5,
+    "clip_filename": "3483M_B_2026-01-06_15-16-26.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 73.591,
+    "duration_sec": 73.591,
+    "memorability": null,
+    "perceived_agency": 1,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "1",
+      "R_2": "1",
+      "R_3": "7",
+      "R_4": "4",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "7",
+      "R_8": "7",
+      "R_9": "1",
+      "comments": "sounded like alarm ringing...as annoying an alarm ringing can be... bur if this is about health and safety, saving lives, maybe the alarm is telling me something, or  the algorithm, the AI , like Al, the space station computer in Stnaly Kubric's  film 2000 a space odyssey. is raising the alarm ??  ",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T21:20:36.355958+00:00"
+  },
+  {
     "token": "c654e193a55241bb0721892c66213f4f",
     "rater_label": "011",
     "clip_id": 28,
@@ -3733,5 +3761,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T21:13:15.669292+00:00"
+  },
+  {
+    "token": "1270ebf547c6d3f9c238e6b0aa37b824",
+    "rater_label": "014",
+    "clip_id": 15,
+    "clip_filename": "5220H_C_2026-01-05_20-04-01.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 76.546,
+    "duration_sec": 76.546,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "7",
+      "R_9": "7",
+      "comments": "what a brilliant piece of original music, started a meditation, then a bit jazzy, then broken, I loved it, I want a longer piece, this was to short. sounded played, written by a human ",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T21:28:51.874630+00:00"
   }
 ]
