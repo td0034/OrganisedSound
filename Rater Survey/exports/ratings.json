@@ -3286,5 +3286,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T09:48:57.981037+00:00"
+  },
+  {
+    "token": "16328b70c7ffc3702c5ff204c50cbddd",
+    "rater_label": "007",
+    "clip_id": 22,
+    "clip_filename": "6770L_A_2026-01-07_14-48-10.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 70.406,
+    "duration_sec": 70.406,
+    "memorability": null,
+    "perceived_agency": 5,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "2",
+      "R_2": "5",
+      "R_3": "2",
+      "R_4": "5",
+      "R_5": "4",
+      "R_6": "4",
+      "R_7": "4",
+      "R_8": "5",
+      "R_9": "5",
+      "comments": "I couldn't help but think there was a human on a keyboard behind the scenes just randomly inputting sound, and seeking some visual pattern. It felt pretty random and then got faster and faster once a pattern was found. The experience was incoherent to me and felt more like a live exploration of cause-and-effect that I was experiencing recorded.",
+      "attention": "Mostly light",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T09:55:05.566608+00:00"
   }
 ]
