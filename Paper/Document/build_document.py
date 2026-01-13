@@ -7,15 +7,15 @@ import sys
 from pathlib import Path
 
 SECTION_FILES = [
-    "1_Abstract",
-    "2_Introduction",
-    "3_Related Work",
-    "4_Method",
-    "5_Results",
-    "6_Discussion",
-    "7_Conclusion",
-    "8_Acknowledgements",
-    "9_References",
+    "0_Abstract",
+    "1_Introduction",
+    "2_Related Work",
+    "3_Method",
+    "4_Results",
+    "5_Discussion",
+    "6_Conclusion",
+    "7_Acknowledgements",
+    "8_References",
 ]
 
 PDF_ENGINES = ["xelatex", "lualatex", "pdflatex", "tectonic"]
@@ -131,9 +131,11 @@ def main():
         print("pandoc not found; skipping export.", file=sys.stderr)
         return
 
+    resource_args = ["--resource-path", str(paper_dir)]
+
     if args.docx:
         docx_path = run_dir / "merged.docx"
-        run_pandoc([pandoc, str(merged_path), "-o", str(docx_path)])
+        run_pandoc([pandoc, str(merged_path), *resource_args, "-o", str(docx_path)])
 
     if args.pdf:
         if args.pdf_engine:
@@ -148,7 +150,15 @@ def main():
             return
         pdf_path = run_dir / "merged.pdf"
         run_pandoc(
-            [pandoc, str(merged_path), "--pdf-engine", pdf_engine, "-o", str(pdf_path)]
+            [
+                pandoc,
+                str(merged_path),
+                *resource_args,
+                "--pdf-engine",
+                pdf_engine,
+                "-o",
+                str(pdf_path),
+            ]
         )
 
 

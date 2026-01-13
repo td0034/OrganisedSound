@@ -1,0 +1,258 @@
+3. Method (revised)
+3.1 Participants and ethics
+
+Recruitment and sampling. Participants were recruited via the author’s professional and personal networks using convenience sampling. Recruitment aimed to include a range of musical experience and varying familiarity with generative systems.
+
+Solo sample. Nine participants completed the solo protocol (N = 9), each completing all three modality-access blocks (27/27 blocks total; 0% missing quantitative items). Participants self-reported age range, musical experience, music-theory familiarity, familiarity with generative systems, Tonnetz familiarity, and perceptual notes (colour-vision deficiency, sensitivity to flashing lights, optional comments). One participant reported red–green colour deficiency; one participant used speakers rather than headphones during the audio-only block.
+
+Exploratory dyad. In addition to the solo protocol, one exploratory dyad trial was conducted in which the same pair completed two dyad sessions with role-swap (audio-role vs visual-role), yielding two dyad captures. Dyad data are treated as exploratory and are reported descriptively.
+
+Consent and recording. All participants provided informed consent for audio/video capture and for anonymised excerpts to be used as research stimuli (including for an external rating task described below as ongoing).
+
+3.2 System and apparatus
+3.2.1 Instrument under study
+
+The study evaluates the TZ5 / Cellular Au-Tonnetz audiovisual instrument, a coupled generative system in which sound and LED-panel activity are produced as parallel media projections of a single evolving Tonnetz-cellular automata (CA) state.
+
+The instrument comprises four functional components:
+
+Web control interface and configuration store. A browser-based UI provides sliders and toggles for the study parameter set. Parameter values are stored in an SQL-backed configuration store and served to the device as a JSON configuration payload over HTTP.
+
+Embedded controller. An ESP32-S3 microcontroller retrieves the latest configuration, updates the CA state, and drives both the audio-control stream and LED output in real time.
+
+Audio rendering chain. The embedded controller outputs musical events as MIDI (or equivalent event messages), rendered using a fixed synthesis configuration (e.g., Ableton Live or a hardware synth) held constant across sessions.
+
+LED panel. A 91-pixel hexagonal LED array displays the evolving CA state using a fixed pitch-class–to-colour mapping.
+
+![Figure X. Exploded view of TZ5 instrument.](Figures/selected/png/Exploaded_view_of_TZ5_instrument.png)
+
+![Figure X. System block diagram (UI → ESP32-S3 → LED panel + MIDI/audio chain).](Figures/selected/png/System_block_diagram.png)
+
+3.2.2 Coupled generation and mappings
+
+The system maintains a Tonnetz-mapped lattice of pitch classes. At each update, local CA rules and global population constraints determine which cells become active. When a cell activates, the system emits (i) a musical event (e.g., MIDI note) and (ii) a corresponding LED update. In this sense, sound and light are coupled by shared causal origin (state update), not by post-hoc synchronisation.
+
+Note–colour mapping. Pitch classes are mapped to hue (HSV-based mapping), such that scale constraints simultaneously affect the admissible pitch set and the resulting colour palette. Colour mapping and synthesis settings were held constant across participants to keep perceptual comparisons focused on state dynamics and parameter steering rather than renderer variability.
+
+![Figure X. Tonnetz pitch-class map used for hue mapping.](Figures/selected/png/TonnetzMap.png)
+
+3.2.3 LED panel configuration (study setup)
+
+The study used a 91-LED hex panel with fixed diffusion and fixed participant viewing geometry. Panel type and diffusion were held constant across all sessions:
+
+Panel build: [custom PCB / mounted panel; dimensions].
+
+Diffusion material: [paper / acrylic; thickness].
+
+Viewing geometry: [distance/angle; seated/standing].
+
+3.2.4 Participant-facing control parameters
+
+Participants controlled the instrument exclusively via the web UI. The study parameter set targeted population/density, temporal dynamics, neighbourhood rule constraints, recurrence, and harmonic admissibility:
+
+Population and density
+
+Max Population (Max Notes): upper bound on concurrent active cells.
+
+Min Population (Min Notes): lower bound; when activity drops below this threshold the system reseeds activity to maintain baseline density.
+
+Temporal dynamics
+
+Rate: CA update rate (ms or equivalent).
+
+Life Length: activation lifetime parameter (firmware-defined units).
+
+Neighbourhood and rule constraints
+
+Neighbourhood extent: Local (6 neighbours) vs Extended (18 neighbours).
+
+Min Neighbours / Max Neighbours: activation thresholds and crowding constraint.
+
+Recurrence and memory
+
+Loop On/Off: toggles between stochastic selection and replay of a stored coordinate-selection sequence.
+
+Loop Length (Loop Steps): number of update steps stored and replayed; effective loop duration depends on Rate × Loop Length.
+
+Harmonic admissibility
+
+Scale: constrains which pitch classes can activate; because pitch classes map to hue, scale selection also shapes the visible palette.
+
+Features disabled to reduce confounds
+
+Automated chord progression / automatic scale sequencing features were disabled for this study, to attribute formal change primarily to participant steering and the coupled CA dynamics.
+
+3.3 Study design
+3.3.1 Overview (solo protocol)
+
+The solo study used a within-subject design with three short composition blocks per participant, each manipulating modality access during composition:
+
+A: Visual-only (panel visible; audio masked)
+
+B: Audio-only (audio via headphones/speakers; panel occluded)
+
+C: Audiovisual (both modalities available)
+
+In all conditions, both audio and video were captured, and end-state parameter presets were saved to support traceability and repeatability.
+
+3.3.2 Order control
+
+Block order was counterbalanced across participants using a rotating schedule to reduce systematic order effects. Participant ID and block order were recorded in session metadata.
+
+3.3.3 Baseline control (system-alone)
+
+To characterise intrinsic generativity absent human steering, the system was also captured running from the common starting preset S0 with no parameter changes for the same duration as a participant block. This produced a baseline audiovisual artefact for qualitative comparison and for optional inclusion in the external rating stimulus set.
+
+3.3.4 Exploratory dyad protocol (asymmetric modality access)
+
+A single pair completed two dyad sessions with role-swap. In each dyad session, one participant had auditory access while the other had visual access, and the pair negotiated parameter changes verbally:
+
+Audio-role: auditory access (headphones); no view of the panel.
+
+Visual-role: panel view; no access to audio.
+
+The dyad produced a final captured excerpt from S0 after collaborative steering. Dyad findings are treated as exploratory and used as a “teaser” for future systematic study.
+
+3.4 Procedure
+3.4.1 Orientation and familiarisation
+
+Participants received a short briefing describing the instrument as a coupled audiovisual generator and outlining the three blocks. A familiarisation period (~10–15 minutes) with full audiovisual access introduced the core parameters (density bounds, rate, neighbourhood extent, looping, and scale constraints).
+
+![Figure X. Study procedure flow diagram.](Figures/selected/png/ConOps.png)
+
+3.4.2 Common starting point and captures
+
+Each block began from a standardised preset S0 to support within-subject comparison. Participants explored the system under the assigned modality constraint for ~5–10 minutes, then recorded a final excerpt of [60–120] seconds. Parameter changes were permitted during recording. The end-state preset for each block was saved.
+
+Block prompts were:
+
+A (Visual-only): “Create an interesting pattern/motion on the LED panel.”
+
+B (Audio-only): “Create an interesting melody/sonic texture.”
+
+C (Audiovisual): “Create an interesting combined audiovisual experience.”
+
+3.4.3 Reveal and per-block questionnaires
+
+Immediately after each capture, the excerpt was replayed with both modalities enabled (the “reveal”). Participants completed:
+
+Part A (pre-reveal): ratings and brief notes about the composition experience under constraint.
+
+Part B (post-reveal): ratings and reflections about the fused audiovisual result after replay.
+
+This structure was designed to separate (i) compositional experience under constraint from (ii) retrospective binding and reinterpretation when both modalities are present.
+
+3.4.4 Dyad trial procedure
+
+For each dyad session: confirm asymmetric access, explore from S0 (~5–10 minutes), record a final excerpt ([60–120] seconds) with parameter changes permitted, save the end-state preset, and complete the dyad questionnaire independently.
+
+3.5 Measures
+3.5.1 Per-block questionnaires (solo)
+
+Each block used a two-part questionnaire with 7-point Likert ratings (1 = strongly disagree, 7 = strongly agree), plus short free-text prompts.
+
+Part A (pre-reveal) captured:
+
+satisfaction with outcome (A1),
+
+intention clarity (A2),
+
+steerability toward intention (A3),
+
+interface understandability (A4),
+
+useful surprise (A5),
+
+frustrating unpredictability (A6),
+
+confidence others would find the result interesting (A7),
+plus brief strategy notes.
+
+Part B (post-reveal) captured:
+
+same-process judgement (B1),
+
+modality balance (B2),
+
+coherence/legibility (B3),
+
+constructive reinforcement (B4),
+
+destructive contradiction (B5),
+
+overload (B6),
+
+expectation match (B7),
+
+interpretation change (B8),
+
+causal story plausibility (B9),
+
+perceived system autonomy (B10),
+
+reliance on visual cues (B11),
+
+reliance on Tonnetz/music-theory cues (B12),
+plus free-text reflections on mismatch, fusion, and interference moments.
+
+Participants also nominated up to three “most influential” parameters used in that block.
+
+3.5.2 End-of-session comparison (solo)
+
+At session end, participants:
+
+ranked their three outputs,
+
+selected which block felt “most intermedial,”
+
+selected which block had the “biggest mismatch,”
+
+provided one change request to improve media equality / intermedial legibility.
+
+3.5.3 Dyad questionnaire (exploratory)
+
+Dyad participants completed a short questionnaire independently, rating coordination, communication, shared reference points, perceived audiovisual coherence/balance, and joint ownership, alongside brief notes on negotiation and disagreements.
+
+3.5.4 External ratings (planned triangulation; ongoing)
+
+A separate pool of independent raters was recruited to evaluate anonymised audiovisual clips in a blinded, randomised web presentation. The intent of this rating task is to triangulate performer self-report with observer judgements of the captured artefacts. At the time of writing, this rating process is ongoing; therefore, the present paper reports no inferential claims from rater data. Rating progress (number of raters and clip completions) is documented in an appendix.
+
+3.6 Data handling and analysis plan
+
+Captured artefacts per solo block
+
+end-state parameter preset (machine-readable export),
+
+audio file and video file for the captured excerpt,
+
+Part A and Part B questionnaire responses,
+
+end-of-session ranking and reflections.
+
+Primary comparisons
+
+within-subject contrasts across A (visual-only), B (audio-only), and C (audiovisual),
+
+descriptive comparison with system-alone baseline captures,
+
+exploratory description of dyad behaviour and experience.
+
+Qualitative analysis focus
+
+compositional strategies under constraint,
+
+reveal-driven reinterpretation and mismatch valence,
+
+interference mechanisms (e.g., temporal/density cue conflicts, masking),
+
+participant-led design requirements.
+
+Quantitative analysis focus
+
+condition-level summaries of key Likert items,
+
+paired within-subject visualisation of focal measures (e.g., steerability, same-process judgement, overload),
+
+descriptive distributions of end-of-session choices (preference, “most intermedial,” “biggest mismatch”),
+
+descriptive distributions of parameter nominations by condition.

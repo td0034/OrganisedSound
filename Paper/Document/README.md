@@ -21,4 +21,4 @@ Outputs land in `Paper/Document/outputs/run_###/` as:
 - `merged.docx` (when `--docx` is used; requires `pandoc`)
 - `merged.pdf` (when `--pdf` is used; requires `pandoc` plus a PDF engine such as `xelatex`)
 
-The script concatenates `Paper/1_Abstract` through `Paper/9_References` in order.
+The script concatenates `Paper/0_Abstract` through `Paper/8_References` in order.

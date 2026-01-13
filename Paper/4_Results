@@ -1,0 +1,73 @@
+4. Results: composing and interpreting intermedial relations under modality constraint
+
+This section reports within-subject outcomes from the three composition conditions—A (visual-only), B (audio-only), and C (audiovisual)—combining descriptive summaries of the Likert items (see Table 2; Figs 1–4), parameter-choice counts (see Fig 6), and thematic synthesis of free-text reflections. Given the small sample (N=9), quantitative results are reported descriptively as medians [interquartile range] and paired plots are used to highlight within-participant patterns.
+
+4.1 Participants and data completeness (Table 1)
+
+Nine participants completed all three blocks (N=9; 27/27 blocks; 0% missing quantitative items). All sessions were solo and block order was counterbalanced. Musical experience ranged from none to advanced/professional; theory familiarity ranged from none to high. One participant reported red–green colour deficiency, and one used speakers rather than headphones. Participant background metadata are summarised in Table 1.
+
+4.2 Condition preference, perceived intermediality, and mismatch (Fig 1)
+
+End-of-session rankings show a strong preference for the audiovisual condition (C): 8/9 participants ranked C as their top condition (with 1/9 preferring B; 0/9 preferring A). Participants also most frequently selected C as “most intermedial” (7 selected C; 1 selected B; 1 response did not provide a single-condition selection and was coded as unsure/blank). In contrast, participants most often identified the audio-only condition (B) as producing the “biggest mismatch” (6/9), compared with A (2/9) and C (1/9). These distributions are shown in Fig 1. A montage of visual outcomes across participants and conditions is provided in Figure X.
+
+![Figure 1. End-of-session counts for preference, most intermedial, and biggest mismatch.](Results_4/outputs/figures/Fig1_outcomes_counts.png)
+
+![Figure X. Montage of participant outputs across conditions (A/B/C).](Figures/selected/png/Montage_41s.png)
+
+Taken together with the free-text accounts, these outcomes suggest that “intermediality” is not treated by participants as a narrow judgement of mapping correctness. Instead, it functions as an experiential judgement about whether the coupled system supports (i) intention formation, (ii) monitoring and causal inference during interaction, and (iii) retrospective sense-making during replay.
+
+4.3 Compositional strategies under constraint: density, arcs, loops, and exploratory testing
+
+Across conditions, participants described compositional approaches that clustered into five recurring strategy families: (i) density shaping (e.g., filling the grid and thinning it), (ii) arc/narrative forms (build-up toward chaos followed by release), (iii) loop-based structuring to establish predictability, (iv) harmony/scale manipulation (sometimes using colour similarity as a proxy), and (v) rapid A/B testing of parameters to learn local cause–effect relations. However, the emphasis of these strategies tended to shift with modality constraint.
+
+In visual-only (A), participants commonly treated the panel as a dynamic visual field and composed by covering the grid, sculpting density, and exploring emergent pattern families. Consistent with these accounts, perceived steerability (A3) was highest in A (6.00 [4.00, 6.00]; Table 2; Fig 2), suggesting that visual feedback supported a confident action–evaluation loop even when audio was unavailable.
+
+In audio-only (B), strategies were more often framed in texture, pacing, repetition, and risk management. Looping was described as a stabilising container to prevent drift into uncontrolled noise. Quantitatively, steerability dropped in B (4.00 [3.00, 5.00]; Table 2; Fig 2), aligning with descriptions of reduced state visibility and uncertainty about what the system was doing.
+
+![Figure 2. Paired steerability (A3) by condition.](Results_4/outputs/figures/Fig2_paired_control_A3.png)
+
+In audiovisual (C), participants frequently described combining what they had learned in the earlier blocks and alternating more deliberately between density control, harmonic selection, and temporal shaping. Satisfaction (A1) was highest in C (6.00 [5.00, 6.00]; Table 2) and useful surprise (A5) also increased (6.00 [5.00, 6.00]), supporting accounts of C as enabling both intention and productive emergence. At the same time, some participants noted the workload of attempting to optimise sound and light simultaneously; frustrating unpredictability (A6) was slightly higher in C (4.00 [3.00, 4.00]) than in A (3.00 [2.00, 4.00]) or B (3.00 [2.00, 5.00]) (Table 2).
+
+4.4 The reveal as a site of intermedial rebinding and reinterpretation (Fig 3; Table 2)
+
+A recurring phenomenon was the reveal (immediate replay with both modalities enabled after composing under constraint) acting as a moment of retrospective binding and reinterpretation. Participants frequently described surprise, delight, or a re-evaluation of what they believed they had controlled; several accounts described replay as disclosing latent structure in the shared generative substrate.
+
+This is supported by item B1 (“two views of the same underlying process”), which was higher after audio-only and audiovisual composition than after visual-only composition (A: 4.00 [3.00, 6.00]; B: 6.00 [6.00, 7.00]; C: 6.00 [6.00, 6.00]; Table 2), summarised in Fig 3. In other words, participants were most likely to judge the coupled replay as “the same process” when sound had been salient during composition (B) or when both modalities were available (C), whereas composing visually produced weaker same-process judgements for some participants.
+
+![Figure 3. Paired intermediality index by condition.](Results_4/outputs/figures/Fig3_paired_intermediality_index.png)
+
+These results also clarify why B was often selected as the “biggest mismatch” (Fig 1) without necessarily being experienced negatively: in multiple accounts, mismatch operated as a productive discontinuity, where replay exceeded expectations and functioned as a calibration signal that extended the participant’s causal model of the system.
+
+4.5 Attentional hierarchy and “media equality” as a negotiated achievement (Table 2)
+
+Participants repeatedly articulated an attentional hierarchy between modalities. Some reported that sound dominated experience and that audio needed to be removed before they could prioritise visual composition; others described the inverse, noting the difficulty of controlling audio-only states despite later recognising more structure on replay.
+
+Quantitatively, “balanced modalities” (B2) showed similar medians across conditions (A: 6.00 [2.00, 6.00]; B: 6.00 [3.00, 6.00]; C: 6.00 [3.00, 6.00]; Table 2), but with wider dispersion in A. This supports a core qualitative theme: “media equality” is not an intrinsic property of the instrument; it is negotiated through attentional dominance, familiarity, and the availability of stabilising cues (notably repetition and looping).
+
+Perceptual overload (B6) remained low across conditions (A: 2.00 [1.00, 2.00]; B: 2.00 [2.00, 3.00]; C: 2.00 [2.00, 2.00]; Table 2; optional Fig 4). Although participants sometimes used terms such as “chaos” or “busy,” overload did not emerge as the dominant failure mode at group level; mismatch and interpretability were more diagnostic, particularly in the audio-only condition.
+
+![Figure 4. Paired perceptual overload (B6) by condition.](Results_4/outputs/figures/Fig4_paired_overload_B6.png)
+
+4.6 Intermedial interference as cue conflict: temporal mismatch, density mismatch, and perceptual masking
+
+When interference was described as disruptive, it was typically framed as cue conflict, where one modality implied temporal or causal relations that the other did not support.
+
+The most concrete conflict concerned duration cues: participants noted that light persistence could be misleading relative to note length, weakening temporal correspondence and cross-modal prediction. A second conflict concerned density cues: sparse visuals were sometimes perceived as sonically busy, while visually dense states could be perceived as less complex than expected. A third issue was perceptual masking introduced by timbre and octave stacking, described as collapsing multiple events into a single percept and reducing the auditability of harmonic relationships. Collectively, these reports align with the concentration of “biggest mismatch” selections in B (Fig 1) and lower steerability in B (Fig 2): when cues are withheld or unreliable, participants’ internal causal model becomes less stable during action.
+
+4.7 Agency, autonomy, and co-creative negotiation with an autonomous substrate (Table 2)
+
+Across conditions, participants framed interaction less as direct control and more as negotiated agency, emphasising the value of steerability coexisting with surprise. One participant explicitly questioned authorship (“whether I performed or the Tonnetz performed”), capturing a recurring ambiguity in how creative credit is distributed between human and system.
+
+This theme is consistent with autonomy ratings (B10), which were moderate in A and B (both 4.00 [3.00, 5.00]) and slightly higher in C (5.00 [2.00, 5.00]; Table 2). Qualitatively, audiovisual composition often supported a shift toward a co-creative stance—acceptance and collaboration with the instrument—particularly after participants had experienced both constrained conditions and developed a more stable causal model.
+
+4.8 Parameter strategy and interpretability: what participants used to steer (Fig 6)
+
+Self-reported “most influential parameters” show both a stable core and a modality-dependent shift (Fig 6). Rate was the dominant control across all conditions (A: 8 selections; B: 7; C: 6), consistent with participants using global dynamism to structure arcs and transitions. Scale exhibited the clearest modality dependence: it was cited far more often when sound was available during composition (B: 7; C: 8) than in visual-only composition (A: 3), suggesting that harmonic admissibility becomes a primary steering dimension when participants can audition outcomes in real time. Other parameters (Life Length; neighbour and population thresholds; loop length/on-off) were cited at moderate frequency across conditions, supporting qualitative descriptions of “constraint tuning” to locate stable regimes and explore local variation.
+
+![Figure 6. Parameter influence counts by condition.](Results_4/outputs/figures/Fig6_param_influence_by_condition.png)
+
+4.9 Participant-led design requirements: improving legibility, prediction, and expressive articulation
+
+Participants produced convergent, instrument-actionable requirements that map directly onto the mechanisms above: clearer loop and reset affordances; improved parameter semantics and scaling (including counter-intuitive rate behaviour); reduced interface fragmentation; improved colour fidelity and discriminability; better temporal correspondence between note duration and light persistence (or an intentional decay model communicating release); and richer articulation/timbre to reduce perceptual masking and improve event discriminability. These requirements connect to the results in a direct way: where cue reliability and parameter semantics were weak, participants reported mismatch and reduced controllability; where stable cues were available (especially repetition/looping), participants reported safety, predictability, and more intentional structuring.
+
+Summary. Across conditions, intermedial relations in this instrument were experienced as a negotiation between cue reliability, attentional dominance, and an evolving causal model of a shared generative substrate. Constraint conditions did not simply degrade experience; they reconfigured how participants formed intention, monitored outcomes, and attributed agency—sometimes producing negative mismatch (loss of legibility) and sometimes producing positive mismatch (reveal-driven rebinding and delight).
