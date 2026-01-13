@@ -3621,5 +3621,33 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T18:53:36.668990+00:00"
+  },
+  {
+    "token": "1270ebf547c6d3f9c238e6b0aa37b824",
+    "rater_label": "014",
+    "clip_id": 3,
+    "clip_filename": "1661J_C_2026-01-06_12-27-39.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 80.698,
+    "duration_sec": 80.698,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "7",
+      "R_2": "7",
+      "R_3": "7",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "1",
+      "R_8": "5",
+      "R_9": "7",
+      "comments": "sounded like played /  driven by a human playing pinball ! Brilliant, I love it because I used to love playing pinball games",
+      "attention": "Balanced",
+      "condition_guess": "unsure"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T20:45:36.052472+00:00"
   }
 ]
