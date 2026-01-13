@@ -3454,5 +3454,32 @@
     },
     "end_notes": {},
     "updated_at": "2026-01-13T10:22:46.420339+00:00"
+  },
+  {
+    "token": "c654e193a55241bb0721892c66213f4f",
+    "rater_label": "011",
+    "clip_id": 16,
+    "clip_filename": "5344J_A_2026-01-05_17-06-17.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 78.016667,
+    "duration_sec": 78.016667,
+    "memorability": null,
+    "perceived_agency": 3,
+    "best_context": "installation_gallery",
+    "payload": {
+      "R_1": "5",
+      "R_2": "6",
+      "R_3": "4",
+      "R_4": "6",
+      "R_5": "2",
+      "R_6": "4",
+      "R_8": "5",
+      "R_9": "3",
+      "comments": "",
+      "attention": "Mostly sound",
+      "condition_guess": "audio_only"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T16:40:05.939986+00:00"
   }
 ]
