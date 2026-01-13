@@ -3679,6 +3679,34 @@
     "updated_at": "2026-01-13T21:35:13.515455+00:00"
   },
   {
+    "token": "1270ebf547c6d3f9c238e6b0aa37b824",
+    "rater_label": "014",
+    "clip_id": 2,
+    "clip_filename": "1661J_B_2026-01-06_11-52-56.mp4",
+    "watched_complete": true,
+    "watch_progress_sec": 78.942,
+    "duration_sec": 78.942,
+    "memorability": null,
+    "perceived_agency": 7,
+    "best_context": "live_performance",
+    "payload": {
+      "R_1": "1",
+      "R_2": "7",
+      "R_3": "1",
+      "R_4": "7",
+      "R_5": "7",
+      "R_6": "1",
+      "R_7": "7",
+      "R_8": "7",
+      "R_9": "7",
+      "comments": "sounded like an alarm clock, or a very frustating pin ball game where the player fails systematically to hit the targets ",
+      "attention": "Mostly sound",
+      "condition_guess": "audiovisual"
+    },
+    "end_notes": {},
+    "updated_at": "2026-01-13T21:40:24.070147+00:00"
+  },
+  {
     "token": "c654e193a55241bb0721892c66213f4f",
     "rater_label": "011",
     "clip_id": 28,
