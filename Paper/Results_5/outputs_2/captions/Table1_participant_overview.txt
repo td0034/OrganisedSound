@@ -1,0 +1,1 @@
+Participant overview with anonymized IDs (1-9), background measures, and block order. Order indicates the within-participant condition sequence.

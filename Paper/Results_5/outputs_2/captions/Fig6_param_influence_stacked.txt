@@ -1,0 +1,1 @@
+Stacked bar chart of parameter influence nominations by condition; colors match Fig1 for A=Visual Only, B=Audio Only, C=Audiovisual.

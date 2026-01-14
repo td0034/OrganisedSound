@@ -1,0 +1,1 @@
+Construct mapping for composite indices, including item lists, reverse-coded items, formulas, and interpretation guidance.

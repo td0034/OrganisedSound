@@ -1,0 +1,32 @@
+condition,parameter,count,percent
+A,Life Length,4,12.5
+A,Loop Length,2,6.25
+A,Loop On/Off,1,3.125
+A,Max Neighbours,4,12.5
+A,Max Population,4,12.5
+A,Min Neighbours,2,6.25
+A,Min Population,2,6.25
+A,Neighbourhood (Local/Extended),2,6.25
+A,Rate,8,25.0
+A,Scale,3,9.375
+B,Life Length,4,12.903225806451612
+B,Loop Length,2,6.451612903225806
+B,Loop On/Off,3,9.67741935483871
+B,Max Neighbours,3,9.67741935483871
+B,Max Population,1,3.225806451612903
+B,Min Neighbours,2,6.451612903225806
+B,Min Population,1,3.225806451612903
+B,Neighbourhood (Local/Extended),1,3.225806451612903
+B,Rate,7,22.58064516129032
+B,Scale,7,22.58064516129032
+C,Life Length,5,15.151515151515152
+C,Loop Length,1,3.0303030303030303
+C,Loop On/Off,4,12.121212121212121
+C,Max Neighbours,2,6.0606060606060606
+C,Max Population,1,3.0303030303030303
+C,Min Neighbours,2,6.0606060606060606
+C,Min Population,1,3.0303030303030303
+C,Neighbourhood (Local/Extended),2,6.0606060606060606
+C,Other,1,3.0303030303030303
+C,Rate,6,18.181818181818183
+C,Scale,8,24.242424242424242

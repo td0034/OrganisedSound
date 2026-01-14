@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1534" height="148">
+<rect width="100%" height="100%" fill="white" />
+<line x1="10" y1="10" x2="1524" y2="10" stroke="black" stroke-width="1" />
+<text x="16" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">Condition</text>
+<text x="91" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">Condition label</text>
+<text x="208" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">n pre</text>
+<text x="255" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">n post</text>
+<text x="309" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">A1 Satisfied with</text>
+<text x="309" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">outcome</text>
+<text x="440" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">A3 Able to steer</text>
+<text x="440" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">system</text>
+<text x="571" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">A5 Useful surprise</text>
+<text x="709" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">A6 Frustrating</text>
+<text x="709" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">unpredictability</text>
+<text x="840" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">B1 Same underlying</text>
+<text x="840" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">process</text>
+<text x="978" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">B2 Balanced</text>
+<text x="978" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">modalities</text>
+<text x="1109" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">B6</text>
+<text x="1109" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">Overwhelming/overload</text>
+<text x="1268" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">B7 Revealed</text>
+<text x="1268" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">modality matched</text>
+<text x="1268" y="58" font-size="12" font-family="Times New Roman" font-weight="bold">expectation</text>
+<text x="1399" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">B10 Strong system</text>
+<text x="1399" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">autonomy</text>
+<line x1="10" y1="66" x2="1524" y2="66" stroke="black" stroke-width="1" />
+<text x="16" y="82" font-size="12" font-family="Times New Roman">A</text>
+<text x="91" y="82" font-size="12" font-family="Times New Roman">Visual-only</text>
+<text x="208" y="82" font-size="12" font-family="Times New Roman">9</text>
+<text x="255" y="82" font-size="12" font-family="Times New Roman">9</text>
+<text x="309" y="82" font-size="12" font-family="Times New Roman">5.00 [4.00, 6.00]</text>
+<text x="440" y="82" font-size="12" font-family="Times New Roman">6.00 [4.00, 6.00]</text>
+<text x="571" y="82" font-size="12" font-family="Times New Roman">5.00 [4.00, 6.00]</text>
+<text x="709" y="82" font-size="12" font-family="Times New Roman">3.00 [2.00, 4.00]</text>
+<text x="840" y="82" font-size="12" font-family="Times New Roman">4.00 [3.00, 6.00]</text>
+<text x="978" y="82" font-size="12" font-family="Times New Roman">6.00 [2.00, 6.00]</text>
+<text x="1109" y="82" font-size="12" font-family="Times New Roman">2.00 [1.00, 2.00]</text>
+<text x="1268" y="82" font-size="12" font-family="Times New Roman">3.00 [3.00, 4.00]</text>
+<text x="1399" y="82" font-size="12" font-family="Times New Roman">4.00 [3.00, 5.00]</text>
+<text x="16" y="106" font-size="12" font-family="Times New Roman">B</text>
+<text x="91" y="106" font-size="12" font-family="Times New Roman">Audio-only</text>
+<text x="208" y="106" font-size="12" font-family="Times New Roman">9</text>
+<text x="255" y="106" font-size="12" font-family="Times New Roman">9</text>
+<text x="309" y="106" font-size="12" font-family="Times New Roman">6.00 [4.00, 6.00]</text>
+<text x="440" y="106" font-size="12" font-family="Times New Roman">4.00 [3.00, 5.00]</text>
+<text x="571" y="106" font-size="12" font-family="Times New Roman">5.00 [4.00, 6.00]</text>
+<text x="709" y="106" font-size="12" font-family="Times New Roman">3.00 [2.00, 5.00]</text>
+<text x="840" y="106" font-size="12" font-family="Times New Roman">6.00 [6.00, 7.00]</text>
+<text x="978" y="106" font-size="12" font-family="Times New Roman">6.00 [3.00, 6.00]</text>
+<text x="1109" y="106" font-size="12" font-family="Times New Roman">2.00 [2.00, 3.00]</text>
+<text x="1268" y="106" font-size="12" font-family="Times New Roman">3.00 [2.00, 4.00]</text>
+<text x="1399" y="106" font-size="12" font-family="Times New Roman">4.00 [3.00, 5.00]</text>
+<text x="16" y="130" font-size="12" font-family="Times New Roman">C</text>
+<text x="91" y="130" font-size="12" font-family="Times New Roman">Audio+Visual</text>
+<text x="208" y="130" font-size="12" font-family="Times New Roman">9</text>
+<text x="255" y="130" font-size="12" font-family="Times New Roman">9</text>
+<text x="309" y="130" font-size="12" font-family="Times New Roman">6.00 [5.00, 6.00]</text>
+<text x="440" y="130" font-size="12" font-family="Times New Roman">5.00 [5.00, 5.00]</text>
+<text x="571" y="130" font-size="12" font-family="Times New Roman">6.00 [5.00, 6.00]</text>
+<text x="709" y="130" font-size="12" font-family="Times New Roman">4.00 [3.00, 4.00]</text>
+<text x="840" y="130" font-size="12" font-family="Times New Roman">6.00 [6.00, 6.00]</text>
+<text x="978" y="130" font-size="12" font-family="Times New Roman">6.00 [3.00, 6.00]</text>
+<text x="1109" y="130" font-size="12" font-family="Times New Roman">2.00 [2.00, 2.00]</text>
+<text x="1268" y="130" font-size="12" font-family="Times New Roman">4.00 [4.00, 4.00]</text>
+<text x="1399" y="130" font-size="12" font-family="Times New Roman">5.00 [2.00, 5.00]</text>
+<line x1="10" y1="138" x2="1524" y2="138" stroke="black" stroke-width="1" />
+</svg>

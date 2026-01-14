@@ -1,0 +1,1 @@
+Paired difference estimation plots for key contrasts (C-A, C-B, B-A). Points show individual within-participant differences; black markers indicate mean with bootstrap 95% CI (percentiles from resampled participants).

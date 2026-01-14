@@ -1,0 +1,6 @@
+Run timestamp: 2026-01-14T14:42:35.704057+00:00
+Input: /Users/tom/projects/tonnetz/Organised Sound/Paper/Results_5/sections_plus_transcriptions.json
+Records: 90
+Participants: 9
+Blocks (wide rows): 27
+Input hash: 16d0392448fdcaa052294c3b0f144bd47a532e1d36873014cb11b126eeb6c211

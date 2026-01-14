@@ -1,0 +1,31 @@
+item,item_label,condition,condition_label,n,median,iqr
+A_1,A1 satisfaction,A,Visual-only,9,5.0,2.0
+A_1,A1 satisfaction,B,Audio-only,9,6.0,2.0
+A_1,A1 satisfaction,C,Audiovisual,9,6.0,1.0
+A_3,A3 steerability,A,Visual-only,9,6.0,2.0
+A_3,A3 steerability,B,Audio-only,9,4.0,2.0
+A_3,A3 steerability,C,Audiovisual,9,5.0,0.0
+A_5,A5 useful surprise,A,Visual-only,9,5.0,2.0
+A_5,A5 useful surprise,B,Audio-only,9,5.0,2.0
+A_5,A5 useful surprise,C,Audiovisual,9,6.0,1.0
+A_6,A6 frustrating unpredictability,A,Visual-only,9,3.0,2.0
+A_6,A6 frustrating unpredictability,B,Audio-only,9,3.0,3.0
+A_6,A6 frustrating unpredictability,C,Audiovisual,9,4.0,1.0
+B_1,B1 same-process,A,Visual-only,9,4.0,3.0
+B_1,B1 same-process,B,Audio-only,9,6.0,1.0
+B_1,B1 same-process,C,Audiovisual,9,6.0,0.0
+B_10,B10 system autonomy,A,Visual-only,9,4.0,2.0
+B_10,B10 system autonomy,B,Audio-only,9,4.0,2.0
+B_10,B10 system autonomy,C,Audiovisual,9,5.0,3.0
+B_3,B3 coherent/legible relationship,A,Visual-only,9,6.0,1.0
+B_3,B3 coherent/legible relationship,B,Audio-only,9,6.0,2.0
+B_3,B3 coherent/legible relationship,C,Audiovisual,9,6.0,0.0
+B_4,B4 constructive interference,A,Visual-only,9,6.0,2.0
+B_4,B4 constructive interference,B,Audio-only,9,6.0,1.0
+B_4,B4 constructive interference,C,Audiovisual,9,6.0,1.0
+B_5,B5 destructive interference,A,Visual-only,9,2.0,3.0
+B_5,B5 destructive interference,B,Audio-only,9,2.0,2.0
+B_5,B5 destructive interference,C,Audiovisual,9,2.0,2.0
+B_6,B6 overload,A,Visual-only,9,2.0,1.0
+B_6,B6 overload,B,Audio-only,9,2.0,1.0
+B_6,B6 overload,C,Audiovisual,9,2.0,0.0

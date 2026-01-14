@@ -1,0 +1,1 @@
+Audit table: long-format item-level responses by participant, condition, and phase.

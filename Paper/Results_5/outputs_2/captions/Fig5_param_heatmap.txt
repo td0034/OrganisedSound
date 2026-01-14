@@ -1,0 +1,1 @@
+Heatmap of parameter influence nominations by condition. Cells show counts of nominations per parameter (A=Visual Only, B=Audio Only, C=Audiovisual).

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="404">
+<rect width="100%" height="100%" fill="white" />
+<line x1="10" y1="10" x2="1115" y2="10" stroke="black" stroke-width="1" />
+<text x="16" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">participant id</text>
+<text x="126" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">session type</text>
+<text x="222" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">order</text>
+<text x="269" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">age range</text>
+<text x="344" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">musical</text>
+<text x="344" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">experience</text>
+<text x="503" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">theory</text>
+<text x="503" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">familiarity</text>
+<text x="592" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">tonnetz</text>
+<text x="592" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">familiarity</text>
+<text x="681" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">generative</text>
+<text x="681" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">experience</text>
+<text x="791" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">color deficiency</text>
+<text x="915" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">light</text>
+<text x="915" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">sensitivity</text>
+<text x="1004" y="26" font-size="12" font-family="Times New Roman" font-weight="bold">perceptual</text>
+<text x="1004" y="42" font-size="12" font-family="Times New Roman" font-weight="bold">comments</text>
+<line x1="10" y1="50" x2="1115" y2="50" stroke="black" stroke-width="1" />
+<text x="16" y="66" font-size="12" font-family="Times New Roman">1661J</text>
+<text x="126" y="66" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="66" font-size="12" font-family="Times New Roman">B→A→C</text>
+<text x="269" y="66" font-size="12" font-family="Times New Roman">25–34</text>
+<text x="344" y="66" font-size="12" font-family="Times New Roman">Some (informal)</text>
+<text x="503" y="66" font-size="12" font-family="Times New Roman">Basic</text>
+<text x="592" y="66" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="66" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="66" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="66" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="66" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="90" font-size="12" font-family="Times New Roman">3483M</text>
+<text x="126" y="90" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="90" font-size="12" font-family="Times New Roman">B→C→A</text>
+<text x="269" y="90" font-size="12" font-family="Times New Roman">45–54</text>
+<text x="344" y="90" font-size="12" font-family="Times New Roman">Some (informal)</text>
+<text x="503" y="90" font-size="12" font-family="Times New Roman">Moderate</text>
+<text x="592" y="90" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="90" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="90" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="90" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="90" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="114" font-size="12" font-family="Times New Roman">4069S</text>
+<text x="126" y="114" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="114" font-size="12" font-family="Times New Roman">C→B→A</text>
+<text x="269" y="114" font-size="12" font-family="Times New Roman">35–44</text>
+<text x="344" y="114" font-size="12" font-family="Times New Roman">None</text>
+<text x="503" y="114" font-size="12" font-family="Times New Roman">None</text>
+<text x="592" y="114" font-size="12" font-family="Times New Roman">Heard of it</text>
+<text x="681" y="114" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="114" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="114" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="114" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="138" font-size="12" font-family="Times New Roman">4939Z</text>
+<text x="126" y="138" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="138" font-size="12" font-family="Times New Roman">C→A→B</text>
+<text x="269" y="138" font-size="12" font-family="Times New Roman">25–34</text>
+<text x="344" y="138" font-size="12" font-family="Times New Roman">High</text>
+<text x="344" y="154" font-size="12" font-family="Times New Roman">(advanced/degree/pro)</text>
+<text x="503" y="138" font-size="12" font-family="Times New Roman">High</text>
+<text x="592" y="138" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="138" font-size="12" font-family="Times New Roman">Yes (moderate)</text>
+<text x="791" y="138" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="138" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="138" font-size="12" font-family="Times New Roman">Using speaker</text>
+<text x="1004" y="154" font-size="12" font-family="Times New Roman">instead of</text>
+<text x="1004" y="170" font-size="12" font-family="Times New Roman">headphones for</text>
+<text x="1004" y="186" font-size="12" font-family="Times New Roman">audio output</text>
+<text x="16" y="210" font-size="12" font-family="Times New Roman">5220H</text>
+<text x="126" y="210" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="210" font-size="12" font-family="Times New Roman">A→C→B</text>
+<text x="269" y="210" font-size="12" font-family="Times New Roman">35–44</text>
+<text x="344" y="210" font-size="12" font-family="Times New Roman">Moderate</text>
+<text x="344" y="226" font-size="12" font-family="Times New Roman">(regular</text>
+<text x="344" y="242" font-size="12" font-family="Times New Roman">practice)</text>
+<text x="503" y="210" font-size="12" font-family="Times New Roman">Moderate</text>
+<text x="592" y="210" font-size="12" font-family="Times New Roman">Heard of it</text>
+<text x="681" y="210" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="210" font-size="12" font-family="Times New Roman">1</text>
+<text x="915" y="210" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="210" font-size="12" font-family="Times New Roman">lil bit colour</text>
+<text x="1004" y="226" font-size="12" font-family="Times New Roman">blind red green</text>
+<text x="16" y="266" font-size="12" font-family="Times New Roman">5344J</text>
+<text x="126" y="266" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="266" font-size="12" font-family="Times New Roman">A→B→C</text>
+<text x="269" y="266" font-size="12" font-family="Times New Roman">35–44</text>
+<text x="344" y="266" font-size="12" font-family="Times New Roman">Some (informal)</text>
+<text x="503" y="266" font-size="12" font-family="Times New Roman">Basic</text>
+<text x="592" y="266" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="266" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="266" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="266" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="266" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="290" font-size="12" font-family="Times New Roman">5747E</text>
+<text x="126" y="290" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="290" font-size="12" font-family="Times New Roman">C→A→B</text>
+<text x="269" y="290" font-size="12" font-family="Times New Roman">65+</text>
+<text x="344" y="290" font-size="12" font-family="Times New Roman">Moderate</text>
+<text x="344" y="306" font-size="12" font-family="Times New Roman">(regular</text>
+<text x="344" y="322" font-size="12" font-family="Times New Roman">practice)</text>
+<text x="503" y="290" font-size="12" font-family="Times New Roman">Basic</text>
+<text x="592" y="290" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="290" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="290" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="290" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="290" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="346" font-size="12" font-family="Times New Roman">6770L</text>
+<text x="126" y="346" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="346" font-size="12" font-family="Times New Roman">A→B→C</text>
+<text x="269" y="346" font-size="12" font-family="Times New Roman">25–34</text>
+<text x="344" y="346" font-size="12" font-family="Times New Roman">High</text>
+<text x="344" y="362" font-size="12" font-family="Times New Roman">(advanced/degree/pro)</text>
+<text x="503" y="346" font-size="12" font-family="Times New Roman">High</text>
+<text x="592" y="346" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="346" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="346" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="346" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="346" font-size="12" font-family="Times New Roman"></text>
+<text x="16" y="386" font-size="12" font-family="Times New Roman">7974C</text>
+<text x="126" y="386" font-size="12" font-family="Times New Roman">solo</text>
+<text x="222" y="386" font-size="12" font-family="Times New Roman">B→A→C</text>
+<text x="269" y="386" font-size="12" font-family="Times New Roman">35–44</text>
+<text x="344" y="386" font-size="12" font-family="Times New Roman">Some (informal)</text>
+<text x="503" y="386" font-size="12" font-family="Times New Roman">None</text>
+<text x="592" y="386" font-size="12" font-family="Times New Roman">No</text>
+<text x="681" y="386" font-size="12" font-family="Times New Roman">No</text>
+<text x="791" y="386" font-size="12" font-family="Times New Roman">0</text>
+<text x="915" y="386" font-size="12" font-family="Times New Roman">0</text>
+<text x="1004" y="386" font-size="12" font-family="Times New Roman"></text>
+<line x1="10" y1="394" x2="1115" y2="394" stroke="black" stroke-width="1" />
+</svg>

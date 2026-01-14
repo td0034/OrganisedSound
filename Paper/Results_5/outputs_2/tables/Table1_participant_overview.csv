@@ -1,0 +1,10 @@
+Participant id,Age range,Musical experience,Theory familiarity,Generative experience,Tonnetz familiarity,Order
+1,25–34,Some,Basic,No,No,B→A→C
+2,45–54,Some,Moderate,No,No,B→C→A
+3,35–44,None,None,No,Heard of it,C→B→A
+4,25–34,High,High,Yes (moderate),No,C→A→B
+5,35–44,Moderate,Moderate,No,Heard of it,A→C→B
+6,35–44,Some,Basic,No,No,A→B→C
+7,65+,Moderate,Basic,No,No,C→A→B
+8,25–34,High,High,No,No,A→B→C
+9,35–44,Some,None,No,No,B→A→C

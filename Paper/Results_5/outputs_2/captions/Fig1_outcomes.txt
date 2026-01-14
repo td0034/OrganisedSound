@@ -1,0 +1,1 @@
+Counts of best overall rank (1), most intermedial selection, and biggest mismatch by block condition (A=Visual Only, B=Audio Only, C=Audiovisual).

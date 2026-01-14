@@ -1,0 +1,558 @@
+participant_id,condition,phase,item,value,item_label,is_reverse,construct,block_position,timestamps
+5747E,A,pre,A_1,4.0,A1 satisfaction,False,,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_2,5.0,A2 intention clarity,False,Agency Index,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_3,4.0,A3 steerability,False,Agency Index,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_4,5.0,A4 interface workable,False,Agency Index,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_5,4.0,A5 useful surprise,False,,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-09 15:36:59.009305+00:00
+5747E,A,pre,A_7,2.0,A7 others would find interesting,False,,2,2026-01-09 15:36:59.009305+00:00
+5344J,A,pre,A_1,3.0,A1 satisfaction,False,,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_2,6.0,A2 intention clarity,False,Agency Index,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_3,3.0,A3 steerability,False,Agency Index,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_4,5.0,A4 interface workable,False,Agency Index,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_6,6.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,pre,A_7,6.0,A7 others would find interesting,False,,1,2026-01-05 17:11:36.106873+00:00
+5344J,A,post,B_1,4.0,B1 same-process,False,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_6,1.0,B6 overload,True,Intermediality Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_7,5.0,B7 expectation match,False,Mismatch Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_8,7.0,B8 interpretation change,False,Mismatch Index,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_9,2.0,B9 plausible causal story,False,,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_10,6.0,B10 system autonomy,False,,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_11,7.0,B11 relied on visual cues,False,,1,2026-01-05 17:19:10.578332+00:00
+5344J,A,post,B_12,1.0,B12 relied on theory cues,False,,1,2026-01-05 17:19:10.578332+00:00
+5344J,B,pre,A_1,6.0,A1 satisfaction,False,,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_2,6.0,A2 intention clarity,False,Agency Index,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_3,5.0,A3 steerability,False,Agency Index,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_4,4.0,A4 interface workable,False,Agency Index,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_5,6.0,A5 useful surprise,False,,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,pre,A_7,6.0,A7 others would find interesting,False,,2,2026-01-05 17:30:52.684456+00:00
+5344J,B,post,B_1,7.0,B1 same-process,False,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_6,5.0,B6 overload,True,Intermediality Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_7,3.0,B7 expectation match,False,Mismatch Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_9,2.0,B9 plausible causal story,False,,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_10,5.0,B10 system autonomy,False,,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_11,1.0,B11 relied on visual cues,False,,2,2026-01-05 17:35:47.033625+00:00
+5344J,B,post,B_12,1.0,B12 relied on theory cues,False,,2,2026-01-05 17:35:47.033625+00:00
+5344J,C,pre,A_1,7.0,A1 satisfaction,False,,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_2,7.0,A2 intention clarity,False,Agency Index,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_3,7.0,A3 steerability,False,Agency Index,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_4,7.0,A4 interface workable,False,Agency Index,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_5,7.0,A5 useful surprise,False,,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_6,5.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,pre,A_7,7.0,A7 others would find interesting,False,,3,2026-01-05 17:49:59.338517+00:00
+5344J,C,post,B_1,6.0,B1 same-process,False,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_2,5.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_6,2.0,B6 overload,True,Intermediality Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_9,5.0,B9 plausible causal story,False,,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_10,5.0,B10 system autonomy,False,,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_11,6.0,B11 relied on visual cues,False,,3,2026-01-05 17:53:32.071358+00:00
+5344J,C,post,B_12,1.0,B12 relied on theory cues,False,,3,2026-01-05 17:53:32.071358+00:00
+5344J,A,end,rank,3.0,Preference rank (1=best),False,,1,2026-01-05 17:57:24.345770+00:00
+5344J,B,end,rank,2.0,Preference rank (1=best),False,,2,2026-01-05 17:57:24.345770+00:00
+5344J,C,end,rank,1.0,Preference rank (1=best),False,,3,2026-01-05 17:57:24.345770+00:00
+5344J,C,end,most_intermedial,1.0,Most intermedial,False,,3,2026-01-05 17:57:24.345770+00:00
+5344J,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,2,2026-01-05 17:57:24.345770+00:00
+5220H,A,pre,A_1,6.0,A1 satisfaction,False,,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_2,7.0,A2 intention clarity,False,Agency Index,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_3,6.0,A3 steerability,False,Agency Index,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_4,4.0,A4 interface workable,False,Agency Index,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_6,3.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-05 19:37:42.154093+00:00
+5220H,A,pre,A_7,7.0,A7 others would find interesting,False,,1,2026-01-05 19:37:42.154093+00:00
+3483M,B,pre,A_1,3.0,A1 satisfaction,False,,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_2,1.0,A2 intention clarity,False,Agency Index,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_3,1.0,A3 steerability,False,Agency Index,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_4,3.0,A4 interface workable,False,Agency Index,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_5,5.0,A5 useful surprise,False,,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_6,5.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-06 15:22:53.398229+00:00
+3483M,B,pre,A_7,2.0,A7 others would find interesting,False,,1,2026-01-06 15:22:53.398229+00:00
+5220H,A,post,B_1,2.0,B1 same-process,False,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_6,1.0,B6 overload,True,Intermediality Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_7,2.0,B7 expectation match,False,Mismatch Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_9,6.0,B9 plausible causal story,False,,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_10,4.0,B10 system autonomy,False,,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_11,7.0,B11 relied on visual cues,False,,1,2026-01-05 19:56:10.553650+00:00
+5220H,A,post,B_12,1.0,B12 relied on theory cues,False,,1,2026-01-05 19:56:10.553650+00:00
+5220H,C,pre,A_1,6.0,A1 satisfaction,False,,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_2,4.0,A2 intention clarity,False,Agency Index,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_3,5.0,A3 steerability,False,Agency Index,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_4,5.0,A4 interface workable,False,Agency Index,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_5,5.0,A5 useful surprise,False,,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,pre,A_7,7.0,A7 others would find interesting,False,,2,2026-01-05 20:09:17.631926+00:00
+5220H,C,post,B_1,6.0,B1 same-process,False,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_6,2.0,B6 overload,True,Intermediality Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_9,6.0,B9 plausible causal story,False,,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_10,5.0,B10 system autonomy,False,,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_11,2.0,B11 relied on visual cues,False,,2,2026-01-05 20:15:23.362018+00:00
+5220H,C,post,B_12,6.0,B12 relied on theory cues,False,,2,2026-01-05 20:15:23.362018+00:00
+5220H,B,pre,A_1,3.0,A1 satisfaction,False,,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_2,3.0,A2 intention clarity,False,Agency Index,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_3,3.0,A3 steerability,False,Agency Index,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_4,6.0,A4 interface workable,False,Agency Index,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_5,3.0,A5 useful surprise,False,,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,pre,A_7,6.0,A7 others would find interesting,False,,3,2026-01-05 20:27:28.074727+00:00
+5220H,B,post,B_1,6.0,B1 same-process,False,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_6,2.0,B6 overload,True,Intermediality Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_7,2.0,B7 expectation match,False,Mismatch Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_8,7.0,B8 interpretation change,False,Mismatch Index,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_9,2.0,B9 plausible causal story,False,,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_10,3.0,B10 system autonomy,False,,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_11,4.0,B11 relied on visual cues,False,,3,2026-01-05 20:33:16.409195+00:00
+5220H,B,post,B_12,2.0,B12 relied on theory cues,False,,3,2026-01-05 20:33:16.409195+00:00
+5220H,A,end,rank,2.0,Preference rank (1=best),False,,1,2026-01-05 20:39:16.097046+00:00
+5220H,B,end,rank,3.0,Preference rank (1=best),False,,3,2026-01-05 20:39:16.097046+00:00
+5220H,C,end,rank,1.0,Preference rank (1=best),False,,2,2026-01-05 20:39:16.097046+00:00
+5220H,C,end,most_intermedial,1.0,Most intermedial,False,,2,2026-01-05 20:39:16.097046+00:00
+5220H,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,3,2026-01-05 20:39:16.097046+00:00
+1661J,B,pre,A_1,6.0,A1 satisfaction,False,,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_2,2.0,A2 intention clarity,False,Agency Index,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_3,4.0,A3 steerability,False,Agency Index,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_4,6.0,A4 interface workable,False,Agency Index,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_5,7.0,A5 useful surprise,False,,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_6,1.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,pre,A_7,6.0,A7 others would find interesting,False,,1,2026-01-06 11:57:45.011891+00:00
+1661J,B,post,B_1,7.0,B1 same-process,False,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_6,1.0,B6 overload,True,Intermediality Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_7,2.0,B7 expectation match,False,Mismatch Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_8,2.0,B8 interpretation change,False,Mismatch Index,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_9,3.0,B9 plausible causal story,False,,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_10,5.0,B10 system autonomy,False,,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_11,1.0,B11 relied on visual cues,False,,1,2026-01-06 12:04:12.814827+00:00
+1661J,B,post,B_12,3.0,B12 relied on theory cues,False,,1,2026-01-06 12:04:12.814827+00:00
+1661J,A,pre,A_1,5.0,A1 satisfaction,False,,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_2,6.0,A2 intention clarity,False,Agency Index,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_3,6.0,A3 steerability,False,Agency Index,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_4,3.0,A4 interface workable,False,Agency Index,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_5,5.0,A5 useful surprise,False,,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,pre,A_7,7.0,A7 others would find interesting,False,,2,2026-01-06 12:15:39.666879+00:00
+1661J,A,post,B_1,4.0,B1 same-process,False,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_6,1.0,B6 overload,True,Intermediality Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_7,3.0,B7 expectation match,False,Mismatch Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_9,6.0,B9 plausible causal story,False,,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_10,5.0,B10 system autonomy,False,,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_11,7.0,B11 relied on visual cues,False,,2,2026-01-06 12:19:43.900185+00:00
+1661J,A,post,B_12,1.0,B12 relied on theory cues,False,,2,2026-01-06 12:19:43.900185+00:00
+1661J,C,pre,A_1,3.0,A1 satisfaction,False,,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_2,3.0,A2 intention clarity,False,Agency Index,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_3,5.0,A3 steerability,False,Agency Index,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_4,6.0,A4 interface workable,False,Agency Index,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_5,7.0,A5 useful surprise,False,,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,pre,A_7,6.0,A7 others would find interesting,False,,3,2026-01-06 12:31:03.785948+00:00
+1661J,C,post,B_1,6.0,B1 same-process,False,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_6,4.0,B6 overload,True,Intermediality Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_7,2.0,B7 expectation match,False,Mismatch Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_8,5.0,B8 interpretation change,False,Mismatch Index,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_9,4.0,B9 plausible causal story,False,,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_10,5.0,B10 system autonomy,False,,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_11,7.0,B11 relied on visual cues,False,,3,2026-01-06 12:39:14.747994+00:00
+1661J,C,post,B_12,1.0,B12 relied on theory cues,False,,3,2026-01-06 12:39:14.747994+00:00
+1661J,A,end,rank,3.0,Preference rank (1=best),False,,2,2026-01-06 12:43:49.687755+00:00
+1661J,B,end,rank,2.0,Preference rank (1=best),False,,1,2026-01-06 12:43:49.687755+00:00
+1661J,C,end,rank,1.0,Preference rank (1=best),False,,3,2026-01-06 12:43:49.687755+00:00
+1661J,C,end,most_intermedial,1.0,Most intermedial,False,,3,2026-01-06 12:43:49.687755+00:00
+1661J,C,end,biggest_mismatch,1.0,Biggest mismatch,False,,3,2026-01-06 12:43:49.687755+00:00
+3483M,B,post,B_1,7.0,B1 same-process,False,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_5,5.0,B5 destructive interference,True,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_6,3.0,B6 overload,True,Intermediality Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_7,4.0,B7 expectation match,False,Mismatch Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_8,3.0,B8 interpretation change,False,Mismatch Index,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_9,4.0,B9 plausible causal story,False,,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_10,2.0,B10 system autonomy,False,,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_11,1.0,B11 relied on visual cues,False,,1,2026-01-06 15:33:29.125855+00:00
+3483M,B,post,B_12,2.0,B12 relied on theory cues,False,,1,2026-01-06 15:33:29.125855+00:00
+3483M,C,pre,A_1,5.0,A1 satisfaction,False,,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_2,2.0,A2 intention clarity,False,Agency Index,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_3,4.0,A3 steerability,False,Agency Index,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_4,4.0,A4 interface workable,False,Agency Index,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_5,5.0,A5 useful surprise,False,,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_6,3.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,pre,A_7,4.0,A7 others would find interesting,False,,2,2026-01-06 15:56:03.443921+00:00
+3483M,C,post,B_1,7.0,B1 same-process,False,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_2,3.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_6,1.0,B6 overload,True,Intermediality Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_9,3.0,B9 plausible causal story,False,,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_10,2.0,B10 system autonomy,False,,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_11,2.0,B11 relied on visual cues,False,,2,2026-01-06 16:02:36.030570+00:00
+3483M,C,post,B_12,2.0,B12 relied on theory cues,False,,2,2026-01-06 16:02:36.030570+00:00
+3483M,A,pre,A_1,4.0,A1 satisfaction,False,,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_2,3.0,A2 intention clarity,False,Agency Index,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_3,4.0,A3 steerability,False,Agency Index,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_4,4.0,A4 interface workable,False,Agency Index,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_5,5.0,A5 useful surprise,False,,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,pre,A_7,4.0,A7 others would find interesting,False,,3,2026-01-06 16:14:26.656392+00:00
+3483M,A,post,B_1,7.0,B1 same-process,False,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_5,4.0,B5 destructive interference,True,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_6,2.0,B6 overload,True,Intermediality Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_7,4.0,B7 expectation match,False,Mismatch Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_9,4.0,B9 plausible causal story,False,,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_10,3.0,B10 system autonomy,False,,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_11,6.0,B11 relied on visual cues,False,,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,post,B_12,3.0,B12 relied on theory cues,False,,3,2026-01-06 16:23:15.612402+00:00
+3483M,A,end,rank,2.0,Preference rank (1=best),False,,3,2026-01-06 16:39:44.596394+00:00
+3483M,B,end,rank,3.0,Preference rank (1=best),False,,1,2026-01-06 16:39:44.596394+00:00
+3483M,C,end,rank,1.0,Preference rank (1=best),False,,2,2026-01-06 16:39:44.596394+00:00
+3483M,A,end,biggest_mismatch,1.0,Biggest mismatch,False,,3,2026-01-06 16:39:44.596394+00:00
+4939Z,C,pre,A_1,5.0,A1 satisfaction,False,,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_2,4.0,A2 intention clarity,False,Agency Index,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_3,5.0,A3 steerability,False,Agency Index,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_4,3.0,A4 interface workable,False,Agency Index,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_6,6.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,pre,A_7,3.0,A7 others would find interesting,False,,1,2026-01-06 18:47:29.420792+00:00
+4939Z,C,post,B_1,6.0,B1 same-process,False,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_2,3.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_3,5.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_5,5.0,B5 destructive interference,True,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_6,2.0,B6 overload,True,Intermediality Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_8,7.0,B8 interpretation change,False,Mismatch Index,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_9,6.0,B9 plausible causal story,False,,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_10,5.0,B10 system autonomy,False,,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_11,5.0,B11 relied on visual cues,False,,1,2026-01-06 19:01:05.884744+00:00
+4939Z,C,post,B_12,6.0,B12 relied on theory cues,False,,1,2026-01-06 19:01:05.884744+00:00
+4939Z,A,pre,A_1,5.0,A1 satisfaction,False,,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_2,6.0,A2 intention clarity,False,Agency Index,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_3,6.0,A3 steerability,False,Agency Index,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_4,6.0,A4 interface workable,False,Agency Index,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_5,4.0,A5 useful surprise,False,,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_6,3.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,pre,A_7,5.0,A7 others would find interesting,False,,2,2026-01-06 19:12:40.116898+00:00
+4939Z,A,post,B_1,3.0,B1 same-process,False,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_3,5.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_4,5.0,B4 constructive interference,False,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_5,6.0,B5 destructive interference,True,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_6,2.0,B6 overload,True,Intermediality Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_7,3.0,B7 expectation match,False,Mismatch Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_8,5.0,B8 interpretation change,False,Mismatch Index,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_9,3.0,B9 plausible causal story,False,,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_10,5.0,B10 system autonomy,False,,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_11,7.0,B11 relied on visual cues,False,,2,2026-01-06 19:25:12.529143+00:00
+4939Z,A,post,B_12,2.0,B12 relied on theory cues,False,,2,2026-01-06 19:25:12.529143+00:00
+4939Z,B,pre,A_1,6.0,A1 satisfaction,False,,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_2,6.0,A2 intention clarity,False,Agency Index,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_3,5.0,A3 steerability,False,Agency Index,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_4,5.0,A4 interface workable,False,Agency Index,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_5,4.0,A5 useful surprise,False,,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_6,6.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,pre,A_7,3.0,A7 others would find interesting,False,,3,2026-01-06 19:37:39.226339+00:00
+4939Z,B,post,B_1,6.0,B1 same-process,False,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_2,5.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_5,3.0,B5 destructive interference,True,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_6,6.0,B6 overload,True,Intermediality Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_7,3.0,B7 expectation match,False,Mismatch Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_9,2.0,B9 plausible causal story,False,,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_10,7.0,B10 system autonomy,False,,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_11,1.0,B11 relied on visual cues,False,,3,2026-01-06 19:53:06.203242+00:00
+4939Z,B,post,B_12,6.0,B12 relied on theory cues,False,,3,2026-01-06 19:53:06.203242+00:00
+4939Z,A,end,rank,2.0,Preference rank (1=best),False,,2,2026-01-06 20:12:46.415747+00:00
+4939Z,B,end,rank,1.0,Preference rank (1=best),False,,3,2026-01-06 20:12:46.415747+00:00
+4939Z,C,end,rank,3.0,Preference rank (1=best),False,,1,2026-01-06 20:12:46.415747+00:00
+4939Z,B,end,most_intermedial,1.0,Most intermedial,False,,3,2026-01-06 20:12:46.415747+00:00
+4939Z,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,3,2026-01-06 20:12:46.415747+00:00
+4069S,C,pre,A_1,6.0,A1 satisfaction,False,,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_2,4.0,A2 intention clarity,False,Agency Index,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_3,5.0,A3 steerability,False,Agency Index,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_4,3.0,A4 interface workable,False,Agency Index,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,pre,A_7,3.0,A7 others would find interesting,False,,1,2026-01-07 11:46:24.205079+00:00
+4069S,C,post,B_1,7.0,B1 same-process,False,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_5,7.0,B5 destructive interference,True,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_6,2.0,B6 overload,True,Intermediality Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_9,2.0,B9 plausible causal story,False,,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_10,5.0,B10 system autonomy,False,,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_11,6.0,B11 relied on visual cues,False,,1,2026-01-07 11:55:55.038272+00:00
+4069S,C,post,B_12,1.0,B12 relied on theory cues,False,,1,2026-01-07 11:55:55.038272+00:00
+4069S,B,pre,A_1,5.0,A1 satisfaction,False,,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_2,2.0,A2 intention clarity,False,Agency Index,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_3,2.0,A3 steerability,False,Agency Index,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_4,2.0,A4 interface workable,False,Agency Index,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_5,4.0,A5 useful surprise,False,,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_6,1.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,pre,A_7,2.0,A7 others would find interesting,False,,2,2026-01-07 12:04:28.985339+00:00
+4069S,B,post,B_1,6.0,B1 same-process,False,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_2,3.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_3,3.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_6,2.0,B6 overload,True,Intermediality Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_7,7.0,B7 expectation match,False,Mismatch Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_9,5.0,B9 plausible causal story,False,,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_10,7.0,B10 system autonomy,False,,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_11,1.0,B11 relied on visual cues,False,,2,2026-01-07 12:12:49.647375+00:00
+4069S,B,post,B_12,1.0,B12 relied on theory cues,False,,2,2026-01-07 12:12:49.647375+00:00
+4069S,A,pre,A_1,7.0,A1 satisfaction,False,,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_2,7.0,A2 intention clarity,False,Agency Index,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_3,6.0,A3 steerability,False,Agency Index,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_4,5.0,A4 interface workable,False,Agency Index,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_5,4.0,A5 useful surprise,False,,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-07 12:21:46.545534+00:00
+4069S,A,pre,A_7,5.0,A7 others would find interesting,False,,3,2026-01-07 12:21:46.545534+00:00
+5747E,C,pre,A_1,6.0,A1 satisfaction,False,,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_2,5.0,A2 intention clarity,False,Agency Index,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_3,4.0,A3 steerability,False,Agency Index,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_4,5.0,A4 interface workable,False,Agency Index,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_6,1.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-09 15:15:43.909699+00:00
+5747E,C,pre,A_7,5.0,A7 others would find interesting,False,,1,2026-01-09 15:15:43.909699+00:00
+4069S,A,post,B_1,7.0,B1 same-process,False,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_6,5.0,B6 overload,True,Intermediality Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_7,3.0,B7 expectation match,False,Mismatch Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_9,5.0,B9 plausible causal story,False,,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_10,6.0,B10 system autonomy,False,,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_11,7.0,B11 relied on visual cues,False,,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,post,B_12,1.0,B12 relied on theory cues,False,,3,2026-01-07 12:28:30.549302+00:00
+4069S,A,end,rank,2.0,Preference rank (1=best),False,,3,2026-01-07 12:37:46.641908+00:00
+4069S,B,end,rank,3.0,Preference rank (1=best),False,,2,2026-01-07 12:37:46.641908+00:00
+4069S,C,end,rank,1.0,Preference rank (1=best),False,,1,2026-01-07 12:37:46.641908+00:00
+4069S,C,end,most_intermedial,1.0,Most intermedial,False,,1,2026-01-07 12:37:46.641908+00:00
+4069S,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,2,2026-01-07 12:37:46.641908+00:00
+6770L,A,pre,A_1,7.0,A1 satisfaction,False,,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_2,6.0,A2 intention clarity,False,Agency Index,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_3,6.0,A3 steerability,False,Agency Index,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_4,6.0,A4 interface workable,False,Agency Index,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_5,7.0,A5 useful surprise,False,,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,pre,A_7,6.0,A7 others would find interesting,False,,1,2026-01-07 14:53:01.379398+00:00
+6770L,A,post,B_1,5.0,B1 same-process,False,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_3,5.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_4,4.0,B4 constructive interference,False,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_6,1.0,B6 overload,True,Intermediality Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_7,3.0,B7 expectation match,False,Mismatch Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_8,1.0,B8 interpretation change,False,Mismatch Index,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_9,5.0,B9 plausible causal story,False,,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_10,3.0,B10 system autonomy,False,,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_11,7.0,B11 relied on visual cues,False,,1,2026-01-07 15:05:17.803827+00:00
+6770L,A,post,B_12,2.0,B12 relied on theory cues,False,,1,2026-01-07 15:05:17.803827+00:00
+6770L,B,pre,A_1,6.0,A1 satisfaction,False,,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_2,7.0,A2 intention clarity,False,Agency Index,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_3,5.0,A3 steerability,False,Agency Index,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_4,6.0,A4 interface workable,False,Agency Index,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_5,5.0,A5 useful surprise,False,,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_6,6.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,pre,A_7,7.0,A7 others would find interesting,False,,2,2026-01-07 15:20:25.361976+00:00
+6770L,B,post,B_1,7.0,B1 same-process,False,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_6,1.0,B6 overload,True,Intermediality Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_7,6.0,B7 expectation match,False,Mismatch Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_8,7.0,B8 interpretation change,False,Mismatch Index,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_9,6.0,B9 plausible causal story,False,,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_10,4.0,B10 system autonomy,False,,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_11,1.0,B11 relied on visual cues,False,,2,2026-01-07 15:30:57.204060+00:00
+6770L,B,post,B_12,7.0,B12 relied on theory cues,False,,2,2026-01-07 15:30:57.204060+00:00
+6770L,C,pre,A_1,7.0,A1 satisfaction,False,,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_2,3.0,A2 intention clarity,False,Agency Index,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_3,5.0,A3 steerability,False,Agency Index,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_4,6.0,A4 interface workable,False,Agency Index,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_5,6.0,A5 useful surprise,False,,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_6,3.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,pre,A_7,5.0,A7 others would find interesting,False,,3,2026-01-07 15:45:34.856389+00:00
+6770L,C,post,B_1,4.0,B1 same-process,False,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_2,7.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_3,7.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_4,7.0,B4 constructive interference,False,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_5,1.0,B5 destructive interference,True,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_6,1.0,B6 overload,True,Intermediality Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_9,5.0,B9 plausible causal story,False,,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_10,5.0,B10 system autonomy,False,,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_11,7.0,B11 relied on visual cues,False,,3,2026-01-07 15:53:50.331995+00:00
+6770L,C,post,B_12,7.0,B12 relied on theory cues,False,,3,2026-01-07 15:53:50.331995+00:00
+5747E,C,post,B_1,4.0,B1 same-process,False,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_2,6.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_4,6.0,B4 constructive interference,False,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_6,2.0,B6 overload,True,Intermediality Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_9,4.0,B9 plausible causal story,False,,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_10,2.0,B10 system autonomy,False,,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_11,4.0,B11 relied on visual cues,False,,1,2026-01-09 15:23:34.107590+00:00
+5747E,C,post,B_12,1.0,B12 relied on theory cues,False,,1,2026-01-09 15:23:34.107590+00:00
+6770L,A,end,rank,3.0,Preference rank (1=best),False,,1,2026-01-07 16:01:40.884478+00:00
+6770L,B,end,rank,2.0,Preference rank (1=best),False,,2,2026-01-07 16:01:40.884478+00:00
+6770L,C,end,rank,1.0,Preference rank (1=best),False,,3,2026-01-07 16:01:40.884478+00:00
+6770L,C,end,most_intermedial,1.0,Most intermedial,False,,3,2026-01-07 16:01:40.884478+00:00
+6770L,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,2,2026-01-07 16:01:40.884478+00:00
+7974C,B,pre,A_1,4.0,A1 satisfaction,False,,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_2,6.0,A2 intention clarity,False,Agency Index,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_3,4.0,A3 steerability,False,Agency Index,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_4,2.0,A4 interface workable,False,Agency Index,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_5,6.0,A5 useful surprise,False,,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_6,3.0,A6 frustrating unpredictability,True,Agency Index,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,pre,A_7,3.0,A7 others would find interesting,False,,1,2026-01-07 17:58:52.403656+00:00
+7974C,B,post,B_1,5.0,B1 same-process,False,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_3,4.0,B3 coherent/legible relationship,False,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_4,5.0,B4 constructive interference,False,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_5,3.0,B5 destructive interference,True,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_6,2.0,B6 overload,True,Intermediality Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_7,1.0,B7 expectation match,False,Mismatch Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_8,5.0,B8 interpretation change,False,Mismatch Index,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_9,6.0,B9 plausible causal story,False,,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_10,3.0,B10 system autonomy,False,,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_11,2.0,B11 relied on visual cues,False,,1,2026-01-07 18:12:29.371521+00:00
+7974C,B,post,B_12,1.0,B12 relied on theory cues,False,,1,2026-01-07 18:12:29.371521+00:00
+7974C,A,pre,A_1,6.0,A1 satisfaction,False,,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_2,6.0,A2 intention clarity,False,Agency Index,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_3,6.0,A3 steerability,False,Agency Index,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_4,5.0,A4 interface workable,False,Agency Index,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_5,4.0,A5 useful surprise,False,,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,pre,A_7,5.0,A7 others would find interesting,False,,2,2026-01-07 18:31:25.003301+00:00
+7974C,A,post,B_1,2.0,B1 same-process,False,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_3,3.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_4,4.0,B4 constructive interference,False,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_5,4.0,B5 destructive interference,True,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_6,3.0,B6 overload,True,Intermediality Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_7,1.0,B7 expectation match,False,Mismatch Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_9,5.0,B9 plausible causal story,False,,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_10,2.0,B10 system autonomy,False,,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_11,7.0,B11 relied on visual cues,False,,2,2026-01-07 18:47:12.018113+00:00
+7974C,A,post,B_12,1.0,B12 relied on theory cues,False,,2,2026-01-07 18:47:12.018113+00:00
+7974C,C,pre,A_1,5.0,A1 satisfaction,False,,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_2,7.0,A2 intention clarity,False,Agency Index,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_3,6.0,A3 steerability,False,Agency Index,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_4,4.0,A4 interface workable,False,Agency Index,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_5,5.0,A5 useful surprise,False,,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_6,4.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,pre,A_7,5.0,A7 others would find interesting,False,,3,2026-01-07 19:03:42.252726+00:00
+7974C,C,post,B_1,6.0,B1 same-process,False,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_3,6.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_4,2.0,B4 constructive interference,False,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_5,4.0,B5 destructive interference,True,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_6,2.0,B6 overload,True,Intermediality Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_7,4.0,B7 expectation match,False,Mismatch Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_8,4.0,B8 interpretation change,False,Mismatch Index,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_9,6.0,B9 plausible causal story,False,,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_10,2.0,B10 system autonomy,False,,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_11,7.0,B11 relied on visual cues,False,,3,2026-01-07 19:14:09.083073+00:00
+7974C,C,post,B_12,5.0,B12 relied on theory cues,False,,3,2026-01-07 19:14:09.083073+00:00
+7974C,A,end,rank,2.0,Preference rank (1=best),False,,2,2026-01-07 19:23:33.339269+00:00
+7974C,B,end,rank,3.0,Preference rank (1=best),False,,1,2026-01-07 19:23:33.339269+00:00
+7974C,C,end,rank,1.0,Preference rank (1=best),False,,3,2026-01-07 19:23:33.339269+00:00
+7974C,C,end,most_intermedial,1.0,Most intermedial,False,,3,2026-01-07 19:23:33.339269+00:00
+7974C,A,end,biggest_mismatch,1.0,Biggest mismatch,False,,2,2026-01-07 19:23:33.339269+00:00
+5747E,A,post,B_1,6.0,B1 same-process,False,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_2,5.0,B2 balanced modalities,False,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_3,5.0,B3 coherent/legible relationship,False,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_4,5.0,B4 constructive interference,False,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_5,2.0,B5 destructive interference,True,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_6,2.0,B6 overload,True,Intermediality Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_7,4.0,B7 expectation match,False,Mismatch Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_8,7.0,B8 interpretation change,False,Mismatch Index,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_9,1.0,B9 plausible causal story,False,,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_10,4.0,B10 system autonomy,False,,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_11,5.0,B11 relied on visual cues,False,,2,2026-01-09 15:45:07.387908+00:00
+5747E,A,post,B_12,1.0,B12 relied on theory cues,False,,2,2026-01-09 15:45:07.387908+00:00
+5747E,B,pre,A_1,6.0,A1 satisfaction,False,,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_2,3.0,A2 intention clarity,False,Agency Index,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_3,4.0,A3 steerability,False,Agency Index,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_4,4.0,A4 interface workable,False,Agency Index,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_5,4.0,A5 useful surprise,False,,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_6,2.0,A6 frustrating unpredictability,True,Agency Index,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,pre,A_7,2.0,A7 others would find interesting,False,,3,2026-01-09 15:58:02.468160+00:00
+5747E,B,post,B_1,3.0,B1 same-process,False,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_2,2.0,B2 balanced modalities,False,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_3,5.0,B3 coherent/legible relationship,False,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_4,4.0,B4 constructive interference,False,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_5,4.0,B5 destructive interference,True,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_6,2.0,B6 overload,True,Intermediality Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_7,4.0,B7 expectation match,False,Mismatch Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_8,6.0,B8 interpretation change,False,Mismatch Index,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_9,2.0,B9 plausible causal story,False,,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_10,4.0,B10 system autonomy,False,,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_11,2.0,B11 relied on visual cues,False,,3,2026-01-09 16:03:51.631122+00:00
+5747E,B,post,B_12,1.0,B12 relied on theory cues,False,,3,2026-01-09 16:03:51.631122+00:00
+5747E,A,end,rank,2.0,Preference rank (1=best),False,,2,2026-01-09 16:12:00.380092+00:00
+5747E,B,end,rank,3.0,Preference rank (1=best),False,,3,2026-01-09 16:12:00.380092+00:00
+5747E,C,end,rank,1.0,Preference rank (1=best),False,,1,2026-01-09 16:12:00.380092+00:00
+5747E,C,end,most_intermedial,1.0,Most intermedial,False,,1,2026-01-09 16:12:00.380092+00:00
+5747E,B,end,biggest_mismatch,1.0,Biggest mismatch,False,,3,2026-01-09 16:12:00.380092+00:00

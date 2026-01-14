@@ -1,0 +1,1 @@
+Median [Q1, Q3] Likert ratings (1-7) for all A1-A7 and B1-B12 items by condition; N is the count of participants. Values in square brackets are the interquartile range (Q1, Q3).

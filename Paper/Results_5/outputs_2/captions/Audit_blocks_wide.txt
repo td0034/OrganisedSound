@@ -1,0 +1,1 @@
+Audit table: wide-format block-level responses with items and composite indices.

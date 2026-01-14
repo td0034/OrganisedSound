@@ -1,0 +1,63 @@
+[
+  {
+    "id": "Fig1",
+    "title": "End-of-session outcomes by condition",
+    "plot_type": "outcomes",
+    "input_df": "end",
+    "output_basename": "Fig1_outcomes",
+    "size": "double",
+    "caption_stub": "Preference rank, most intermedial, and biggest mismatch counts by condition."
+  },
+  {
+    "id": "Fig2",
+    "title": "Part A (pre-reveal) Likert responses",
+    "plot_type": "likert_panel",
+    "items": ["A_1", "A_2", "A_3", "A_4", "A_5", "A_6", "A_7"],
+    "input_df": "long",
+    "output_basename": "Fig2_partA_likert",
+    "size": "double",
+    "caption_stub": "Diverging stacked Likert bars for pre-reveal items by condition."
+  },
+  {
+    "id": "Fig3",
+    "title": "Part B (post-reveal) Likert responses",
+    "plot_type": "likert_panel",
+    "items": ["B_1", "B_2", "B_3", "B_4", "B_5", "B_6", "B_7", "B_8", "B_9", "B_10", "B_11", "B_12"],
+    "input_df": "long",
+    "output_basename": "Fig3_partB_likert",
+    "size": "double",
+    "caption_stub": "Diverging stacked Likert bars for post-reveal items by condition."
+  },
+  {
+    "id": "Fig4",
+    "title": "Primary contrasts (paired differences)",
+    "plot_type": "estimation",
+    "measures": [
+      {"column": "A_3", "label": "A3 steerability"},
+      {"column": "Intermediality Index", "label": "Intermediality Index"},
+      {"column": "B_6", "label": "B6 overload"}
+    ],
+    "input_df": "wide",
+    "output_basename": "Fig4_estimation_contrasts",
+    "size": "double",
+    "caption_stub": "Paired difference estimates for key contrasts." 
+  },
+  {
+    "id": "Fig5",
+    "title": "Parameter influence by condition",
+    "plot_type": "param_heatmap",
+    "input_df": "params",
+    "output_basename": "Fig5_param_heatmap",
+    "size": "double",
+    "caption_stub": "Heatmap of parameter influence counts by condition."
+  },
+  {
+    "id": "Fig6",
+    "title": "Parameter influence by condition",
+    "plot_type": "param_stacked",
+    "input_df": "params",
+    "output_basename": "Fig6_param_influence_stacked",
+    "size": "double",
+    "caption_stub": "Stacked bar chart of parameter influence counts by condition."
+  }
+]
