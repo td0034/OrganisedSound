@@ -59,3 +59,33 @@ The merged “session notes” and “one change” responses make the interpret
 
 A subtle but valuable theme becomes clearer in the merged set: several participants describe outcomes they enjoyed but could not reproduce (“don’t think I could reproduce it ever as it’s not in my head”), and they explicitly question authorship (“if I performed or the Tonnetz performed”). This sits alongside descriptions of play, surprise, and acceptance, and suggests that participants treat the system less as a deterministic instrument and more as an autonomous collaborator whose behaviour must be negotiated rather than commanded. In this framing, “intermedial composition” is not only the production of an artefact; it is the cultivation of a working relationship with a shared generative substrate—one that is sometimes more legible in replay than in action.
 }
+
+
+
+Participants and completeness (Table 1)
+
+Nine participants completed all three blocks (N=9; 27/27 blocks; no missing quantitative items). All sessions were solo. Participants spanned multiple age ranges (including one 65+), and musical experience ranged from none to advanced/professional; two participants reported high music/theory familiarity and one reported colour deficiency (red–green). See Table 1 for overview.
+
+Preferences and “most intermedial” judgments (Fig 1)
+
+Participants overwhelmingly preferred the audio–visual condition (C). Eight of nine participants ranked C as their top condition, with one participant preferring B and none preferring A. When asked which condition felt “most intermedial”, seven participants selected C and one selected B (no participants selected A), with the remaining response recorded as unsure depending on coding. In contrast, the largest expectation mismatch was most frequently reported in B (6/9), followed by A (2/9) and C (1/9). These distributions are summarised in Fig1_outcomes_counts.
+
+Perceived steerability depends on available modality (Fig 2; Table 2)
+
+Perceived ability to steer the system toward an intention (A3) was highest when composing with visual access (A: median 6.00 [4.00, 6.00]), lowest when composing audio-only (B: 4.00 [3.00, 5.00]), and intermediate for audio–visual (C: 5.00 [5.00, 5.00]). This paired pattern is shown in Fig2_paired_control_A3 and aligns with participants’ qualitative reports that visual feedback supported agency and learning-by-adjustment, while the audio-only constraint could feel like “something missing” during performance.
+
+Notably, outcome satisfaction (A1) did not track steerability directly. Satisfaction was lowest in A (5.00 [4.00, 6.00]) and higher in both B (6.00 [4.00, 6.00]) and C (6.00 [5.00, 6.00]) (Table 2). This supports the qualitative observation that even when audio-only performance felt harder to control, the subsequent reveal could be experienced as structured and aesthetically rewarding.
+
+Intermedial coherence is strongest after audio-only and audio–visual composition (Fig 3; Table 2)
+
+Ratings for “two views of the same underlying process” (B1) were markedly higher in B and C than in A (A: 4.00 [3.00, 6.00]; B: 6.00 [6.00, 7.00]; C: 6.00 [6.00, 6.00]) (Table 2). In other words, participants more strongly perceived intermedial coupling when the composition stage either foregrounded sound (B) or integrated both modalities (C), whereas composing from visuals alone produced weaker “same process” judgments on reveal. This pattern is captured by the paired intermediality summary in Fig3_paired_intermediality_index, and it dovetails with qualitative accounts of (i) surprise and reinterpretation on reveal, and (ii) difficulties predicting sonic complexity from visual density in the visual-only block for some participants.
+
+Overload and autonomy (Table 2; optional Fig 4)
+
+Perceptual overload (B6) remained low across conditions (A: 2.00 [1.00, 2.00]; B: 2.00 [2.00, 3.00]; C: 2.00 [2.00, 2.00]). Although participants sometimes described moments of chaos or intensity qualitatively, these did not translate into consistently high overload ratings at the group level. Perceived system autonomy (B10) was moderate in A and B (both 4.00 [3.00, 5.00]) and slightly higher in C (5.00 [2.00, 5.00]), consistent with qualitative language of “collaboration” when both modalities were available.
+
+(If you keep Fig4_paired_overload_B6, this paragraph becomes more convincing as a “negative finding”: overload is not the main mechanism; mismatch/control/reinterpretation is.)
+
+Parameter strategy differs by condition (Fig 6; counts table)
+
+Participants’ self-reported “most influential parameters” show a stable core and a modality-dependent shift. Rate was the dominant control across all conditions (A: 8 selections; B: 7; C: 6), consistent with participants using global tempo/dynamism to shape arcs and transitions. Scale shows the clearest modality dependence: it was cited far more often when sound was available during composition (B: 7; C: 8) than in visual-only composition (A: 3), suggesting that harmonic/tonal considerations become salient when participants are actively managing auditory outcomes. Other structural parameters (Life Length; neighbour and population thresholds) were cited at moderate frequency across conditions, supporting the qualitative framing of “constraint tuning” and “finding stable states” as part of the exploration. These distributions are shown in Fig6_param_influence_by_condition.

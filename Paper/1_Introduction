@@ -1,42 +1,69 @@
 1. Introduction
-Electroacoustic audiovisual composition is often discussed through models that implicitly privilege one medium over another: sound interpreted as primary structure with image as illustration, or image interpreted as primary narrative with sound as enhancement. Even where practitioners aim for parity, the practical realities of compositional workflow, interface design and perceptual salience tend to reintroduce hierarchy. This thematic issue calls for approaches that treat sound and moving image as co-equal media within an intermedial space, and for critical accounts of how meaning arises when the media are fused rather than juxtaposed.
-This article contributes; a practice-based, empirical study of intermedial composition using a Tonnetz cellular automata (CA) system in which sound and light are generated from a single evolving state-space. The work starts from a simple proposition: if sound and image are projections of the same latent “score”, then intermediality can be addressed not only as an aesthetic aspiration, but as a manipulable design problem. In such a system, relationships between media are not primarily established through post-hoc synchronisation or representational alignment, but through shared generative causality: changes to the underlying state propagate to both modalities. This framing has two implications for intermedial practice. First, it invites a conception of composition as shaping the dynamics of an underlying state-space rather than authoring separate sonic and visual layers. Second, it provides a concrete basis for analysing intermedial interference: constructive and destructive interactions can be observed when the two projections amplify, compete with, or contradict one another in perception.
-1.1. Intermedial interference as a design and evaluation problem
-In the context of generative audiovisual instruments, intermedial interference can be understood as the perceptual and interpretive consequences of interactions between salient features of the two media: temporal alignment (or misalignment), structural correspondence (or divergence), salience dominance, and the distribution of perceived agency between human and system. In a state-space projection model, interference is not an incidental by-product; it is an emergent property of coupling choices, control affordances and constraint regimes. For example, increasing the update rate or density of events may raise perceived vitality while simultaneously producing attentional overload, shifting the balance of salience between modalities. Similarly, introducing recurrence (looping) may increase structural legibility while reducing the sense of liveness or co-authorship. These tensions are compositional in nature, but they are also evaluable: they manifest in what participants do, what they report experiencing, and what independent listeners/viewers perceive in the resulting artefacts.
-Despite the prevalence of generative systems in electroacoustic and audiovisual practices, evaluation is frequently limited to descriptive accounts or anecdotal responses, making it difficult to compare design choices or to articulate how a system supports co-equal media relationships. There remains a need for evaluation approaches that can (i) retain practice-based validity, (ii) produce analysable evidence within realistic artistic development timelines, and (iii) connect participant experience to perceivable properties of the resulting audiovisual artefacts.
-1.2. System overview: Tonnetz cellular automata as an intermedial score
-The system studied here organises pitch classes on a Tonnetz-derived spatial lattice and drives their activation through asynchronous CA dynamics. The same evolving CA state is rendered simultaneously as (i) audio output and (ii) LED-panel activity, with fixed mappings between pitch-class admissibility and colour. Composition occurs through real-time adjustment of a small set of parameters controlling population bounds, neighbour-rule thresholds, temporal rate, activation lifetimes, neighbourhood extent (local versus extended), recurrence (looping), and harmonic admissibility (scale). Rather than treating sound and light as separate channels to be aligned, the instrument treats them as co-equal surfaces of a single evolving substrate: when the underlying state changes, both modalities change.
-This design intentionally blurs boundaries between instrument and environment. On one hand, it affords local interventions and steerability through parameter changes; on the other, it produces autonomous evolution that can surprise and resist direct control. The central evaluation question is therefore not whether the system is “usable” in a conventional sense, but how its coupling and constraints support (or undermine) intermedial equality, meaningful fusion, and negotiated authorship.
-1.3. Research questions
-The study addresses the following questions:
-RQ1 (Intermedial equality): To what extent do participants experience sound and light as co-equal contributors to meaning when composing with the system?
 
+Electroacoustic audiovisual composition often aspires to parity between sound and moving image, yet compositional workflows and perceptual salience frequently reintroduce hierarchy—sound functioning as structural “carrier” with image as illustration, or image driving narrative with sound as enhancement. The Organised Sound thematic focus on intermediality intensifies this problem by asking how meaning emerges when media are fused rather than juxtaposed, and how “media equality” might be treated as more than an aesthetic intention.
 
-RQ2 (Intermedial interference): What forms of constructive and destructive intermedial interference arise in practice, and how do they relate to modality access and parameter shaping?
+This article contributes a practice-based empirical study of intermedial composition using a Tonnetz cellular automata (CA) instrument in which sound and LED-panel activity are parallel media projections of a single evolving state-space. The work begins from a simple proposition: when both modalities share generative causality—i.e., when changes to one latent substrate propagate to both sound and light—intermediality becomes a manipulable design problem rather than a post-hoc alignment task. Under this framing, composition is less the authoring of separate sonic and visual layers and more the shaping of state-space dynamics that become perceivable across modalities.
 
+We examine how such coupling supports (or undermines) intermedial equality by manipulating modality access during composition: participants compose under visual-only, audio-only, and audiovisual constraints, then immediately replay the captured excerpt with both modalities present (“the reveal”). This design makes intermedial relations observable at two levels: (i) how participants form intention and steer an autonomous substrate under partial information, and (ii) how the reinstated audiovisual whole is retrospectively interpreted, including whether interference is experienced as productive reinforcement or as cue conflict.
 
-RQ3 (Agency and causality): How do participants’ perceptions of authorship, predictability and steerability change when one modality is unavailable during composition?
+1.1 Intermedial interference as a design and evaluation problem
 
+In generative audiovisual instruments, the relationship between modalities is not fixed by synchronisation alone. It emerges from coupling choices, control affordances, and constraint regimes that shape what participants can perceive and predict while acting. We use intermedial interference to describe the perceptual and interpretive consequences of interactions between salient features of sound and light—e.g., temporal correspondence, density correspondence, salience dominance, and the perceived distribution of agency between human and system. Interference can be constructive (enhancing coherence, legibility, or meaning) or destructive (producing contradiction, masking, or loss of interpretability).
 
-RQ4 (Distributed authorship, exploratory): Can dyads with asymmetric modality access (one hearing, one seeing) negotiate a coherent intermedial outcome, and how is this outcome perceived by independent raters?
+Evaluation remains a practical challenge for practice-based intermedial work: accounts are often compelling but difficult to compare across design choices, and “media equality” is frequently asserted rather than operationalised. The present study aims to produce analysable evidence within realistic artistic development constraints by combining (i) controlled modality-access manipulation, (ii) replay-based reflection, (iii) saved parameter presets and captured artefacts, and (iv) a baseline “system-alone” control capturing intrinsic generativity without human steering.
 
+1.2 Key terms and operational definitions
 
-1.4. Methodological approach
-To operationalise “co-equal media” without reducing the work to preference testing, the study uses a within-subject design in which each participant completes three short compositional tasks under controlled modality-access conditions: visual-only, audio-only and audiovisual. In all cases, both audio and video are recorded, end-state parameter presets are saved for reproducibility, and participants complete brief post-block measures targeting coherence, novelty, agency, fusion/equality, and constructive versus destructive interference. Immediately after each block, participants replay the captured excerpt with both modalities enabled and provide a short reflection on expectation, fusion and competition. A baseline “system-alone” capture provides a control for the system’s intrinsic generativity.
-To relate felt experience to perceivable outcomes, the captured clips are subsequently rated by independent raters drawn from the author’s wider network using blind presentation and standardised scales (preference, coherence, novelty, fusion/equality, overload). Finally, an exploratory dyad variant tests distributed access: one participant composes with audio-only feedback while the other composes with visual-only feedback, negotiating parameter changes verbally to reach a joint outcome.
-1.5. Contributions
+Because several core terms are used inconsistently across intermedial discourse, this paper adopts the following operational meanings:
+
+Cue: any perceptual feature that participants use to infer system state or structure (e.g., density, repetition, onset grouping, colour clustering, persistence/decay, timbral separability, perceived “busyness”).
+
+Cue reliability: the extent to which a cue provides stable and accurate guidance for prediction and steering in a given context. A cue is “reliable” when similar cue states tend to imply similar system behaviour (supporting intention → action → evaluation); it is “unreliable” when it frequently misleads or varies in meaning across parameter regimes.
+
+Intermedial binding: the experience of sound and light as belonging to a single underlying process rather than two unrelated streams (operationalised via post-reveal items such as “two views of the same underlying process”, coherence/legibility, and causal story plausibility).
+
+Media equality: not mere co-presence, but the negotiated perceptual/interpretive condition in which neither modality is consistently treated as the sole “real” carrier of form; operationalised through balance and dominance reports, reliance on modality-specific cues, and qualitative accounts of hierarchy.
+
+Intermedial interference: constructive or destructive interaction between media features, including reinforcement (cross-modal support) and contradiction/competition (cue conflict, masking, overload).
+
+Agency and autonomy: agency refers to perceived ability to steer toward intention; autonomy refers to the perceived degree to which the system “wants to do its own thing.” Both are treated as co-creative properties rather than purely usability attributes.
+
+These definitions serve two purposes: they make the questionnaire items interpretable as measurements of specific experiential mechanisms, and they allow qualitative accounts to be analysed in terms of cue use, cue conflict, and evolving causal models.
+
+1.3 System overview: Tonnetz cellular automata as an intermedial score
+
+The instrument organises pitch classes on a Tonnetz-derived lattice and drives activation through asynchronous CA dynamics. The evolving CA state is rendered simultaneously as (i) audio output and (ii) LED-panel activity, with fixed mappings between pitch-class admissibility and colour. Participants shape outcomes by adjusting a compact parameter set controlling population bounds, neighbour-rule thresholds, neighbourhood extent (local versus extended), update rate, activation lifetimes, recurrence (looping), and harmonic admissibility (scale). Rather than aligning independent audio and visual layers, the instrument treats both modalities as parallel projections of a shared substrate: when state evolves, sound and light evolve together.
+
+This design intentionally balances steerability with autonomous behaviour. The evaluation problem is therefore not conventional “usability,” but how coupling and constraints support intermedial equality, meaningful fusion, and negotiated authorship under partial information.
+
+1.4 Research questions
+
+The study addresses three primary questions and one exploratory extension:
+
+RQ1 (Intermedial equality): To what extent do participants experience sound and light as co-equal contributors to meaning in a coupled generative system?
+
+RQ2 (Intermedial interference): What forms of constructive and destructive interference arise in practice, and how do they relate to modality access and parameter shaping?
+
+RQ3 (Agency and causality): How do perceived steerability, predictability, and authorship change when one modality is unavailable during composition, and what role does the reveal play in retrospective binding?
+
+RQ4 (Exploratory, distributed access): How do dyads with asymmetric modality access coordinate around a shared parameter interface, and what interaction patterns emerge that may inform future collaborative study designs?
+
+1.5 Methodological approach and evidence strategy (including external ratings)
+
+To operationalise “co-equal media” without reducing the work to preference testing, the study uses a within-subject design: each participant completes three short compositional tasks under visual-only, audio-only, and audiovisual constraints. In all blocks, paired audio/video artefacts are captured and end-state parameter presets saved; participants provide Likert ratings and free-text reflections both pre-reveal and post-reveal, allowing analysis of intention formation, monitoring, and retrospective reinterpretation.
+
+A blinded external rating study is being conducted to triangulate participant experience with artefact-level judgements. Because ratings collection is still ongoing, this paper reports the participant-facing results as the primary evidential base, while documenting the external rating protocol and current completion status in an appendix for transparency and to support follow-on analysis.
+
+1.6 Contributions
+
 This article offers three contributions to intermedial electroacoustic audiovisual practice:
-A state-space projection framing of intermedial composition in which sound and light are treated as parallel projections of a single generative substrate (an ‘intermedial score’), supporting analysis without default media hierarchy.
 
+A state-space projection framing of intermedial composition in which sound and light are treated as parallel media projections of a shared generative substrate (an intermedial “score”), avoiding default media hierarchy.
 
-An evaluative method suitable for practice-based research under time constraints, combining modality-access manipulation, replay-based reflection, baseline controls and independent rater assessment to connect compositional experience to perceivable artefacts.
+A practical evaluation method suitable for practice-based research under time constraints, combining modality-access manipulation, replay-based reflection, baseline controls, and traceable artefacts (saved presets + captures).
 
+An interference-focused analytic account describing how constructive and destructive interference manifests in this system, and how parameter regimes and modality access relate to perceived fusion, agency, and interpretability.
 
-An interference-focused analytic account (taxonomy and exemplars) describing how constructive and destructive intermedial interference manifests in this system, and how parameter regimes and modality access relate to perceived fusion, agency and overload.
+1.7 Article structure
 
-
-1.6. Article structure
-Section 2 situates the work within intermedial audiovisual composition and generative electroacoustic practices, clarifying how interference and equality are understood in this study. Section 3 details the system and study method, including parameter set, capture protocol and rating procedures. Section 4 reports quantitative and qualitative findings, including within-subject condition effects, baseline comparisons and rater triangulation, alongside an interference taxonomy supported by audiovisual exemplars. Section 5 discusses implications for intermedial instrument design, including practical strategies for balancing autonomy, constraint and salience to support co-equal media relationships.
-The audiovisual instrument evaluated here is the TZ5 / Cellular Au-Tonnetz system, previously described in detail as a unified audio-visual MIDI generator that couples Tonnetz pitch-space mapping with cellular automata and a web-configured embedded control architecture. Springer Nature Link+1 That prior publication focuses on system design and demonstration rather than formal evaluation.
-The present paper therefore contributes an issue-driven evaluation aligned with Organised Sound’s call for intermediality: specifically, how “media equality” and intermedial interference manifest when participants compose under modality-restricted conditions (visual-only / audio-only / audiovisual) and when outputs are subsequently assessed by independent raters.
-
+Section 2 situates the work within intermedial audiovisual composition and generative electroacoustic practices. Section 3 details the system and study method. Section 4 reports quantitative and qualitative findings from the participant study. Section 5 discusses implications for intermedial instrument design and outlines the role of external ratings and dyad work as future extensions.
