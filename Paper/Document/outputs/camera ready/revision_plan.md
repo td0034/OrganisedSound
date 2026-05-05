@@ -88,13 +88,14 @@
 - **Approach:** I'll do a first pass targeting the worst offenders (abstract, §1, §1.1, §1.2, §5.1) and Tom does a read-through. Avoid editing results quotes or method specifics.
 
 ### 2.9 Spelling errors (Reviewer 2)
-**Confirmed errors I spotted:**
-- L335: "didnt" → "didn't"
-- L335: "intersting" → "interesting"
-- L337: "perfomance" → "performance"
-- L501: "audiovisuallly" (triple l) → "audiovisually"
-- Need full proofread pass for the rest.
-**Action:** Full proofread after substantive edits are done.
+**Status after first audit pass:**
+- ✅ "audiovisuallly" → "audiovisually" — fixed (was Tom's prose, §5.1).
+- ⚠️ "didnt" / "intersting" / "perfomance" — all inside Participant 8's quoted text (§4.3). **Decision needed from Tom**: silently correct in quotes (with a methods footnote: "minor spelling normalised in participant quotes"), leave as-is, or `[sic]`. Standard for OS-style journals is silent correction with a footnote.
+- ⚠️ Hyphenation inconsistency: L204 "audio-visual MIDI generator" (paraphrasing the EvoMUSART self-cite, which is titled "Audio-Visual"); rest of paper uses "audiovisual" unhyphenated. Probably normalise L204 to "audiovisual"; reference list entry stays as the title.
+- No other typos found in author prose.
+
+### 2.10 Structural issue in §4.9 (newly found)
+L466–468: "**Reduce overload and support attention management**:" appears as a heading with **no content**, immediately followed by "**Improve interface ergonomics**:" with a participant quote. Looks like a deletion artefact or missing paste. **Decision needed from Tom**: was a quote dropped, or should the two headings be merged?
 
 ---
 
@@ -106,44 +107,47 @@
 3. Prefer Organised Sound and adjacent journals (CMJ, JNMR, Leonardo Music Journal) where possible — fits the audience.
 4. Anything not verifiable in the time available is dropped, not approximated.
 
-### 3.2 Shortlist (priority order)
+### 3.2 Reference set — current status
 
-**Tier A — strong fit, near-certain useful:**
-- **Hill, A. (2013).** *Interpreting Electroacoustic Audio-Visual Music* (PhD, De Montfort). Direct framework for AV interpretation; addresses reviewer's "frameworks for encountering" concern head-on. Also possibly Hill's later journal articles in OS or eContact!.
-- **Harris, L. (2021).** *Composing Audiovisually: Perspectives on Audiovisual Practice and Composition.* Routledge. Recent monograph; directly engages parity, hierarchy, and compositional process.
-- **Coulter, J. (2010).** "Electroacoustic music with moving images: the art of media pairing." *Organised Sound* 15(1): 26–34. Typology of sound-image pairings — within-journal precedent.
+**In hand and read (✅ confirmed Tier A):**
+- **Coulter, J. 2010.** "Electroacoustic Music with Moving Images: the art of media pairing." *Organised Sound* 15(1): 26–34. Builds a 3D classification cube (referential↔abstract on each axis) for sound-image pairs; distinguishes **concomitant** (highlighting/masking through overlay) vs **isomorphic** (catalysing integration via shared formal characteristics) relationships. Cites Cook 1998, Smalley, Talsma, Chion, Emmerson. *Operationalises* "frameworks for encountering AV"; OS-internal precedent.
+- **Hill, A. 2013.** *Interpreting Electroacoustic Audio-visual Music.* PhD, De Montfort University. Cognitive models of perception (Ch.4), interpretation theory (Ch.3), critique of Coulter's Language Cube (§6.2.4). Argues for a **post-structuralist model of interpretation foregrounding context**; vocabulary of *schemata and lived experience in negotiated interpretation*, *visible/audible technique and obstruction*. Direct fit with Reviewer 1's "frameworks for encountering".
+- **Watkins, J. 2018.** "Composing Visual Music: Visual Music Practice at the Intersection of Technology, Audio-visual Rhythms and Human Traces." *Body, Space & Technology* 17(1): 51–75. Open access. Engages Cook's (1998) similarity/difference test. Useful as an *example* of the visual-music tradition (Dahn-style "music made visible") for the privilege claim — note: she sits *on* that tradition rather than critiquing it, so cite as an example, not as a critique.
+- **Harris, L. 2016.** "Audiovisual Coherence and Physical Presence: I am there, therefore I am [?]." *eContact!* 18(2). Open access (econtact.ca / Glasgow eprints). Explicit anti-hierarchy / **media equality** position; rejects "visual music" because it implies musicality takes precedence; uses "audiovisual" (one word) deliberately. Substitutes for Harris 2021 (book inaccessible).
 
-**Tier B — likely useful, depends on argument fit:**
-- **Garro, D. (2012).** "From Sonic Art to Visual Music: Divergences, convergences, intersections." *Organised Sound* 17(2): 103–113. Or "A Glow on Pythagoras' Curtain". Composer's perspective on AV parity and visual-music traditions.
-- **Hyde, J. (2012).** "Musique concrète thinking in visual music practice." *Organised Sound* 17(2): 170–178. Visual-music side of the privilege claim.
-- **McDonnell, M. (2020 or related).** Visual music articles in OS. Historical critical perspective.
-- **Cohen, A. J. (2013).** "Congruence-Association Model of music and multimedia" (in *Psychology of Music in Multimedia*, OUP). Perception framework complementing Chion.
+**To grab from library next (Tom):**
+- **Cohen, A. J. 2013.** "Congruence-Association Model of music and multimedia: Origin and evolution." In Tan, Cohen, Lipscomb & Kendall (eds.) *The Psychology of Music in Multimedia*. Oxford University Press, 17–47. — Canonical psychological framework for AV perception; complements Chion.
+- **Garro, D. 2012.** "From Sonic Art to Visual Music: Divergences, convergences, intersections." *Organised Sound* 17(2): 103–113. — Composer's-eye reflection on parity vs. hierarchy in OS itself.
+- **Hyde, J. 2012.** "Musique concrète thinking in visual music practice…" *Organised Sound* 17(2): 170–178. — Optional, same OS issue as Garro; grab if convenient.
 
-**Tier C — only if needed for specific claims:**
-- Spielmann, Y. *Video: The Reflexive Medium* (2008) — intermedial.
-- Battey, B. — AV mapping CMJ articles.
-- Whitelaw, M. *Metacreation* (2004) — for generative-art context if needed.
+**Dropped:**
+- **Harris, L. 2021** *Composing Audiovisually* (Routledge). Inaccessible without paid copy. 2016 eContact article makes the same anti-hierarchy point and is open access; sub it in. If Harris sends a copy later, swap up.
+- **McDonnell** — original Tier B placeholder, no longer needed; Watkins covers the visual-music side.
 
-### 3.3 What to verify first
-Tom should confirm:
-- **Library access:** does Tom have access to *Organised Sound*, CMJ, OUP books? (If at Bristol, yes.)
-- **Existing relationship to literature:** has Tom read Harris (2021) or Hill (2013)? If yes, the citation is honest; if not, we need real reading time, not skim-citing.
+**Tier C (out of scope unless needed):** Spielmann, Battey, Whitelaw — not pursuing.
 
 ---
 
-## 4. Execution order (proposed)
+## 4. Execution order (current state)
 
-1. **Reference sourcing first** (parallel to other work) — without verified refs the framing edits are blocked. Aim: shortlist verified within 2–3 days.
-2. **Abstract** — rewrite from scratch using the 4-move structure. This is the highest-visibility change and benefits from being done early so other prose can echo its tone.
-3. **Intro §1 ¶1 + framing** — add the supporting citations once Tier A refs are in hand.
-4. **§1.1 + §1.2** — RQ1 "meaning" definition; Chiaramonte cite at point of use; minor prose edits.
-5. **§2 Related Work** — the broader-frameworks paragraph; Besada clarification.
-6. **§5.4 + §6** — sample-size reframing.
-7. **Whole-paper machine-phrasing edit pass** — targeted, not blanket.
-8. **Full spelling/proofread pass.**
-9. **Rebuild PDF/DOCX**, export, sanity-check figures and refs.
-10. **Response-to-reviewers letter** — finalise (drafted in parallel from step 2 onward).
-11. **Submit** via Manuscript Central.
+- ✅ Camera ready folder + plan.
+- ✅ Reference sourcing — Coulter, Hill, Watkins, Harris-2016 in hand and integrated. Cohen + Garro (+optional Hyde) still on Tom's library trip; slot reserved in §2 with HTML-comment marker.
+- ✅ Mechanical edits (Chiaramonte cite at §1.1, audiovisuallly typo, Besada phrasing).
+- ✅ Typo audit + spelling fixes in author prose and Participant 8 / Participant 9 quotes.
+- ✅ §4.9 missing-quote restored (Participant 4, end-of-session, on overload).
+- ✅ Quote-typo policy: silent correction adopted; methods note added to §3.5.
+- ✅ RQ1 rephrased (Option B: "the audiovisual experience").
+- ✅ Abstract rewritten (no em-dashes; foundational framing).
+- ✅ §1 ¶1 — supporting cites added (Watkins, Chion, Cook, Harris, Hill).
+- ✅ §1 ¶2-3, §1.1 ¶2, §1.2 contributions list, §5.1 — machine-phrasing pass.
+- ✅ §2 Related Work — Coulter, Garro, Hill, Harris, Hyde, Watkins all integrated. Cohen 2013 dropped (paywall, library inaccessible).
+- ✅ §5.4 + §6 — sample-size reframing complete.
+- ✅ References list — Coulter, Harris, Hill, Watkins added in alphabetical order.
+- ✅ Hyphenation normalised (L204 'audio-visual' → 'audiovisual'; intentional hyphenated uses retained where they are titles or author terminology).
+- ✅ Response-to-reviewers letter drafted (`response_to_reviewers.md`).
+- ⬜ **Final proofread by Tom** — read-through of full manuscript before submission.
+- ⬜ **Rebuild PDF/DOCX** — figure paths still point to `/run_006/figures_pdf/`; either keep (works fine) or update to `/camera ready/figures_pdf/` for self-containment. Decide on build path: Pandoc-direct vs Pages export.
+- ⬜ **Submit** via Manuscript Central by 20-May-2026.
 
 ---
 

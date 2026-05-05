@@ -15,65 +15,70 @@ header-includes:
 
 **Abstract**
 
-Electroacoustic audiovisual composition often aspires to parity between
-sound and moving image, yet workflow and perceptual salience can
-reintroduce hierarchy. This article evaluates media equality and
-intermedial interference (constructive and destructive interactions
-between media features) in a generative audiovisual instrument using a
-modality constraint and replay-based reveal protocol. We study the
-Cellular Au-Tonnetz, a Tonnetz cellular-automata system in which sound
-and LED activity are parallel projections of a single evolving
-state-space. In a within-subject study (N = 9), participants completed
-three short compositional tasks with visual-only, audio-only, and
-audiovisual access. Each block began from a shared preset, ended with a
-recorded audiovisual excerpt and saved parameter preset, and was
-followed by immediate audiovisual replay and two-part reflection
-(pre-reveal and post-reveal). Audiovisual access was most often ranked
-best overall (8/9) and most intermedial (7/9), while audio-only most
-often produced the biggest mismatch (6/9). Disruptive interference was
-commonly reported as cue conflict (temporal persistence, density
-mismatch, perceptual masking), while productive interference emerged
-when replay supported rebinding and increased perceived coherence. We
-propose a lightweight evaluation template for practice-based intermedial
-research and outline design priorities for state-space projection
-instruments.
+Coupled audiovisual instruments, in which sound and image are produced
+from a shared generative process, promise media equality by design.
+But does causal coupling actually deliver perceptual parity? This
+article asks how composers experience media equality and intermedial
+interference when working with such an instrument.
+
+We report a practice-based study of the Cellular Au-Tonnetz, a system
+in which audio and LED light are parallel projections of the same
+evolving cellular-automaton state. Nine participants composed short
+pieces under three modality conditions: visual-only, audio-only, and
+audiovisual. Each was followed by replay with both modalities revealed.
+By withholding one medium during composition and reinstating it at
+replay, the protocol makes the construction of audiovisual experience
+observable.
+
+Audiovisual access was preferred overall (8 of 9 participants), but the
+audio-only condition most often produced the largest perceived mismatch
+(6 of 9), and replay frequently turned apparent mismatch into coherent
+re-reading. Mismatch typically took the form of cue conflict: temporal
+persistence, density correspondence, perceptual masking. Productive
+interference emerged at replay through rebinding. We position this as
+foundational practice-based work, offering a method other practitioners
+can adopt and design priorities for instruments where sound and image
+share a single generative substrate.
 
 **1 Introduction**
 
 Electroacoustic audiovisual composition is often discussed through
 models that implicitly privilege one medium: sound as structural driver
-with image as illustration, or image as narrative driver with sound as
-enhancement. Even where practitioners aim for parity, practical
-realities of workflow, interface design, and perceptual salience tend to
-reintroduce hierarchy. The Organised Sound call for this thematic issue
-highlights this as a problem of media equality and raises intermedial
-interference as a prompt for reconceptualising how media relationships
-are composed and perceived (Organised Sound 2026). Interference has also
-been developed as a compositional and analytic focus within
-electroacoustic audiovisual practice (Chiaramonte 2024).
+with image as visualisation, a stance common in visual music practice
+(Hyde 2012; Watkins 2018); or image as narrative driver with sound as
+enhancement, inherited from film sound (Chion 1994; Cook 1998). Even where
+practitioners aim for parity, perceptual salience and the practical
+realities of workflow and interface design tend to reintroduce
+hierarchy, a tension that Harris (2016) and Hill (2013) have
+articulated explicitly. The Organised Sound call for this thematic
+issue highlights this as a problem of media equality and raises
+intermedial interference as a prompt for reconceptualising how media
+relationships are composed and perceived (Organised Sound 2026).
+Interference has also been developed as a compositional and analytic
+focus within electroacoustic audiovisual practice (Chiaramonte 2024).
 
-This article takes a design-and-evaluation position on that prompt. It
-treats intermediality not only as an aesthetic aspiration, but as a
-manipulable design problem that can be evaluated in practice. The focus
-is generative instruments in which sound and moving image are produced
-in real time from shared processes. In such systems, the compositional
-site shifts away from post hoc synchronisation of independent layers and
-towards shaping the dynamics of an underlying generative substrate.
+The article takes a design-and-evaluation approach. We treat
+intermediality as a manipulable design problem that can be evaluated in
+practice, focusing on generative instruments in which sound and moving
+image are produced in real time from shared processes. In such
+instruments, composing means shaping the dynamics of an underlying
+generative substrate rather than synchronising independent media layers
+after the fact.
 
-We examine a specific coupling pattern that is common in contemporary
-audiovisual tools but rarely operationalised in evaluation: state-space
-projection. Here, sound and image are treated as parallel projections of
-a single evolving state, rather than one medium being derived from or
-aligned to the other. This provides a concrete basis for evaluating
-intermedial interference because the coupling is causal: when the
-underlying state changes, both modalities change.
+The coupling pattern we examine is state-space projection: sound and
+image are parallel projections of a single evolving state, rather than
+one medium being derived from or aligned to the other. Because the
+coupling is causal, with every change in the underlying state changing
+both modalities, it provides a concrete basis for evaluating intermedial
+interference.
 
 **1.1 Intermedial interference as a design and evaluation problem**
 
-Intermedial interference is used here to denote the perceptual and
-interpretive consequences of interactions between salient features of
-the two media. It includes constructive effects (reinforcement,
-increased legibility, meaningful surprise) and destructive effects
+Intermedial interference is used here, following Chiaramonte (2024), to
+denote the perceptual and interpretive consequences of interactions
+between salient features of the two media. It includes constructive
+effects (reinforcement, increased legibility, meaningful surprise) and
+destructive effects
 (contradiction, masking, overload, reduced causal confidence). In a
 state-space projection system, interference is design-sensitive: it
 emerges from mapping choices, temporal envelopes, constraint regimes,
@@ -81,22 +86,20 @@ and the performer's ability to build and test a causal model while
 composing.
 
 Despite the prevalence of generative systems in electroacoustic and
-audiovisual practices, evaluation is frequently limited to descriptive
+audiovisual practices, evaluation is often limited to descriptive
 accounts or anecdotal response. This makes it difficult to compare
-design choices or to articulate how a system supports, or undermines,
-parity between media. There remains a need for evaluation approaches
-that (i) retain practice-based validity, (ii) produce analysable
-evidence within realistic artistic development timelines, and (iii)
-connect participant experience to perceivable properties of captured
-audiovisual artefacts.
+design choices or to articulate how a system supports or undermines
+parity between media. The field needs evaluation approaches that
+combine practice-based validity with analysable evidence and that link
+participant experience to perceivable properties of captured artefacts.
 
 **1.2 Research questions and contributions**
 
 The study addresses three questions:
 
-**RQ1 (intermedial equality)**: To what extent do participants
-experience sound and light as co-equal contributors to meaning when
-composing with the system?
+**RQ1 (intermedial equality)**: To what extent do participants perceive
+sound and light as co-equal contributors to the audiovisual experience
+when composing with the system?
 
 **RQ2 (intermedial interference)**: What forms of constructive and
 destructive intermedial interference arise in practice, and how do they
@@ -112,9 +115,10 @@ A state-space projection framing of intermedial composition in which
 sound and light are treated as parallel projections of a shared
 generative substrate, enabling analysis without default media hierarchy.
 
-A lightweight evaluation method for practice-based intermedial research
-that combines modality-access manipulation, replay-based reveal, and
-traceable artefact capture.
+An evaluation method for practice-based intermedial research, combining
+modality-access manipulation, replay-based reveal, and traceable
+artefact capture, that produces analysable evidence within realistic
+artistic development timelines.
 
 An interference-focused account of mechanisms (cue conflict and
 rebinding) and instrument-actionable design priorities that improve
@@ -145,6 +149,27 @@ is directly relevant to a modality-withholding design: composing with
 one modality absent and reinstating it at replay makes the construction
 of audio-vision observable, including how expectation, surprise, and
 retrospective binding contribute to perceived unity (Chion 1994).
+
+Beyond Chion, several frameworks address the encounter and composition
+of electroacoustic audiovisual works directly. Coulter (2010) classifies
+sound-image pairs along referential and abstract axes and distinguishes
+concomitant from isomorphic relationships, offering a vocabulary for
+how shared formal characteristics catalyse audiovisual integration.
+Garro (2012) places audiovisual association strategies on a continuum
+from separation through intuitive complementarity, synchresis, and
+parametric mapping, contrasting Chion's visually-driven cinema contract
+with a visual music contract that holds "the primacy of both ear and
+eye together" as its artistic credo. Hill (2013) extends this work
+towards audience interpretation, where schemata, lived experience, and
+contextual framing make audiovisual works legible across diverse
+encounters. Harris (2016) takes an explicit anti-hierarchy position,
+rejecting the term "visual music" because it implies musicality takes
+precedence and arguing instead for sound and image as parts of a single
+coherent system. From within the visual music tradition itself, Hyde
+(2012) and Watkins (2018) apply music-derived principles to ocular
+media, working through concepts such as visual silence, visual noise,
+and visual suspension, and through audio-visual rhythm as a
+compositional concern.
 
 Within electroacoustic and intermedial discourse, intermedial
 interference foregrounds constructive and destructive interactions
@@ -177,10 +202,11 @@ transformational theory, where neighbourhood relations correspond to
 parsimonious voice-leading operations (Cohn 1997; Douthett and Steinbach
 1998). Cellular automata also have a long-standing lineage as musical
 generative formalisms valued for emergent structure from simple local
-rules (Miranda 2007). Besada et al. highlight cognitive and HCI
-challenges in Tonnetz-at-first-sight interaction, where visually salient
-geometric regularities can bias harmonic expectation; here, such bias is
-treated not only as a usability risk but as a potential resource for
+rules (Miranda 2007). Besada et al. highlight cognitive and HCI challenges in
+Tonnetz-at-first-sight interaction, where visible patterns in the
+lattice geometry, such as the triangular groupings that form familiar
+chord shapes, can bias harmonic expectation; here, such bias
+is treated not only as a usability risk but as a potential resource for
 productive intermedial interference in a coupled audio and light system
 (Besada et al. 2024).
 
@@ -200,7 +226,7 @@ example, colour-vision deficiency and sensitivity to flashing lights).
 **3.2 System under study**
 
 The study evaluates the Cellular Au-Tonnetz (TZ5), previously described
-as a unified audio-visual MIDI generator that couples Tonnetz
+as a unified audiovisual MIDI generator that couples Tonnetz
 pitch-space mapping with cellular automata and a web-configured embedded
 control architecture (Didiot-Cook 2025).
 
@@ -286,6 +312,10 @@ condition that felt most intermedial, selected the condition with the
 biggest mismatch, and described one change that would improve media
 equality or intermedial legibility.
 
+Where participant quotations appear in this article, minor spelling and
+typing errors have been silently corrected for readability; meaning and
+structure are unchanged.
+
 **4 Results**
 
 **4.1 Data completeness**
@@ -332,9 +362,9 @@ the grid, then reduce intensity and bring it back up to full coverage"
 Visual-only access was sometimes described as creatively liberating,
 especially for trained musicians. Participant 8 reported that removing
 audio reduced theory-led self-monitoring and enabled a more playful mode
-of exploration: \"didnt even think about pitch and what scale notes to
-use on the visual block \... satisfaction is intersting as i felt in a
-playful state so satisfaction higher than if i was in a perfomance
+of exploration: \"didn't even think about pitch and what scale notes to
+use on the visual block \... satisfaction is interesting as I felt in a
+playful state so satisfaction higher than if I was in a performance
 /product state\" (Participant 8 - Visual-only).
 
 **Audio-only composition** shifted strategies towards pacing, texture,
@@ -424,7 +454,7 @@ contradiction) in the audiovisual condition.
 
 Across conditions, participants framed interaction less as direct
 control and more as negotiated agency. Some described collaboration with
-the instrument: "there something like a collaboration
+the instrument: "there's something like a collaboration
 working with the instrument" (Participant 8, audiovisual block,
 pre-reveal). Others framed the experience as discovering structure
 beyond their own intention: "The reviewed videos were more
@@ -462,7 +492,10 @@ the audio and visuals" (Participant 1, end-of-session reflection).
 notes, regardless of them being played may have helped build more
 harmonious sounds" (Participant 3, end-of-session reflection).
 
-**Reduce overload and support attention management**:
+**Reduce overload and support attention management**: "just having
+high activity/dynamics of light and sound would be overwhelming and not
+satisfying" (Participant 4, end-of-session reflection).
+
 **Improve interface ergonomics**: "Put the interface on one
 page without scrolling" (Participant 9, end-of-session reflection).
 
@@ -488,18 +521,18 @@ intention-monitoring-interpretation loop: participants can form
 intentions with reference to both media, test hypotheses during
 interaction, and refine causal inference in real time.
 
-With such coupled systems, modality constraint can be beneficial, not
-only degradative. Visual-only composition was described by a trained
-musician, as creatively liberating, because it suspends real-time
-harmonic self-monitoring and invites a more exploratory stance.
+Modality constraint, applied within a coupled system, can be beneficial
+rather than only degradative. One trained musician described visual-only
+composition as creatively liberating because it suspended real-time
+harmonic self-monitoring and invited a more exploratory stance.
 Temporarily relinquishing one modality can reduce evaluative pressure
 and open alternative compositional strategies, which in turn may support
-later intermedial rebinding at reveal. Practically, this points to a
-design opportunity: intermedial instruments may benefit from explicit
-"constraint modes" that intentionally reweight attention
-and agency, allowing users to move between exploratory play and
-audiovisuallly accountable refinement rather than treating constraint
-purely as an experimental manipulation.
+later intermedial rebinding at reveal. This suggests a design
+opportunity: intermedial instruments may benefit from explicit
+"constraint modes" that intentionally reweight attention and agency,
+allowing users to move between exploratory play and audiovisually
+accountable refinement rather than treating constraint purely as an
+experimental manipulation.
 
 **5.2 Interference as cue conflict and productive discontinuity**
 
@@ -545,15 +578,16 @@ how performers construct and test causal models while composing.
 
 **5.4 Limits and scope**
 
-The study is intentionally practice-proximate: convenience sampling,
-short sessions, a single synthesis configuration, and a constrained
-parameter set. Accordingly, the article does not claim population-level
-effects. Its contribution is methodological and conceptual: it shows
-that media equality and interference can be operationalised within
-realistic artistic development timelines using modality manipulation,
-reveal-based reflection, and traceable artefact capture. Future work can
-extend the method to other instruments, longer-form composition, and
-independent observer evaluation.
+With nine participants, a single synthesis configuration, and a
+constrained parameter set, the study supports analytic rather than
+statistical generalisation. We do not claim population-level effects;
+the contribution is foundational. The article shows that media equality
+and intermedial interference can be operationalised within realistic
+artistic development timelines using modality manipulation, replay-based
+reflection, and traceable artefact capture, and the resulting method is
+ready to scale. Future work can extend it to other coupled instruments,
+longer-form composition, and independent-observer evaluation, with
+sample sizes that license stronger inferential claims.
 
 **6 Conclusion**
 
@@ -574,11 +608,15 @@ coupling alone does not guarantee perceptual parity: co-equal media
 relations depend on cue reliability and interaction design that supports
 evolving causal understanding.
 
-More broadly, the study demonstrates a lightweight evaluation template
-for practice-based intermedial research. By linking structured
-reflection to reproducible artefacts (saved presets and recorded
-outputs), the method supports issue-driven analysis of how media
-relationships are composed and perceived in coupled generative systems.
+More broadly, the study shows how media equality and intermedial
+interference can be evaluated through structured practice rather than
+through descriptive accounts alone. By linking structured reflection to
+reproducible artefacts (saved presets and recorded outputs), the method
+supports issue-driven analysis of how media relationships are composed
+and perceived in coupled generative systems. As foundational
+practice-based work, it establishes a method that larger-scale
+follow-ups can refine and extend across other coupled instruments and
+longer-form composition.
 
 **Supplementary Materials**
 
@@ -620,6 +658,10 @@ Their Tonnetz Representations. *Journal of Music Theory* 41(1): 1-66.
 
 Cook, N. 1998. *Analysing Musical Multimedia*. Oxford: Clarendon Press.
 
+Coulter, J. 2010. Electroacoustic Music with Moving Images: the art of
+media pairing. *Organised Sound* 15(1): 26-34.
+[https://doi.org/10.1017/S1355771809990239](https://doi.org/10.1017/S1355771809990239).
+
 Didiot-Cook, T. 2025. Cellular Au-Tonnetz: A Unified Audio-Visual MIDI
 Generator Using Tonnetz, Cellular Automata, and IoT. In P. Machado, C.
 Johnson and I. Santos (eds.) *Artificial Intelligence in Music, Sound,
@@ -635,6 +677,22 @@ Elleström, L. 2010. The Modalities of Media: A Model for Understanding
 Intermedial Relations. In L. Elleström (ed.) *Media Borders,
 Multimodality and Intermediality*. London: Palgrave Macmillan, 11-48.
 [https://doi.org/10.1057/9780230275201_2](https://doi.org/10.1057/9780230275201_2).
+
+Garro, D. 2012. From Sonic Art to Visual Music: Divergences,
+convergences, intersections. *Organised Sound* 17(2): 103-113.
+[https://doi.org/10.1017/S1355771812000027](https://doi.org/10.1017/S1355771812000027).
+
+Harris, L. 2016. Audiovisual Coherence and Physical Presence: I am
+there, therefore I am [?]. *eContact!* 18(2).
+[https://econtact.ca/18_2/harris_audiovisualcoherence.html](https://econtact.ca/18_2/harris_audiovisualcoherence.html).
+
+Hill, A. 2013. *Interpreting Electroacoustic Audio-visual Music*. PhD
+thesis. De Montfort University.
+
+Hyde, J. 2012. Musique Concrète Thinking in Visual Music Practice:
+Audiovisual silence and noise, reduced listening and visual suspension.
+*Organised Sound* 17(2): 170-178.
+[https://doi.org/10.1017/S1355771812000106](https://doi.org/10.1017/S1355771812000106).
 
 Miranda, E. R. 2007. Cellular Automata Music: From Sound Synthesis to
 Musical Forms. In E. R. Miranda (ed.) *Evolutionary Computer Music*.
@@ -663,3 +721,8 @@ A Literary Perspective on Intermediality. *Intermédialités* 6: 43-64.
 Spence, C. 2011. Crossmodal correspondences: A tutorial review.
 *Attention, Perception, and Psychophysics* 73: 971-995.
 [https://doi.org/10.3758/s13414-010-0073-7](https://doi.org/10.3758/s13414-010-0073-7).
+
+Watkins, J. 2018. Composing Visual Music: Visual Music Practice at the
+Intersection of Technology, Audio-visual Rhythms and Human Traces.
+*Body, Space & Technology* 17(1): 51-75.
+[https://doi.org/10.16995/bst.296](https://doi.org/10.16995/bst.296).
