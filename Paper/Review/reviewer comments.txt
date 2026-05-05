@@ -1,0 +1,42 @@
+Dear Mr. Didiot-Cook,
+
+OSO-2026-0019 entitled "Evaluating Media Equality in Generative Audiovisual Composition Using Modality Constraint and Replay-Based Reveal" which you submitted to Organised Sound, has been reviewed. Both reviewers consider it a valid and interesting contribution within the scope of the issue, and I am pleased to invite a minor revision.
+The most important concern, shared by both reviewers, is the contextual and theoretical framing. The opening claim — that electroacoustic audiovisual composition is often discussed using models that privilege one medium — is presented without supporting examples or references in either the introduction or the related work section. Engagement with critical frameworks for audiovisual composition is currently limited: Chion is a useful starting point, but a broader engagement with the relevant literature is needed to properly ground the study's premises and position its contribution within the existing discourse.
+Both reviewers also raise concerns about the abstract, which reads in places as overly technical and does not yet give the reader a clear sense of what the study seeks to explore, how it does so, and what it offers. It should be rewritten to draw the reader in and to communicate the value and scope of the research in broader terms, without sacrificing precision.
+Reviewer 2 also asks that the term "meaning" in Research Question 1 be defined more clearly, as it is central to the study yet not adequately addressed in the body of the article. A small number of spelling errors should also be corrected throughout, references (intermedial interference) should be checked and added, and phrasing that risks appearing machine-generated should be reviewed and revised in the abstract, introduction, and main body.
+Finally, I would ask the authors to reflect on how the findings are framed in relation to the study's sample size. Reviewer 1 notes that the conclusions, while valid within the study's specific context, have limited wider applicability as it stands. Explicitly acknowledging this and positioning the work as valuable foundational research for future larger-scale studies would considerably strengthen the manuscript's scholarly standing.
+Therefore, I invite you to respond to their comments and revise your manuscript. To start your revision now, click the link below:
+
+*** PLEASE NOTE: This is a two-step process. After clicking on the link, you will be directed to a webpage to confirm. ***
+
+https://mc.manuscriptcentral.com/organised-sound?URL_MASK=b2ec1c731dde4adc9f002109c09d5308
+
+Alternatively, you may log into your author centre at https://mc.manuscriptcentral.com/organised-sound, where you will find your manuscript under "Manuscripts Awaiting Revision". Upon submission of the revised version, your manuscript number will be appended to denote a revision. When submitting your revised manuscript, you will be able to respond to the comments made by the reviewer(s) and editor in the space provided. Please use this space to document any changes you make to the original manuscript.  In order to expedite the processing of the revised manuscript, please be as specific as possible in your response to the reviewer(s). Because we are trying to facilitate timely publication of manuscripts submitted to Organised Sound, your revised manuscript should be uploaded as soon as possible. We expect to receive your revision by 20-May-2026. If it is not possible for you to submit your revision by this date, please contact the Editorial Office to rearrange the due date. Otherwise, we may have to consider your paper as a new submission.
+
+Once again, thank you for submitting your manuscript to Organised Sound and I look forward to receiving your revision.
+
+Sincerely,
+Dr. Antonino Chiaramonte
+Handling Editor, Organised Sound
+
+Reviewer: 1
+
+Comments to the Author
+I would like to see a more extensive overview of perspectives on medial relationships in AV composition - the introduction begins with the statement 'Electroacoustic audiovisual composition is often discussed through models that implicitly privilege one medium: sound as structural driver with image as illustration, or image as narrative driver with sound as enhancement' but no relevant examples are given (either here or in the 'related work' section), Equally, the engagement with relevant critical frameworks for encountering audiovisual compositions is quite limited - Chion is, of course, useful here, but a wider net needs to be cast to really cement this element of the contextual discussion.
+
+Reviewer: 2
+
+Comments to the Author
+An interesting article and within the scope of the Volume.
+
+The Abstract. This reads very technically and I’d like a greater sense of the gist of the study once we get past the first sentence or two. What are you really trying to discover? What is this exploring?  It reads overly technically (almost like it was written by a computer in places - this may have been the use of Chat, which is then repeated in the Introduction and main body anyway. As a regular OS reader, I read this abstract I would not want to read the article because I don’t know, in broad brushstrokes, what the paper seeks to explore, how it does it, and what it hopes to offer in conclusion. You are telling a story of the research, and this is the summary that should draw the reader in. You don’t have to prove the scientific validity of the study right here - rather you need to clearly explain why it is valuable and why I should read it.
+
+p. 2 RQ1. There is a fundamental concern regarding question 1: “To what extent do participants experience sound and light as co-equal contributors to meaning when composing with the system?”
+
+How are you defining ‘meaning’ here? I know it is a big topic but I have my own inferred definition, but I imagine it might be different to that assumed here. Is it really the audiovisual experience? Meaning is not really addressed later on, so
+
+p.3 Penultimate paragraph - just reference Chiaramonte if that is the source of the idea (intermedial interference).
+
+p.4 “visually salient geometric regularities” does this mean striking shapes/patterns that appear regularly?
+
+Watch out for spelling mistakes - there are a few.
