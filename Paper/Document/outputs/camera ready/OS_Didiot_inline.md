@@ -37,7 +37,7 @@ re-reading. Mismatch typically took the form of cue conflict: temporal
 persistence, density correspondence, perceptual masking. Productive
 interference emerged at replay through rebinding. We position this as
 foundational practice-based work, offering a method other practitioners
-can adopt and design priorities for instruments where sound and image
+can adopt, and design priorities for instruments where sound and image
 share a single generative substrate.
 
 **1 Introduction**
@@ -77,9 +77,9 @@ interference.
 Intermedial interference is used here, following Chiaramonte (2024), to
 denote the perceptual and interpretive consequences of interactions
 between salient features of the two media. It includes constructive
-effects (reinforcement, increased legibility, meaningful surprise) and
-destructive effects
-(contradiction, masking, overload, reduced causal confidence). In a
+effects (reinforcement, increased legibility, and meaningful surprise)
+and destructive effects (contradiction, masking, overload, and reduced
+causal confidence). In a
 state-space projection system, interference is design-sensitive: it
 emerges from mapping choices, temporal envelopes, constraint regimes,
 and the performer's ability to build and test a causal model while
@@ -111,18 +111,19 @@ during composition?
 
 The article contributes:
 
-A state-space projection framing of intermedial composition in which
-sound and light are treated as parallel projections of a shared
-generative substrate, enabling analysis without default media hierarchy.
+- A state-space projection framing of intermedial composition in which
+  sound and light are treated as parallel projections of a shared
+  generative substrate, enabling analysis without default media
+  hierarchy.
 
-An evaluation method for practice-based intermedial research, combining
-modality-access manipulation, replay-based reveal, and traceable
-artefact capture, that produces analysable evidence within realistic
-artistic development timelines.
+- An evaluation method for practice-based intermedial research,
+  combining modality-access manipulation, replay-based reveal, and
+  traceable artefact capture, that produces analysable evidence within
+  realistic artistic development timelines.
 
-An interference-focused account of mechanisms (cue conflict and
-rebinding) and instrument-actionable design priorities that improve
-media equality in coupled generative instruments.
+- An interference-focused account of mechanisms (cue conflict and
+  rebinding) and instrument-actionable design priorities that improve
+  media equality in coupled generative instruments.
 
 **2 Related work**
 
@@ -166,10 +167,9 @@ encounters. Harris (2016) takes an explicit anti-hierarchy position,
 rejecting the term "visual music" because it implies musicality takes
 precedence and arguing instead for sound and image as parts of a single
 coherent system. From within the visual music tradition itself, Hyde
-(2012) and Watkins (2018) apply music-derived principles to ocular
-media, working through concepts such as visual silence, visual noise,
-and visual suspension, and through audio-visual rhythm as a
-compositional concern.
+(2012) develops the concepts of visual silence, visual noise, and
+visual suspension as ocular counterparts to musique concrète, and
+Watkins (2018) treats audio-visual rhythm as a compositional concern.
 
 Within electroacoustic and intermedial discourse, intermedial
 interference foregrounds constructive and destructive interactions
@@ -239,11 +239,11 @@ pitch-class-to-colour mapping. In this framing, sound and light are
 parallel projections of a shared latent score: a single evolving
 substrate that is perceived through two modalities.
 
-![System block diagram, comprising the TZ5 instrument and its constituent parts, as well as the supporting infrastructure and instrumentation required to conduct the study.](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig1.pdf){ width=100% }
+![System block diagram, comprising the TZ5 instrument and its constituent parts, as well as the supporting infrastructure and instrumentation required to conduct the study.](figures_png/fig1.png){#fig:fig1 width=100%}
 
-![Exploded view of TZ5 audiovisual instrument. Light from the 91x Red, Green & Blue (RGB) LEDs is guided by a hexagonal lattice and diffused by a 2mm sheet of acetate.](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig2.pdf){ width=100% }
+![Exploded view of TZ5 audiovisual instrument. Light from the 91x Red, Green & Blue (RGB) LEDs is guided by a hexagonal lattice and diffused by a 2mm sheet of acetate.](figures_png/fig2.png){#fig:fig2 width=100%}
 
-![Tonnetz pitch-class map used for hue mapping. MIDI numbers are given under each pitch class, and computed from the root of C;36 (bottom, centre), incrementing by +3 semitones moving right, and +4 moving left.](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig3.pdf){ width=100% }
+![Tonnetz pitch-class map used for hue mapping. MIDI numbers are given under each pitch class, and computed from the root of C;36 (bottom, centre), incrementing by +3 semitones moving right, and +4 moving left.](figures_png/fig3.png){#fig:fig3 width=100%}
 
 **3.3 Participant-facing control parameters**
 
@@ -252,18 +252,14 @@ interface. The parameter set was intentionally compact and targeted
 density, temporal dynamics, neighbourhood constraints, recurrence, and
 harmonic admissibility:
 
-**Density bounds**: Min Population and Max Population.
-
-**Temporal dynamics**: Rate (update interval) and Life Length
-(activation lifetime).
-
-**Neighbourhood constraints**: Neighbourhood extent (6 local neighbours
-or 18 extended) and Min Neighbours and Max Neighbours.
-
-**Recurrence**: Loop On or Off and Loop Length.
-
-**Harmonic admissibility**: Scale (constrains pitch classes and
-therefore the visible palette).
+- **Density bounds**: Min Population and Max Population.
+- **Temporal dynamics**: Rate (update interval) and Life Length
+  (activation lifetime).
+- **Neighbourhood constraints**: Neighbourhood extent (6 local
+  neighbours or 18 extended), Min Neighbours, and Max Neighbours.
+- **Recurrence**: Loop On or Off and Loop Length.
+- **Harmonic admissibility**: Scale (constrains pitch classes and
+  therefore the visible palette).
 
 **3.4 Study design**
 
@@ -336,7 +332,7 @@ Mismatch reports concentrated in the audio-only condition: 6 of 9
 participants nominated B as the biggest mismatch, compared with A (2 of
 9) and C (1 of 9).
 
-![Counts of best overall rank, most intermedial selection, and biggest mismatch by block condition (A=Visual Only, B=Audio Only, C=Audiovisual).](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig4.pdf){ width=100% }
+![Counts of best overall rank, most intermedial selection, and biggest mismatch by block condition (A=Visual Only, B=Audio Only, C=Audiovisual).](figures_png/fig4.png){#fig:fig4 width=100%}
 
 **4.3 Strategies under constraint**
 
@@ -357,15 +353,15 @@ density-first approach: "Start with lots of colour covering
 the grid, then reduce intensity and bring it back up to full coverage"
 (Participant 1, visual-only block, pre-reveal).
 
-![Diverging stacked Likert responses for Part A (pre-reveal) items by block condition. Bars show within-condition percentages centred on neutral (4).](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig5.pdf){ width=100% }
+![Diverging stacked Likert responses for Part A (pre-reveal) items by block condition. Bars show within-condition percentages centred on neutral (4).](figures_png/fig5.png){#fig:fig5 width=100%}
 
 Visual-only access was sometimes described as creatively liberating,
 especially for trained musicians. Participant 8 reported that removing
 audio reduced theory-led self-monitoring and enabled a more playful mode
-of exploration: \"didn't even think about pitch and what scale notes to
-use on the visual block \... satisfaction is interesting as I felt in a
+of exploration: "didn't even think about pitch and what scale notes to
+use on the visual block... satisfaction is interesting as I felt in a
 playful state so satisfaction higher than if I was in a performance
-/product state\" (Participant 8 - Visual-only).
+/product state" (Participant 8, visual-only block, post-reveal).
 
 **Audio-only composition** shifted strategies towards pacing, texture,
 and repetition as a stabiliser. Figure 5 shows A2, A3, and A4 (interface
@@ -395,16 +391,16 @@ audiovisual composition, while B8 (interpretation change) increases most
 when one modality has been withheld, consistent with replay functioning
 as calibration.
 
-![Diverging stacked Likert responses for Part B (post-reveal) items by block condition. Bars show within-condition percentages centred on neutral (4)](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig6.pdf){ width=100% }
+![Diverging stacked Likert responses for Part B (post-reveal) items by block condition. Bars show within-condition percentages centred on neutral (4)](figures_png/fig6.png){#fig:fig6 width=100%}
 
 Qualitative accounts support this. One participant described audio-only
 replay as exceeding expectations: "The outcome was more
 satisfying than I felt the recording and playing process went... on
 review had more structure than maybe I realised during the process of
 recording" (Participant 3, audio-only block, post-reveal). Another
-described a strong positive mismatch on reveal: "I had no
-expectation of what the visuals should be, but when I saw it it was so
-beautiful" (Participant 8, audio-only block, post-reveal).
+described a strong positive mismatch on reveal: "I had no expectation
+of what the visuals should be, but when I saw it, it was so beautiful"
+(Participant 8, audio-only block, post-reveal).
 
 **4.5 Attentional hierarchy and media equality as negotiated practice**
 
@@ -478,33 +474,30 @@ when sound was available, consistent with participants treating harmonic
 admissibility as a primary steering dimension when auditory feedback is
 present.
 
-![Stacked bar chart of parameter influence nominations by condition.](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig7.pdf){ width=100% }
+![Stacked bar chart of parameter influence nominations by condition.](figures_png/fig7.png){#fig:fig7 width=100%}
 
 **4.9 Participant-led design requirements**
 
 Participant change requests converge on cue reliability and constraint
 transparency:
 
-**Align temporal cues**: "Incorporate ADSR envelopes into
-the audio and visuals" (Participant 1, end-of-session reflection).
-
-**Improve mapping legibility**: "Seeing the colours of the
-notes, regardless of them being played may have helped build more
-harmonious sounds" (Participant 3, end-of-session reflection).
-
-**Reduce overload and support attention management**: "just having
-high activity/dynamics of light and sound would be overwhelming and not
-satisfying" (Participant 4, end-of-session reflection).
-
-**Improve interface ergonomics**: "Put the interface on one
-page without scrolling" (Participant 9, end-of-session reflection).
+- **Align temporal cues**: "Incorporate ADSR envelopes into the audio
+  and visuals" (Participant 1, end-of-session reflection).
+- **Improve mapping legibility**: "Seeing the colours of the notes,
+  regardless of them being played may have helped build more harmonious
+  sounds" (Participant 3, end-of-session reflection).
+- **Reduce overload and support attention management**: "just having
+  high activity/dynamics of light and sound would be overwhelming and
+  not satisfying" (Participant 4, end-of-session reflection).
+- **Improve interface ergonomics**: "Put the interface on one page
+  without scrolling" (Participant 9, end-of-session reflection).
 
 These requirements map directly onto the interference mechanisms above:
 where cue structure was reliable, participants reported reinforcement;
 where cues conflicted or masked one another, participants reported
 mismatch and reduced steerability.
 
-![Montage of video-stills taken from participant outputs across conditions (A/B/C).](/Users/tom/projects/tonnetz/Organised Sound/Paper/Document/outputs/run_006/figures_pdf/fig8.pdf){ width=100% }
+![Montage of video-stills taken from participant outputs across conditions (A/B/C).](figures_png/fig8.png){#fig:fig8 width=100%}
 
 **5 Discussion**
 
@@ -594,7 +587,7 @@ sample sizes that license stronger inferential claims.
 This article operationalised media equality and intermedial interference
 in a practice-based evaluation of the Cellular Au-Tonnetz, a coupled
 generative instrument in which sound and LED activity are parallel
-projections of a shared evolving state-space. Audiovisual access was
+projections of a shared evolving state. Audiovisual access was
 most often ranked best overall and most intermedial, while audio-only
 access most often produced the biggest mismatch.
 
@@ -649,6 +642,7 @@ Chiaramonte, A. 2024. *Intermedial Interference in Electroacoustic
 Audiovisual Composition: An Investigation into Combining, Integrating,
 and Fusing Sound and the Moving Image. A Portfolio of Audiovisual
 Compositions*. PhD thesis. Bournemouth University.
+[https://eprints.bournemouth.ac.uk/40772/](https://eprints.bournemouth.ac.uk/40772/).
 
 Chion, M. 1994. *Audio-Vision: Sound on Screen*. New York: Columbia
 University Press.
@@ -688,6 +682,7 @@ there, therefore I am [?]. *eContact!* 18(2).
 
 Hill, A. 2013. *Interpreting Electroacoustic Audio-visual Music*. PhD
 thesis. De Montfort University.
+[https://hdl.handle.net/2086/9898](https://hdl.handle.net/2086/9898).
 
 Hyde, J. 2012. Musique Concrète Thinking in Visual Music Practice:
 Audiovisual silence and noise, reduced listening and visual suspension.

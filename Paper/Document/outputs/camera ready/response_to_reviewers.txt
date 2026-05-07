@@ -1,0 +1,60 @@
+RESPONSE TO REVIEWERS
+
+Manuscript: OSO-2026-0019
+"Evaluating Media Equality in Generative Audiovisual Composition Using Modality Constraint and Replay-Based Reveal"
+Author: Thomas Didiot-Cook
+
+Dear Reviewers,
+
+I am grateful for your careful and constructive comments. The revisions have improved the manuscript's framing, accessibility, and scholarly grounding. A summary of changes is given below, followed by point-by-point responses to each reviewer. The editor's overall comments synthesise the reviewers' concerns, so the responses below address them in full; one editor-specific framing question (on sample size) is answered separately.
+
+SUMMARY OF CHANGES
+
+1. The abstract has been rewritten to communicate the study's question, method, and contribution in plain terms, and to position the work as foundational practice-based research.
+2. The Introduction (§1 ¶1) has been strengthened with citations grounding the medium-privilege claim (Hyde 2012; Watkins 2018 on the visual-music side; Chion 1994; Cook 1998 on the film-sound side) and citations articulating the parity tension (Harris 2016; Hill 2013).
+3. The Related Work (§2) has been expanded with a new paragraph on critical frameworks for encountering and composing within electroacoustic audiovisual music: Coulter (2010), Garro (2012), Hill (2013), Harris (2016), Hyde (2012), and Watkins (2018).
+4. RQ1 has been revised to refer to "the audiovisual experience" rather than "meaning", a term that was insufficiently grounded in the body of the paper.
+5. §1.1 now attributes "intermedial interference" to Chiaramonte (2024) at point of definition.
+6. The Besada paragraph in §2 clarifies "visually salient geometric regularities" as visible patterns in the lattice geometry, with a concrete example.
+7. §3.5 adds a brief disclosure that minor spelling and typing errors in participant quotations have been silently corrected for readability while meaning and structure are unchanged.
+8. §4.9 restored a missing participant quote on overload (Participant 4).
+9. §5.4 and §6 have been strengthened to frame the work as foundational practice-based research, with sample sizes that license analytic rather than statistical generalisation, and to position the method as ready for larger-scale follow-up. The abstract closes on the same framing.
+10. Sections §1, §1.1, §1.2, and §5.1 have been revised to remove machine-generated phrasing patterns (parallel-list cadences, hedge stacks, em-dashes, the repeated "lightweight evaluation template").
+11. Spelling errors have been corrected throughout, including "audiovisuallly" in §5.1 and three errors within Participant 8's quoted text in §4.3.
+12. Six new references have been added to the bibliography: Coulter (2010), Garro (2012), Harris (2016), Hill (2013), Hyde (2012), and Watkins (2018). Repository URLs have been added for the Hill (2013) and Chiaramonte (2024) PhD theses.
+
+EDITOR (sample size)
+
+Comment: "I would ask the authors to reflect on how the findings are framed in relation to the study's sample size."
+Response: §5.4 has been rewritten to acknowledge explicitly that nine participants support analytic rather than statistical generalisation, and to position the contribution as foundational practice-based research with a method ready to scale. §6 closes with a parallel framing, and the abstract closes on the same point. The framing is now load-bearing in three places (abstract, §5.4, §6) so that it is unmissable.
+
+REVIEWER 1
+
+Comment: "I would like to see a more extensive overview of perspectives on medial relationships in AV composition. The introduction begins with the statement '...models that implicitly privilege one medium...' but no relevant examples are given. Equally, the engagement with relevant critical frameworks for encountering audiovisual compositions is quite limited. Chion is, of course, useful here, but a wider net needs to be cast."
+Response: Two changes address this concern. First, §1 ¶1 now grounds the medium-privilege claim with examples on both sides: Hyde (2012) and Watkins (2018) for the visual-music-as-music-made-visible position, Chion (1994) and Cook (1998) for the film-sound inheritance. The parity tension is then attributed explicitly to Harris (2016) and Hill (2013). Second, a new paragraph in §2 (placed immediately after the Chion paragraph) engages six critical frameworks for the encounter and composition of electroacoustic audiovisual works:
+- Coulter's (2010) classification of media pairs along referential and abstract axes, with the concomitant/isomorphic distinction.
+- Garro's (2012) continuum of audiovisual association strategies (separation, intuitive complementarity, synchresis, parametric mapping) and his contrast between Chion's visually-driven cinema contract and a visual music contract that holds "the primacy of both ear and eye together".
+- Hill's (2013) interpretation framework, where schemata, lived experience, and contextual framing make audiovisual works legible across diverse encounters.
+- Harris's (2016) explicit anti-hierarchy position, which rejects "visual music" because it implies musicality takes precedence and argues for sound and image as parts of a single coherent system.
+- Hyde's (2012) and Watkins's (2018) practice-grounded engagements with the visual music tradition: visual silence, visual noise, and visual suspension as ocular counterparts to musique concrète; and audio-visual rhythm as a compositional concern.
+
+REVIEWER 2
+
+Comment: "The Abstract reads very technically. ... Almost like it was written by a computer in places. ... I would not want to read the article because I don't know, in broad brushstrokes, what the paper seeks to explore, how it does it, and what it hopes to offer in conclusion."
+Response: The abstract has been rewritten in full using a four-move structure: (i) the aspiration and the problem; (ii) what the study explores and why; (iii) how, in plain language; (iv) what the study offers. Parenthetical glosses ("constructive and destructive interactions between media features"; "pre-reveal and post-reveal") have been removed. The phrase "lightweight evaluation template" has been retired. Em-dashes have been replaced throughout with commas and colons. The opening question, "But does causal coupling actually deliver perceptual parity?", is intended to draw the reader in before any technical specification. The same machine-phrasing pass was extended to §1, §1.1, §1.2, and §5.1.
+
+Comment: "p. 2 RQ1. There is a fundamental concern regarding question 1: 'To what extent do participants experience sound and light as co-equal contributors to meaning when composing with the system?' How are you defining 'meaning' here?"
+Response: RQ1 now reads: "To what extent do participants perceive sound and light as co-equal contributors to the audiovisual experience when composing with the system?". This avoids overloading "meaning" with semantic implications the study does not investigate, and aligns the question with what §4 and §5 actually address (the audiovisual experience as a perceived whole).
+
+Comment: "p.3 Penultimate paragraph: just reference Chiaramonte if that is the source of the idea (intermedial interference)."
+Response: Chiaramonte (2024) is now cited at the point of definition in §1.1: "Intermedial interference is used here, following Chiaramonte (2024), to denote ...". The earlier reference in §1 ¶1 and the reference in §2 are retained.
+
+Comment: "p.4 'visually salient geometric regularities' — does this mean striking shapes/patterns that appear regularly?"
+Response: The phrase has been rewritten in §2 as: "where visible patterns in the lattice geometry, such as the triangular groupings that form familiar chord shapes, can bias harmonic expectation". The Besada et al. (2024) citation is retained. We hope this clarifies the intended meaning.
+
+Comment: "Watch out for spelling mistakes - there are a few."
+Response: A full proofread has been performed. The most visible errors have been corrected, including "audiovisuallly" in §5.1 and three errors within Participant 8's quoted text in §4.3 ("didnt", "intersting", "perfomance"). A brief disclosure has been added to §3.5 noting that minor spelling and typing errors in participant quotations are silently corrected for readability while meaning and structure are unchanged.
+
+Thank you for the time and care taken with this manuscript.
+
+Thomas Didiot-Cook
