@@ -121,7 +121,7 @@ final_md = re.sub(
 final_md = re.sub(r'\n{3,}', '\n\n', final_md)
 
 # Add YAML frontmatter for pandoc
-title = "Intermedial Interference in a Coupled Generative Instrument: Evaluating Media Equality Through Modality Constraint and Replay"
+title = "Evaluating Media Equality in Generative Audiovisual Composition Using Modality Constraint and Replay-Based Reveal"
 author = "Thomas Didiot-Cook"
 
 frontmatter = f"""---
